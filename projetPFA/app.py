@@ -70,8 +70,13 @@ TE_ORANGE_LIGHT = TE_ORANGE_50
 TE_ANTHRACITE = "#2B2B2B"
 TE_GRIS = "#6A6A6A"
 
-LOGO_FILE = "logo.png"
+from pathlib import Path
 
+BASE_DIR = Path(__file__).resolve().parent
+LOGO_FILE = BASE_DIR / "logo.png"
+
+print("Logo path:", LOGO_FILE)
+print("Logo exists:", LOGO_FILE.exists())
 st.set_page_config(
     page_title="Nettoyage intelligent de données par Machine Learning",
     layout="wide",
