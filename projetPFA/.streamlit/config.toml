@@ -1,0 +1,11 @@
+[theme]
+# Palette inspirée de l'identité TE Connectivity (orange dominant)
+primaryColor = "#FF8200"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#FFF1E0"
+textColor = "#1A1A1A"
+font = "sans serif"
+ 
+[browser]
+gatherUsageStats = false
+ 

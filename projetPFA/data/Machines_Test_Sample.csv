@@ -1,0 +1,26 @@
+Date,Semaine,Mois,Shift,Machine,Intervenant,Durée de l'Arrêt (min),Problème,Détails de l'intervention,Status Intervention,Zone,Priorité
+2026-01-04,1,Janvier,Matin,Press 1,AHMED,120,Bloquage matière,Vérification du capteur,Terminé,Ligne A,Haute
+2026-01-05,1,Janvier,Après-midi,Press 2,BEN,45,Fuite hydraulique,Remplacement de joint,Terminé,Ligne B,Moyenne
+2026-01-06,1,Janvier,Nuit,Press 3,CAMILLE,30,Problème électrique,Vérification du disjoncteur,Terminé,Ligne A,Basse
+2026-01-07,2,Janvier,Matin,Press 1,AHMED,,Blocage matière,Nettoyage de la matrice,En cours,Ligne A,Haute
+2026-01-08,2,Janvier,Après-midi,Press 4,DAVID,90,Arrêt circuit de graissage,Remplacement pompe,Terminé,Ligne C,Haute
+2026-01-09,2,Janvier,Nuit,Press 2,BEN,0,Capteur défectueux,Test du capteur,Terminé,Ligne B,Moyenne
+2026-01-10,2,Janvier,Matin,Press 3,CAMILLE,2000,Usure anormale de roulement,Commande de pièce,En cours,Ligne A,Haute
+2026-01-11,3,Janvier,Après-midi,Press 1,AHMED,60,Maintenance préventive,Réglage du système,Terminé,Ligne A,Basse
+2026-01-12,3,Janvier,Nuit,Press 4,DAVID,100,Problème logiciel,Redémarrage du contrôleur,Terminé,Ligne C,Moyenne
+2026-01-13,3,Janvier,Matin,Press 5,EMMA,55,Blocage convoyeur,Nettoyage du tapis,Terminé,Ligne D,Haute
+2026-01-14,3,Janvier,Après-midi,Press 2,BEN,25,Problème affectant la qualité,Ajustement du format,Terminé,Ligne B,Basse
+2026-01-15,4,Janvier,Nuit,Press 1,AHMED,80,Surchauffe,Remplacement du ventilateur,Terminé,Ligne A,Haute
+2026-01-16,4,Janvier,Matin,Press 3,CAMILLE,30,Problème de lubrification,Contrôle du niveau d'huile,Terminé,Ligne A,Moyenne
+2026-01-17,4,Janvier,Après-midi,Press 4,DAVID,20,Problème de capteur,Nettoyage et recalibrage,Terminé,Ligne C,Basse
+2026-01-18,4,Janvier,Nuit,Press 5,EMMA,75,Problème mécaniques,Remplacement des guides,Terminé,Ligne D,Haute
+2026-01-19,5,Janvier,Matin,Press 2,BEN,95,Fuite hydraulique,Remplacement tuyau,Terminé,Ligne B,Haute
+2026-01-20,5,Janvier,Après-midi,Press 1,AHMED,40,Blocage matière,Nettoyage du système,Terminé,Ligne A,Moyenne
+2026-01-21,5,Janvier,Nuit,Press 3,CAMILLE,55,Problème d'alimentation électrique,Contrôle des connexions,Terminé,Ligne A,Basse
+2026-01-22,5,Janvier,Matin,Press 4,DAVID,10,Inspection rapide,Vérification du capot,Terminé,Ligne C,Basse
+2026-01-23,6,Janvier,Après-midi,Press 5,EMMA,210,Usure anormale,Analyse de vibration,En cours,Ligne D,Haute
+2026-01-24,6,Janvier,Nuit,Press 2,BEN,85,Problème de mesure,Remplacement du transducteur,Terminé,Ligne B,Moyenne
+2026-01-25,6,Janvier,Matin,Press 1,AHMED,65,Mauvaise qualité d'usinage,Réglage du gabarit,Terminé,Ligne A,Haute
+2026-01-26,6,Janvier,Après-midi,Press 3,CAMILLE,50,Blocage convoyeur,Nettoyage du rouleau,Terminé,Ligne A,Moyenne
+2026-01-27,7,Janvier,Nuit,Press 4,DAVID,0,,Inspection visuelle,Terminé,Ligne C,Basse
+2026-01-28,7,Janvier,Matin,Press 5,EMMA,120,Arrêt machine,Remplacement du moteur,Terminé,Ligne D,Haute

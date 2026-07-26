@@ -1,0 +1,943 @@
+2026-07-20 10:51:23 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-20 10:51:23 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-20 10:51:31 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-20 10:52:37 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 178, 'doublon': 177, 'valeur_aberrante': 2, 'non_utile_total': 180, 'utile_total': 47}
+2026-07-20 10:52:37 | INFO     | models.pretraitement | Doublons supprimés : 177
+2026-07-20 10:52:37 | INFO     | models.pretraitement | Valeurs manquantes imputées : 32
+2026-07-20 10:53:22 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 30 features
+2026-07-20 10:53:22 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.923 precision=0.852 recall=0.923 f1=0.886
+2026-07-20 10:53:36 | INFO     | models.modele_ml | LogisticRegression entraîné : 30 features
+2026-07-20 10:53:36 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.923 precision=0.852 recall=0.923 f1=0.886
+2026-07-20 10:53:37 | INFO     | models.modele_ml | LogisticRegression entraîné : 30 features
+2026-07-20 10:53:37 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.923 precision=0.852 recall=0.923 f1=0.886
+2026-07-20 10:53:38 | INFO     | models.modele_ml | LogisticRegression entraîné : 30 features
+2026-07-20 10:53:38 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.923 precision=0.852 recall=0.923 f1=0.886
+2026-07-20 10:53:38 | INFO     | models.modele_ml | LogisticRegression entraîné : 30 features
+2026-07-20 10:53:38 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.923 precision=0.852 recall=0.923 f1=0.886
+2026-07-20 10:53:56 | INFO     | models.fichier_excel | Fichier chargé : Maintenance_Analyse.xlsx (50 lignes, 16 colonnes)
+2026-07-20 10:53:56 | INFO     | models.fichier_excel | JeuDonnees créé : 50 lignes, 16 colonnes
+2026-07-20 11:07:05 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 3, 'non_utile_total': 3, 'utile_total': 47}
+2026-07-20 11:07:05 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-20 11:07:05 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-20 11:07:10 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 3, 'non_utile_total': 3, 'utile_total': 47}
+2026-07-20 11:07:10 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-20 11:07:10 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-20 11:07:20 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 3, 'non_utile_total': 3, 'utile_total': 47}
+2026-07-20 11:07:20 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-20 11:07:20 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-20 11:07:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 3, 'non_utile_total': 3, 'utile_total': 47}
+2026-07-20 11:07:23 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-20 11:07:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-20 11:07:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 3, 'non_utile_total': 3, 'utile_total': 47}
+2026-07-20 11:07:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-20 11:07:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-20 11:07:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 3, 'non_utile_total': 3, 'utile_total': 47}
+2026-07-20 11:07:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-20 11:07:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-20 11:07:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 3, 'non_utile_total': 3, 'utile_total': 47}
+2026-07-20 11:07:27 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-20 11:07:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-20 11:07:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 3, 'non_utile_total': 3, 'utile_total': 47}
+2026-07-20 11:07:27 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-20 11:07:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-20 11:07:30 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 34 features
+2026-07-20 11:07:30 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.923 precision=0.852 recall=0.923 f1=0.886
+2026-07-20 11:07:31 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 34 features
+2026-07-20 11:07:31 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 34 features
+2026-07-20 11:07:32 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.923 precision=0.852 recall=0.923 f1=0.886
+2026-07-20 11:07:37 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 3, 'non_utile_total': 3, 'utile_total': 47}
+2026-07-20 11:07:37 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-20 11:07:37 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-20 11:07:38 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 3, 'non_utile_total': 3, 'utile_total': 47}
+2026-07-20 11:07:38 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-20 11:07:38 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-20 11:07:39 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 3, 'non_utile_total': 3, 'utile_total': 47}
+2026-07-20 11:07:39 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-20 11:07:39 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-20 11:07:39 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 3, 'non_utile_total': 3, 'utile_total': 47}
+2026-07-20 11:07:39 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-20 11:07:39 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-20 11:07:39 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 3, 'non_utile_total': 3, 'utile_total': 47}
+2026-07-20 11:07:39 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-20 11:07:39 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-20 11:07:42 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 3, 'non_utile_total': 3, 'utile_total': 47}
+2026-07-20 11:07:42 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-20 11:07:42 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-20 11:08:01 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-20 11:08:01 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-20 11:08:05 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-20 11:08:13 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-20 11:11:04 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 178, 'doublon': 177, 'valeur_aberrante': 2, 'non_utile_total': 180, 'utile_total': 47}
+2026-07-20 11:11:04 | INFO     | models.pretraitement | Doublons supprimés : 177
+2026-07-20 11:11:04 | INFO     | models.pretraitement | Valeurs manquantes imputées : 32
+2026-07-20 11:11:18 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 30 features
+2026-07-20 11:11:18 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.923 precision=0.852 recall=0.923 f1=0.886
+2026-07-20 11:11:21 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 30 features
+2026-07-20 11:11:21 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.923 precision=0.852 recall=0.923 f1=0.886
+2026-07-20 11:20:16 | INFO     | models.fichier_excel | Fichier chargé : titanic.csv (891 lignes, 12 colonnes)
+2026-07-20 11:20:16 | INFO     | models.fichier_excel | JeuDonnees créé : 891 lignes, 12 colonnes
+2026-07-20 11:20:26 | INFO     | models.analyse_eda | EDA : 7 colonnes numériques analysées
+2026-07-20 11:20:52 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 65, 'non_utile_total': 65, 'utile_total': 826}
+2026-07-20 11:20:52 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-20 11:20:52 | INFO     | models.pretraitement | Valeurs manquantes imputées : 866
+2026-07-20 11:21:01 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 65, 'non_utile_total': 65, 'utile_total': 826}
+2026-07-20 11:21:01 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-20 11:21:01 | INFO     | models.pretraitement | Valeurs manquantes imputées : 866
+2026-07-20 11:21:05 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-20 11:21:05 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-20 11:22:32 | INFO     | models.analyse_eda | EDA : 7 colonnes numériques analysées
+2026-07-20 11:22:37 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 65, 'non_utile_total': 65, 'utile_total': 826}
+2026-07-20 11:22:37 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-20 11:22:37 | INFO     | models.pretraitement | Valeurs manquantes imputées : 866
+2026-07-20 11:26:19 | INFO     | models.fichier_excel | Fichier chargé : iris.csv (150 lignes, 5 colonnes)
+2026-07-20 11:26:19 | INFO     | models.fichier_excel | JeuDonnees créé : 150 lignes, 5 colonnes
+2026-07-20 11:26:30 | INFO     | models.analyse_eda | EDA : 4 colonnes numériques analysées
+2026-07-20 11:27:25 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-20 11:27:25 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-20 11:27:29 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-20 11:27:34 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 178, 'doublon': 177, 'valeur_aberrante': 2, 'non_utile_total': 180, 'utile_total': 47}
+2026-07-20 11:27:34 | INFO     | models.pretraitement | Doublons supprimés : 177
+2026-07-20 11:27:34 | INFO     | models.pretraitement | Valeurs manquantes imputées : 32
+2026-07-20 11:27:40 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 30 features
+2026-07-20 11:27:40 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.923 precision=0.852 recall=0.923 f1=0.886
+2026-07-20 11:28:22 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 250 arbres, 30 features
+2026-07-20 11:28:22 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.923 precision=0.852 recall=0.923 f1=0.886
+2026-07-20 13:15:16 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-20 13:23:02 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 30 features
+2026-07-20 13:23:02 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.923 precision=0.852 recall=0.923 f1=0.886
+2026-07-20 13:29:41 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 30 features
+2026-07-20 13:29:41 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.923 precision=0.852 recall=0.923 f1=0.886
+2026-07-20 13:29:43 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 30 features
+2026-07-20 13:29:44 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 30 features
+2026-07-20 13:29:44 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 30 features
+2026-07-20 13:29:44 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 30 features
+2026-07-20 13:29:45 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.923 precision=0.852 recall=0.923 f1=0.886
+2026-07-20 15:35:32 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-20 15:35:32 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-20 15:35:37 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-20 15:49:59 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-20 15:49:59 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-20 15:50:04 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-20 16:00:19 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-20 16:00:30 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-20 16:00:30 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-20 22:02:17 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-20 22:02:17 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-21 16:30:56 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-21 16:30:56 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-21 16:31:16 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-21 16:31:45 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 178, 'doublon': 177, 'valeur_aberrante': 2, 'non_utile_total': 180, 'utile_total': 47}
+2026-07-21 16:31:45 | INFO     | models.pretraitement | Doublons supprimés : 177
+2026-07-21 16:31:45 | INFO     | models.pretraitement | Valeurs manquantes imputées : 32
+2026-07-21 16:31:57 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 30 features
+2026-07-21 16:31:57 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.923 precision=0.852 recall=0.923 f1=0.886
+2026-07-21 17:18:45 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-21 17:18:45 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-21 17:18:51 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-21 17:42:37 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-21 17:42:40 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-21 17:43:08 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-21 17:43:34 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-21 17:43:37 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-21 17:43:41 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-21 17:47:56 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-21 17:48:13 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-21 17:48:16 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-21 17:48:56 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-21 17:51:42 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-21 17:51:49 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-21 17:51:53 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-21 17:52:33 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-21 17:56:37 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-21 17:56:40 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-21 17:56:48 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-22 08:32:47 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-22 08:32:47 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-22 08:32:50 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-22 08:32:50 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-22 08:32:56 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-22 08:37:50 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 178, 'doublon': 177, 'valeur_aberrante': 2, 'non_utile_total': 180, 'utile_total': 47}
+2026-07-22 08:37:50 | INFO     | models.pretraitement | Doublons supprimés : 177
+2026-07-22 08:37:50 | INFO     | models.pretraitement | Valeurs manquantes imputées : 32
+2026-07-22 08:38:10 | INFO     | models.modele_ml | LogisticRegression entraîné : 30 features
+2026-07-22 08:38:10 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.923 precision=0.852 recall=0.923 f1=0.886
+2026-07-22 08:49:12 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-22 08:51:16 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-22 09:39:23 | INFO     | models.fichier_excel | Fichier chargé : google_sheet_1gv6LybO-87CA4SaXbI9TvBQyRnFVFBcV.csv (170 lignes, 41 colonnes)
+2026-07-22 09:39:23 | INFO     | models.fichier_excel | JeuDonnees créé : 170 lignes, 41 colonnes
+2026-07-22 09:39:34 | INFO     | models.fichier_excel | Fichier chargé : google_sheet_1gv6LybO-87CA4SaXbI9TvBQyRnFVFBcV.csv (170 lignes, 41 colonnes)
+2026-07-22 09:39:34 | INFO     | models.fichier_excel | JeuDonnees créé : 170 lignes, 41 colonnes
+2026-07-22 09:39:35 | INFO     | models.fichier_excel | Fichier chargé : google_sheet_1gv6LybO-87CA4SaXbI9TvBQyRnFVFBcV.csv (170 lignes, 41 colonnes)
+2026-07-22 09:39:35 | INFO     | models.fichier_excel | JeuDonnees créé : 170 lignes, 41 colonnes
+2026-07-22 09:40:15 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-07-22 09:40:29 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-22 09:40:29 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-22 09:40:43 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-22 09:41:57 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 178, 'doublon': 177, 'valeur_aberrante': 2, 'non_utile_total': 180, 'utile_total': 47}
+2026-07-22 09:41:57 | INFO     | models.pretraitement | Doublons supprimés : 177
+2026-07-22 09:41:58 | INFO     | models.pretraitement | Valeurs manquantes imputées : 32
+2026-07-22 09:42:21 | INFO     | models.fichier_excel | Fichier chargé : google_sheet_1gv6LybO-87CA4SaXbI9TvBQyRnFVFBcV.csv (170 lignes, 41 colonnes)
+2026-07-22 09:42:21 | INFO     | models.fichier_excel | JeuDonnees créé : 170 lignes, 41 colonnes
+2026-07-22 09:45:08 | INFO     | models.fichier_excel | Fichier chargé : google_sheet_1gv6LybO-87CA4SaXbI9TvBQyRnFVFBcV.csv (170 lignes, 41 colonnes)
+2026-07-22 09:45:08 | INFO     | models.fichier_excel | JeuDonnees créé : 170 lignes, 41 colonnes
+2026-07-22 09:45:19 | INFO     | models.fichier_excel | Fichier chargé : google_sheet_1gv6LybO-87CA4SaXbI9TvBQyRnFVFBcV.csv (170 lignes, 41 colonnes)
+2026-07-22 09:45:19 | INFO     | models.fichier_excel | JeuDonnees créé : 170 lignes, 41 colonnes
+2026-07-22 09:45:21 | INFO     | models.fichier_excel | Fichier chargé : google_sheet_1gv6LybO-87CA4SaXbI9TvBQyRnFVFBcV.csv (170 lignes, 41 colonnes)
+2026-07-22 09:45:21 | INFO     | models.fichier_excel | JeuDonnees créé : 170 lignes, 41 colonnes
+2026-07-22 09:45:22 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-07-22 09:45:42 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-07-22 09:45:42 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-07-22 09:45:56 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 6, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 6, 'utile_total': 164}
+2026-07-22 09:45:56 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-22 09:45:56 | INFO     | models.pretraitement | Valeurs manquantes imputées : 217
+2026-07-22 09:46:05 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 123 features
+2026-07-22 09:46:05 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.953 precision=0.909 recall=0.953 f1=0.931
+2026-07-22 09:47:17 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-22 09:49:14 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-22 09:49:16 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-07-22 09:49:31 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-22 09:50:21 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-22 10:46:29 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-22 10:51:05 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (Saisie manuelle) : 12 lignes, 4 colonnes
+2026-07-22 10:53:01 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (Saisie manuelle) : 12 lignes, 4 colonnes
+2026-07-22 10:53:12 | INFO     | models.analyse_eda | EDA : 3 colonnes numériques analysées
+2026-07-22 10:53:19 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-22 10:53:29 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-22 10:53:29 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-22 10:54:06 | INFO     | models.fichier_excel | Fichier chargé : google_sheet_1gv6LybO-87CA4SaXbI9TvBQyRnFVFBcV.csv (170 lignes, 41 colonnes)
+2026-07-22 10:54:06 | INFO     | models.fichier_excel | JeuDonnees créé : 170 lignes, 41 colonnes
+2026-07-22 10:57:12 | INFO     | models.fichier_excel | Fichier chargé : google_sheet_1mITH3d5XR4j17_JGTZT1DPRufYe12M2UQX3Z9vOg8Oo.csv (227 lignes, 12 colonnes)
+2026-07-22 10:57:12 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-22 10:57:56 | INFO     | models.fichier_excel | Fichier chargé : google_sheet_1mITH3d5XR4j17_JGTZT1DPRufYe12M2UQX3Z9vOg8Oo.csv (227 lignes, 19 colonnes)
+2026-07-22 10:57:56 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 19 colonnes
+2026-07-22 11:01:29 | INFO     | models.fichier_excel | Fichier chargé : google_sheet_1mITH3d5XR4j17_JGTZT1DPRufYe12M2UQX3Z9vOg8Oo.csv (15 lignes, 14 colonnes)
+2026-07-22 11:01:29 | INFO     | models.fichier_excel | JeuDonnees créé : 15 lignes, 14 colonnes
+2026-07-22 11:02:30 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-07-22 11:02:47 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-22 11:02:47 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-22 11:03:13 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (Saisie manuelle) : 12 lignes, 4 colonnes
+2026-07-22 11:03:17 | INFO     | models.analyse_eda | EDA : 3 colonnes numériques analysées
+2026-07-22 11:03:24 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-22 11:03:29 | INFO     | models.analyse_eda | EDA : 3 colonnes numériques analysées
+2026-07-22 11:03:36 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-22 11:05:18 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 12}
+2026-07-22 11:05:18 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-22 11:05:18 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-22 11:06:04 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (Saisie manuelle) : 12 lignes, 4 colonnes
+2026-07-22 11:06:08 | INFO     | models.analyse_eda | EDA : 3 colonnes numériques analysées
+2026-07-22 11:06:15 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-22 11:07:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 12}
+2026-07-22 11:07:27 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-22 11:07:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-22 11:07:39 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 3 features
+2026-07-22 11:07:39 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-22 11:08:16 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (Saisie manuelle) : 12 lignes, 4 colonnes
+2026-07-22 11:08:19 | INFO     | models.analyse_eda | EDA : 3 colonnes numériques analysées
+2026-07-22 11:08:26 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-22 11:14:07 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-22 11:14:40 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 12}
+2026-07-22 11:14:40 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-22 11:14:40 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-22 11:14:46 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 3 features
+2026-07-22 11:14:46 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-22 11:15:14 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 3 features
+2026-07-22 11:15:14 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-22 11:16:52 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-22 12:31:52 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-22 12:32:06 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-22 12:47:56 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-22 12:47:56 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-22 12:48:19 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-22 12:53:42 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-22 12:53:53 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-22 12:54:01 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-22 12:54:35 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-22 12:54:35 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-22 12:54:39 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-22 12:57:10 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-22 12:57:10 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-22 12:57:36 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-22 12:57:36 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-22 13:40:51 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-22 13:48:43 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-22 13:48:43 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-22 13:49:24 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (227 lignes, 12 colonnes)
+2026-07-22 13:49:24 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-22 13:54:50 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-22 13:55:01 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 178, 'doublon': 177, 'valeur_aberrante': 2, 'non_utile_total': 180, 'utile_total': 47}
+2026-07-22 13:55:01 | INFO     | models.pretraitement | Doublons supprimés : 177
+2026-07-22 13:55:01 | INFO     | models.pretraitement | Valeurs manquantes imputées : 32
+2026-07-22 14:39:53 | INFO     | models.fichier_excel | Fichier chargé : google_sheet_1gv6LybO-87CA4SaXbI9TvBQyRnFVFBcV.csv (170 lignes, 41 colonnes)
+2026-07-22 14:39:53 | INFO     | models.fichier_excel | JeuDonnees créé : 170 lignes, 41 colonnes
+2026-07-22 14:39:55 | INFO     | models.fichier_excel | Fichier chargé : google_sheet_1gv6LybO-87CA4SaXbI9TvBQyRnFVFBcV.csv (170 lignes, 41 colonnes)
+2026-07-22 14:39:55 | INFO     | models.fichier_excel | JeuDonnees créé : 170 lignes, 41 colonnes
+2026-07-22 14:40:09 | INFO     | models.fichier_excel | Fichier chargé : google_sheet_1gv6LybO-87CA4SaXbI9TvBQyRnFVFBcV.csv (170 lignes, 41 colonnes)
+2026-07-22 14:40:09 | INFO     | models.fichier_excel | JeuDonnees créé : 170 lignes, 41 colonnes
+2026-07-22 14:53:48 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (Saisie manuelle) : 12 lignes, 4 colonnes
+2026-07-22 14:53:51 | INFO     | models.analyse_eda | EDA : 3 colonnes numériques analysées
+2026-07-22 14:54:19 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 12}
+2026-07-22 14:54:19 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-22 14:54:19 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-22 14:54:26 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 3 features
+2026-07-22 14:54:26 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-22 15:09:58 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test.xlsx (59 lignes, 5 colonnes)
+2026-07-22 15:09:58 | INFO     | models.fichier_excel | JeuDonnees créé : 59 lignes, 5 colonnes
+2026-07-22 15:10:20 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-22 15:10:41 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 10, 'doublon': 4, 'valeur_aberrante': 0, 'non_utile_total': 11, 'utile_total': 48}
+2026-07-22 15:10:41 | INFO     | models.pretraitement | Doublons supprimés : 4
+2026-07-22 15:10:41 | INFO     | models.pretraitement | Valeurs manquantes imputées : 28
+2026-07-22 15:10:49 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-22 15:10:49 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-22 15:21:01 | INFO     | models.fichier_excel | Fichier chargé : Maintenance_Analyse.xlsx (50 lignes, 16 colonnes)
+2026-07-22 15:21:01 | INFO     | models.fichier_excel | JeuDonnees créé : 50 lignes, 16 colonnes
+2026-07-22 15:22:33 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (Saisie manuelle) : 12 lignes, 4 colonnes
+2026-07-22 15:22:36 | INFO     | models.analyse_eda | EDA : 3 colonnes numériques analysées
+2026-07-22 15:28:29 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test.xlsx (59 lignes, 5 colonnes)
+2026-07-22 15:28:29 | INFO     | models.fichier_excel | JeuDonnees créé : 59 lignes, 5 colonnes
+2026-07-22 15:28:39 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-22 16:14:21 | INFO     | models.fichier_excel | Fichier chargé : google_sheet_1gv6LybO-87CA4SaXbI9TvBQyRnFVFBcV.csv (170 lignes, 41 colonnes)
+2026-07-22 16:14:21 | INFO     | models.fichier_excel | JeuDonnees créé : 170 lignes, 41 colonnes
+2026-07-22 16:14:33 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test.xlsx (59 lignes, 5 colonnes)
+2026-07-22 16:14:33 | INFO     | models.fichier_excel | JeuDonnees créé : 59 lignes, 5 colonnes
+2026-07-22 16:14:39 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-22 16:25:40 | INFO     | models.fichier_excel | Fichier chargé : Maintenacne record & downtime 2025 Daily_Update.xlsx (198 lignes, 109 colonnes)
+2026-07-22 16:25:40 | INFO     | models.fichier_excel | JeuDonnees créé : 198 lignes, 109 colonnes
+2026-07-22 16:25:58 | INFO     | models.fichier_excel | Fichier chargé : Maintenacne record & downtime 2025 Daily_Update.xlsx (88 lignes, 163 colonnes)
+2026-07-22 16:25:58 | INFO     | models.fichier_excel | JeuDonnees créé : 88 lignes, 163 colonnes
+2026-07-22 16:26:31 | INFO     | models.fichier_excel | Fichier chargé : google_sheet_1gv6LybO-87CA4SaXbI9TvBQyRnFVFBcV.csv (170 lignes, 41 colonnes)
+2026-07-22 16:26:31 | INFO     | models.fichier_excel | JeuDonnees créé : 170 lignes, 41 colonnes
+2026-07-22 16:33:15 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-07-22 16:33:15 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-07-22 16:36:37 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-07-22 16:36:37 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-07-22 16:37:52 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (Saisie manuelle) : 12 lignes, 4 colonnes
+2026-07-22 16:37:57 | INFO     | models.analyse_eda | EDA : 3 colonnes numériques analysées
+2026-07-22 16:44:38 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-07-22 16:44:38 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-07-22 16:44:53 | INFO     | models.fichier_excel | Fichier chargé : Maintenacne record & downtime 2025 Daily_Update - Copy.xlsx (198 lignes, 109 colonnes)
+2026-07-22 16:44:53 | INFO     | models.fichier_excel | JeuDonnees créé : 198 lignes, 109 colonnes
+2026-07-22 16:45:08 | INFO     | models.analyse_eda | EDA : 56 colonnes numériques analysées
+2026-07-22 16:48:23 | INFO     | models.fichier_excel | Fichier chargé : test.xlsx (198 lignes, 109 colonnes)
+2026-07-22 16:51:59 | INFO     | models.fichier_excel | Fichier chargé : test.xlsx (198 lignes, 109 colonnes)
+2026-07-22 16:52:16 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test.xlsx (59 lignes, 5 colonnes)
+2026-07-22 16:52:16 | INFO     | models.fichier_excel | JeuDonnees créé : 59 lignes, 5 colonnes
+2026-07-22 16:52:16 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-22 16:52:16 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 10, 'doublon': 4, 'valeur_aberrante': 0, 'non_utile_total': 11, 'utile_total': 48}
+2026-07-22 16:52:16 | INFO     | models.pretraitement | Doublons supprimés : 4
+2026-07-22 16:52:16 | INFO     | models.pretraitement | Valeurs manquantes imputées : 28
+2026-07-22 16:52:17 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-22 16:52:17 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-22 16:52:17 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test.xlsx (48 lignes utiles, 7 rejetées)
+2026-07-22 16:52:17 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_Realiste.xlsx (92 lignes, 5 colonnes)
+2026-07-22 16:52:17 | INFO     | models.fichier_excel | JeuDonnees créé : 92 lignes, 5 colonnes
+2026-07-22 16:52:17 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-22 16:52:17 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 12, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 14, 'utile_total': 78}
+2026-07-22 16:52:17 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-22 16:52:17 | INFO     | models.pretraitement | Valeurs manquantes imputées : 48
+2026-07-22 16:52:17 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-22 16:52:17 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.957 precision=0.967 recall=0.957 f1=0.959
+2026-07-22 16:52:17 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test_Realiste.xlsx (77 lignes utiles, 13 rejetées)
+2026-07-22 16:52:17 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_Realiste_2.xlsx (157 lignes, 5 colonnes)
+2026-07-22 16:52:17 | INFO     | models.fichier_excel | JeuDonnees créé : 157 lignes, 5 colonnes
+2026-07-22 16:52:17 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-22 16:52:17 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 22, 'doublon': 5, 'valeur_aberrante': 0, 'non_utile_total': 27, 'utile_total': 130}
+2026-07-22 16:52:17 | INFO     | models.pretraitement | Doublons supprimés : 5
+2026-07-22 16:52:17 | INFO     | models.pretraitement | Valeurs manquantes imputées : 77
+2026-07-22 16:52:17 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-22 16:52:17 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-22 16:52:17 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test_Realiste_2.xlsx (130 lignes utiles, 22 rejetées)
+2026-07-22 16:52:17 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_NonOrganise.xlsx (72 lignes, 12 colonnes)
+2026-07-22 16:52:17 | INFO     | models.fichier_excel | JeuDonnees créé : 72 lignes, 12 colonnes
+2026-07-22 16:52:17 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-22 16:52:17 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 70}
+2026-07-22 16:52:17 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-22 16:52:17 | INFO     | models.pretraitement | Valeurs manquantes imputées : 142
+2026-07-22 16:52:17 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 31 features
+2026-07-22 16:52:17 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-22 16:52:18 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test_NonOrganise.xlsx (70 lignes utiles, 1 rejetées)
+2026-07-22 16:52:47 | INFO     | models.fichier_excel | Fichier chargé : Maintenacne record & downtime 2025 Daily_Update - Copy.xlsx (198 lignes, 109 colonnes)
+2026-07-22 16:52:47 | INFO     | models.fichier_excel | JeuDonnees créé : 198 lignes, 109 colonnes
+2026-07-22 16:53:06 | INFO     | models.fichier_excel | Fichier chargé : Machines List.xlsx (114 lignes, 4 colonnes)
+2026-07-22 16:53:06 | INFO     | models.fichier_excel | JeuDonnees créé : 114 lignes, 4 colonnes
+2026-07-22 16:53:31 | INFO     | models.fichier_excel | Fichier chargé : google_sheet_1gv6LybO-87CA4SaXbI9TvBQyRnFVFBcV.csv (170 lignes, 41 colonnes)
+2026-07-22 16:53:31 | INFO     | models.fichier_excel | JeuDonnees créé : 170 lignes, 41 colonnes
+2026-07-22 16:53:50 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-07-22 16:54:10 | INFO     | models.fichier_excel | Fichier chargé : Maintenance_Analyse.xlsx (50 lignes, 16 colonnes)
+2026-07-22 16:54:10 | INFO     | models.fichier_excel | JeuDonnees créé : 50 lignes, 16 colonnes
+2026-07-22 16:54:20 | INFO     | models.analyse_eda | EDA : 6 colonnes numériques analysées
+2026-07-22 17:02:56 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_Realiste_2.xlsx (157 lignes, 5 colonnes)
+2026-07-22 17:02:56 | INFO     | models.fichier_excel | JeuDonnees créé : 157 lignes, 5 colonnes
+2026-07-22 17:07:30 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_NonOrganise.xlsx (72 lignes, 12 colonnes)
+2026-07-22 17:07:30 | INFO     | models.fichier_excel | JeuDonnees créé : 72 lignes, 12 colonnes
+2026-07-22 17:09:57 | INFO     | models.analyse_eda | EDA : 6 colonnes numériques analysées
+2026-07-22 17:13:33 | INFO     | models.fichier_excel | Fichier chargé : Maintenance_Analyse.xlsx (50 lignes, 16 colonnes)
+2026-07-22 17:13:33 | INFO     | models.fichier_excel | JeuDonnees créé : 50 lignes, 16 colonnes
+2026-07-22 17:15:08 | INFO     | models.analyse_eda | EDA : 6 colonnes numériques analysées
+2026-07-22 17:18:49 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test.xlsx (59 lignes, 5 colonnes)
+2026-07-22 17:18:49 | INFO     | models.fichier_excel | JeuDonnees créé : 59 lignes, 5 colonnes
+2026-07-22 17:19:25 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-22 17:25:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 10, 'doublon': 4, 'valeur_aberrante': 0, 'non_utile_total': 11, 'utile_total': 48}
+2026-07-22 17:25:26 | INFO     | models.pretraitement | Doublons supprimés : 4
+2026-07-22 17:25:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 28
+2026-07-22 17:40:17 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test.xlsx (59 lignes, 5 colonnes)
+2026-07-22 17:40:17 | INFO     | models.fichier_excel | JeuDonnees créé : 59 lignes, 5 colonnes
+2026-07-22 17:41:36 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-22 17:43:19 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 10, 'doublon': 4, 'valeur_aberrante': 0, 'non_utile_total': 11, 'utile_total': 48}
+2026-07-22 17:43:19 | INFO     | models.pretraitement | Doublons supprimés : 4
+2026-07-22 17:43:19 | INFO     | models.pretraitement | Valeurs manquantes imputées : 28
+2026-07-23 18:51:06 | INFO     | models.fichier_excel | Fichier chargé : Machine Classification (2).xlsx (163 lignes, 5 colonnes)
+2026-07-23 18:51:06 | INFO     | models.fichier_excel | JeuDonnees créé : 163 lignes, 5 colonnes
+2026-07-23 18:51:59 | INFO     | models.fichier_excel | Fichier chargé : Maintenacne record & downtime 2025 Daily_Update - Copy.xlsx (210 lignes, 18 colonnes)
+2026-07-23 18:51:59 | INFO     | models.fichier_excel | JeuDonnees créé : 210 lignes, 18 colonnes
+2026-07-23 18:52:30 | INFO     | models.analyse_eda | EDA : 17 colonnes numériques analysées
+2026-07-23 18:52:58 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 25, 'doublon': 0, 'valeur_aberrante': 26, 'non_utile_total': 51, 'utile_total': 159}
+2026-07-23 18:52:58 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-23 18:52:58 | INFO     | models.pretraitement | Valeurs manquantes imputées : 370
+2026-07-23 18:53:17 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 20 features
+2026-07-23 18:53:17 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 18:53:23 | INFO     | models.modele_ml | LogisticRegression entraîné : 20 features
+2026-07-23 18:53:23 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.849 precision=0.843 recall=0.849 f1=0.839
+2026-07-23 18:54:01 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (27 lignes, 20 colonnes)
+2026-07-23 18:54:01 | INFO     | models.fichier_excel | JeuDonnees créé : 27 lignes, 20 colonnes
+2026-07-23 18:54:17 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-07-23 18:54:58 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 22, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 22, 'utile_total': 5}
+2026-07-23 18:54:58 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-23 18:54:58 | INFO     | models.pretraitement | Valeurs manquantes imputées : 416
+2026-07-23 18:55:17 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-23 18:55:17 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.857 precision=0.735 recall=0.857 f1=0.791
+2026-07-23 18:55:30 | INFO     | models.fichier_excel | Fichier chargé : test.xlsx (198 lignes, 109 colonnes)
+2026-07-23 18:56:39 | INFO     | models.fichier_excel | Fichier chargé : test.xlsx (198 lignes, 109 colonnes)
+2026-07-23 18:57:59 | INFO     | models.fichier_excel | Fichier chargé : test.xlsx (198 lignes, 109 colonnes)
+2026-07-23 18:58:21 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test.xlsx (59 lignes, 5 colonnes)
+2026-07-23 18:58:21 | INFO     | models.fichier_excel | JeuDonnees créé : 59 lignes, 5 colonnes
+2026-07-23 18:58:21 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 18:58:21 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 10, 'doublon': 4, 'valeur_aberrante': 0, 'non_utile_total': 11, 'utile_total': 48}
+2026-07-23 18:58:21 | INFO     | models.pretraitement | Doublons supprimés : 4
+2026-07-23 18:58:21 | INFO     | models.pretraitement | Valeurs manquantes imputées : 28
+2026-07-23 18:58:21 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-23 18:58:22 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 18:58:22 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test.xlsx (48 lignes utiles, 7 rejetées)
+2026-07-23 18:58:22 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_Realiste.xlsx (92 lignes, 5 colonnes)
+2026-07-23 18:58:22 | INFO     | models.fichier_excel | JeuDonnees créé : 92 lignes, 5 colonnes
+2026-07-23 18:58:22 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 18:58:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 12, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 14, 'utile_total': 78}
+2026-07-23 18:58:22 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-23 18:58:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 48
+2026-07-23 18:58:22 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-23 18:58:22 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.957 precision=0.967 recall=0.957 f1=0.959
+2026-07-23 18:58:22 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test_Realiste.xlsx (77 lignes utiles, 13 rejetées)
+2026-07-23 18:58:22 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_Realiste_2.xlsx (157 lignes, 5 colonnes)
+2026-07-23 18:58:22 | INFO     | models.fichier_excel | JeuDonnees créé : 157 lignes, 5 colonnes
+2026-07-23 18:58:22 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 18:58:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 22, 'doublon': 5, 'valeur_aberrante': 0, 'non_utile_total': 27, 'utile_total': 130}
+2026-07-23 18:58:22 | INFO     | models.pretraitement | Doublons supprimés : 5
+2026-07-23 18:58:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 77
+2026-07-23 18:58:23 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-23 18:58:23 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 18:58:23 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test_Realiste_2.xlsx (130 lignes utiles, 22 rejetées)
+2026-07-23 18:58:23 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_NonOrganise.xlsx (72 lignes, 12 colonnes)
+2026-07-23 18:58:23 | INFO     | models.fichier_excel | JeuDonnees créé : 72 lignes, 12 colonnes
+2026-07-23 18:58:23 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 18:58:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 70}
+2026-07-23 18:58:23 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-23 18:58:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 142
+2026-07-23 18:58:23 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 31 features
+2026-07-23 18:58:23 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 18:58:23 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test_NonOrganise.xlsx (70 lignes utiles, 1 rejetées)
+2026-07-23 18:59:27 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (27 lignes, 20 colonnes)
+2026-07-23 18:59:27 | INFO     | models.fichier_excel | JeuDonnees créé : 27 lignes, 20 colonnes
+2026-07-23 19:01:10 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-07-23 19:03:53 | INFO     | models.fichier_excel | Fichier chargé : test.xlsx (83 lignes, 725 colonnes)
+2026-07-23 19:03:54 | INFO     | models.fichier_excel | Fichier chargé : test.xlsx (78 lignes, 726 colonnes)
+2026-07-23 19:03:55 | INFO     | models.fichier_excel | Fichier chargé : test.xlsx (191 lignes, 109 colonnes)
+2026-07-23 19:03:57 | INFO     | models.fichier_excel | Fichier chargé : test.xlsx (143 lignes, 725 colonnes)
+2026-07-23 19:04:48 | INFO     | models.fichier_excel | Fichier chargé : Thor.xlsx (27 lignes, 20 colonnes)
+2026-07-23 19:05:16 | INFO     | models.fichier_excel | Fichier chargé : Thor.xlsx (27 lignes, 20 colonnes)
+2026-07-23 19:05:38 | INFO     | models.fichier_excel | Fichier chargé : Thor.xlsx (0 lignes, 0 colonnes)
+2026-07-23 19:05:38 | INFO     | models.fichier_excel | Fichier chargé : Thor.xlsx (59 lignes, 5 colonnes)
+2026-07-23 19:05:52 | INFO     | models.fichier_excel | Fichier chargé : Thor.xlsx (59 lignes, 5 colonnes)
+2026-07-23 19:07:01 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-07-23 19:07:01 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-07-23 19:07:08 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (59 lignes, 5 colonnes)
+2026-07-23 19:07:08 | INFO     | models.fichier_excel | JeuDonnees créé : 59 lignes, 5 colonnes
+2026-07-23 19:07:13 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (27 lignes, 20 colonnes)
+2026-07-23 19:07:13 | INFO     | models.fichier_excel | JeuDonnees créé : 27 lignes, 20 colonnes
+2026-07-23 19:07:24 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-07-23 19:11:00 | INFO     | models.fichier_excel | Fichier chargé : Thor.xlsx (53 lignes, 3 colonnes)
+2026-07-23 19:12:04 | INFO     | models.fichier_excel | Fichier chargé : Thor.xlsx (42 lignes, 3 colonnes)
+2026-07-23 19:12:04 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-23 19:12:50 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test.xlsx (59 lignes, 5 colonnes)
+2026-07-23 19:12:50 | INFO     | models.fichier_excel | JeuDonnees créé : 59 lignes, 5 colonnes
+2026-07-23 19:12:50 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:12:50 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 10, 'doublon': 4, 'valeur_aberrante': 0, 'non_utile_total': 11, 'utile_total': 48}
+2026-07-23 19:12:50 | INFO     | models.pretraitement | Doublons supprimés : 4
+2026-07-23 19:12:50 | INFO     | models.pretraitement | Valeurs manquantes imputées : 28
+2026-07-23 19:12:51 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-23 19:12:51 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:12:51 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test.xlsx (48 lignes utiles, 7 rejetées)
+2026-07-23 19:12:51 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_Realiste.xlsx (92 lignes, 5 colonnes)
+2026-07-23 19:12:51 | INFO     | models.fichier_excel | JeuDonnees créé : 92 lignes, 5 colonnes
+2026-07-23 19:12:51 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:12:51 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 12, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 14, 'utile_total': 78}
+2026-07-23 19:12:51 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-23 19:12:51 | INFO     | models.pretraitement | Valeurs manquantes imputées : 48
+2026-07-23 19:12:52 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-23 19:12:52 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.957 precision=0.967 recall=0.957 f1=0.959
+2026-07-23 19:12:52 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test_Realiste.xlsx (77 lignes utiles, 13 rejetées)
+2026-07-23 19:12:52 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_Realiste_2.xlsx (157 lignes, 5 colonnes)
+2026-07-23 19:12:52 | INFO     | models.fichier_excel | JeuDonnees créé : 157 lignes, 5 colonnes
+2026-07-23 19:12:52 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:12:52 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 22, 'doublon': 5, 'valeur_aberrante': 0, 'non_utile_total': 27, 'utile_total': 130}
+2026-07-23 19:12:52 | INFO     | models.pretraitement | Doublons supprimés : 5
+2026-07-23 19:12:52 | INFO     | models.pretraitement | Valeurs manquantes imputées : 77
+2026-07-23 19:12:52 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-23 19:12:52 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:12:52 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test_Realiste_2.xlsx (130 lignes utiles, 22 rejetées)
+2026-07-23 19:12:52 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_NonOrganise.xlsx (72 lignes, 12 colonnes)
+2026-07-23 19:12:52 | INFO     | models.fichier_excel | JeuDonnees créé : 72 lignes, 12 colonnes
+2026-07-23 19:12:52 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:12:52 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 70}
+2026-07-23 19:12:52 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-23 19:12:52 | INFO     | models.pretraitement | Valeurs manquantes imputées : 142
+2026-07-23 19:12:53 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 31 features
+2026-07-23 19:12:53 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:12:53 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test_NonOrganise.xlsx (70 lignes utiles, 1 rejetées)
+2026-07-23 19:13:54 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-07-23 19:13:54 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-07-23 19:13:59 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (42 lignes, 3 colonnes)
+2026-07-23 19:13:59 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-23 19:14:06 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:16:27 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-07-23 19:16:27 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-07-23 19:16:30 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (8 lignes, 1 colonnes)
+2026-07-23 19:16:30 | INFO     | models.fichier_excel | JeuDonnees créé : 8 lignes, 1 colonnes
+2026-07-23 19:16:34 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (42 lignes, 3 colonnes)
+2026-07-23 19:16:34 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-23 19:16:41 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:17:13 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38}
+2026-07-23 19:17:13 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-23 19:17:13 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-23 19:17:28 | INFO     | models.fichier_excel | Fichier chargé : Thor.xlsx (42 lignes, 3 colonnes)
+2026-07-23 19:17:28 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-23 19:18:00 | INFO     | models.fichier_excel | Fichier chargé : Thor.xlsx (42 lignes, 3 colonnes)
+2026-07-23 19:18:00 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-23 19:18:00 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:19:23 | INFO     | models.fichier_excel | Fichier chargé : Thor.xlsx (42 lignes, 3 colonnes)
+2026-07-23 19:19:23 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-23 19:19:23 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:19:44 | INFO     | models.fichier_excel | Fichier chargé : t.xlsx (72 lignes, 12 colonnes)
+2026-07-23 19:19:44 | INFO     | models.fichier_excel | JeuDonnees créé : 72 lignes, 12 colonnes
+2026-07-23 19:19:49 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test.xlsx (59 lignes, 5 colonnes)
+2026-07-23 19:19:49 | INFO     | models.fichier_excel | JeuDonnees créé : 59 lignes, 5 colonnes
+2026-07-23 19:19:49 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:19:49 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 10, 'doublon': 4, 'valeur_aberrante': 0, 'non_utile_total': 11, 'utile_total': 48}
+2026-07-23 19:19:49 | INFO     | models.pretraitement | Doublons supprimés : 4
+2026-07-23 19:19:49 | INFO     | models.pretraitement | Valeurs manquantes imputées : 28
+2026-07-23 19:19:49 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-23 19:19:49 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:19:50 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test.xlsx (48 lignes utiles, 7 rejetées)
+2026-07-23 19:19:50 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_Realiste.xlsx (92 lignes, 5 colonnes)
+2026-07-23 19:19:50 | INFO     | models.fichier_excel | JeuDonnees créé : 92 lignes, 5 colonnes
+2026-07-23 19:19:50 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:19:50 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 12, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 14, 'utile_total': 78}
+2026-07-23 19:19:50 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-23 19:19:50 | INFO     | models.pretraitement | Valeurs manquantes imputées : 48
+2026-07-23 19:19:50 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-23 19:19:50 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.957 precision=0.967 recall=0.957 f1=0.959
+2026-07-23 19:19:50 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test_Realiste.xlsx (77 lignes utiles, 13 rejetées)
+2026-07-23 19:19:50 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_Realiste_2.xlsx (157 lignes, 5 colonnes)
+2026-07-23 19:19:50 | INFO     | models.fichier_excel | JeuDonnees créé : 157 lignes, 5 colonnes
+2026-07-23 19:19:50 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:19:50 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 22, 'doublon': 5, 'valeur_aberrante': 0, 'non_utile_total': 27, 'utile_total': 130}
+2026-07-23 19:19:50 | INFO     | models.pretraitement | Doublons supprimés : 5
+2026-07-23 19:19:50 | INFO     | models.pretraitement | Valeurs manquantes imputées : 77
+2026-07-23 19:19:51 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-23 19:19:51 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:19:51 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test_Realiste_2.xlsx (130 lignes utiles, 22 rejetées)
+2026-07-23 19:19:51 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_NonOrganise.xlsx (72 lignes, 12 colonnes)
+2026-07-23 19:19:51 | INFO     | models.fichier_excel | JeuDonnees créé : 72 lignes, 12 colonnes
+2026-07-23 19:19:51 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:19:51 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 70}
+2026-07-23 19:19:51 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-23 19:19:51 | INFO     | models.pretraitement | Valeurs manquantes imputées : 142
+2026-07-23 19:19:52 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 31 features
+2026-07-23 19:19:52 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:19:52 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test_NonOrganise.xlsx (70 lignes utiles, 1 rejetées)
+2026-07-23 19:20:16 | INFO     | models.fichier_excel | Fichier chargé : t.xlsx (72 lignes, 12 colonnes)
+2026-07-23 19:20:16 | INFO     | models.fichier_excel | JeuDonnees créé : 72 lignes, 12 colonnes
+2026-07-23 19:21:26 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-07-23 19:21:26 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-07-23 19:21:38 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (42 lignes, 3 colonnes)
+2026-07-23 19:21:38 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-23 19:21:41 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:23:10 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38}
+2026-07-23 19:23:10 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-23 19:23:10 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-23 19:23:15 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38}
+2026-07-23 19:23:15 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-23 19:23:15 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-23 19:23:26 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 2 features
+2026-07-23 19:23:26 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:23:32 | INFO     | models.modele_ml | LogisticRegression entraîné : 2 features
+2026-07-23 19:23:32 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.909 precision=0.826 recall=0.909 f1=0.866
+2026-07-23 19:23:49 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-07-23 19:23:49 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-07-23 19:23:58 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (27 lignes, 20 colonnes)
+2026-07-23 19:23:58 | INFO     | models.fichier_excel | JeuDonnees créé : 27 lignes, 20 colonnes
+2026-07-23 19:24:11 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-07-23 19:24:26 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-07-23 19:24:26 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-07-23 19:24:34 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (27 lignes, 20 colonnes)
+2026-07-23 19:24:34 | INFO     | models.fichier_excel | JeuDonnees créé : 27 lignes, 20 colonnes
+2026-07-23 19:24:41 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-07-23 19:24:46 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-07-23 19:24:46 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-07-23 19:24:50 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (8 lignes, 1 colonnes)
+2026-07-23 19:24:50 | INFO     | models.fichier_excel | JeuDonnees créé : 8 lignes, 1 colonnes
+2026-07-23 19:24:54 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (42 lignes, 3 colonnes)
+2026-07-23 19:24:54 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-23 19:25:01 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:25:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38}
+2026-07-23 19:25:27 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-23 19:25:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-23 19:25:39 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 2 features
+2026-07-23 19:25:39 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:25:43 | INFO     | models.modele_ml | SVC entraîné : noyau=rbf, 2 features
+2026-07-23 19:25:43 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:25:44 | INFO     | models.modele_ml | SVC entraîné : noyau=rbf, 2 features
+2026-07-23 19:25:44 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:25:51 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 2 features
+2026-07-23 19:25:51 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:25:59 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-07-23 19:25:59 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-07-23 19:27:09 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (42 lignes, 3 colonnes)
+2026-07-23 19:27:09 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-23 19:27:13 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-07-23 19:27:13 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-07-23 19:31:42 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (Saisie manuelle) : 12 lignes, 4 colonnes
+2026-07-23 19:34:22 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (Saisie manuelle) : 12 lignes, 4 colonnes
+2026-07-23 19:34:25 | INFO     | models.analyse_eda | EDA : 3 colonnes numériques analysées
+2026-07-23 19:34:34 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-23 19:34:50 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 12}
+2026-07-23 19:34:50 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-23 19:34:50 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-23 19:34:54 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 12}
+2026-07-23 19:34:54 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-23 19:34:54 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-23 19:34:54 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 12}
+2026-07-23 19:34:54 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-23 19:34:54 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-23 19:35:00 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 3 features
+2026-07-23 19:35:01 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:35:02 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 3 features
+2026-07-23 19:35:02 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:38:22 | INFO     | models.analyse_eda | EDA : 3 colonnes numériques analysées
+2026-07-23 19:38:22 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-23 19:38:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-23 19:38:23 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 2 features
+2026-07-23 19:38:23 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.960 precision=1.000 recall=0.960 f1=0.980
+2026-07-23 19:38:23 | INFO     | models.modele_ml | LogisticRegression entraîné : 2 features
+2026-07-23 19:38:23 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:38:23 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:38:23 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-23 19:38:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-23 19:38:37 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test.xlsx (59 lignes, 5 colonnes)
+2026-07-23 19:38:37 | INFO     | models.fichier_excel | JeuDonnees créé : 59 lignes, 5 colonnes
+2026-07-23 19:38:37 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:38:37 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 10, 'doublon': 4, 'valeur_aberrante': 0, 'non_utile_total': 11, 'utile_total': 48}
+2026-07-23 19:38:37 | INFO     | models.pretraitement | Doublons supprimés : 4
+2026-07-23 19:38:37 | INFO     | models.pretraitement | Valeurs manquantes imputées : 28
+2026-07-23 19:38:37 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-23 19:38:37 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:38:37 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test.xlsx (48 lignes utiles, 7 rejetées)
+2026-07-23 19:38:37 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_Realiste.xlsx (92 lignes, 5 colonnes)
+2026-07-23 19:38:37 | INFO     | models.fichier_excel | JeuDonnees créé : 92 lignes, 5 colonnes
+2026-07-23 19:38:37 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:38:37 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 12, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 14, 'utile_total': 78}
+2026-07-23 19:38:37 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-23 19:38:37 | INFO     | models.pretraitement | Valeurs manquantes imputées : 48
+2026-07-23 19:38:37 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-23 19:38:37 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.957 precision=0.967 recall=0.957 f1=0.959
+2026-07-23 19:38:37 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test_Realiste.xlsx (77 lignes utiles, 13 rejetées)
+2026-07-23 19:38:37 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_Realiste_2.xlsx (157 lignes, 5 colonnes)
+2026-07-23 19:38:37 | INFO     | models.fichier_excel | JeuDonnees créé : 157 lignes, 5 colonnes
+2026-07-23 19:38:37 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:38:37 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 22, 'doublon': 5, 'valeur_aberrante': 0, 'non_utile_total': 27, 'utile_total': 130}
+2026-07-23 19:38:37 | INFO     | models.pretraitement | Doublons supprimés : 5
+2026-07-23 19:38:37 | INFO     | models.pretraitement | Valeurs manquantes imputées : 77
+2026-07-23 19:38:38 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-23 19:38:38 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:38:38 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test_Realiste_2.xlsx (130 lignes utiles, 22 rejetées)
+2026-07-23 19:38:38 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_NonOrganise.xlsx (72 lignes, 12 colonnes)
+2026-07-23 19:38:38 | INFO     | models.fichier_excel | JeuDonnees créé : 72 lignes, 12 colonnes
+2026-07-23 19:38:38 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:38:38 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 70}
+2026-07-23 19:38:38 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-23 19:38:38 | INFO     | models.pretraitement | Valeurs manquantes imputées : 142
+2026-07-23 19:38:39 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 31 features
+2026-07-23 19:38:39 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:38:39 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test_NonOrganise.xlsx (70 lignes utiles, 1 rejetées)
+2026-07-23 19:39:58 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-07-23 19:39:58 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-07-23 19:40:03 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (42 lignes, 3 colonnes)
+2026-07-23 19:40:03 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-23 19:40:08 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-23 19:40:55 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38}
+2026-07-23 19:40:55 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-23 19:40:55 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-23 19:41:01 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38}
+2026-07-23 19:41:01 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-23 19:41:01 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-23 19:41:22 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 2 features
+2026-07-23 19:41:22 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:41:30 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 2 features
+2026-07-23 19:41:30 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-23 19:41:34 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 250 arbres, 2 features
+2026-07-23 19:41:34 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-24 09:15:44 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (227 lignes, 12 colonnes)
+2026-07-24 09:15:44 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-24 09:15:47 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (8 lignes, 1 colonnes)
+2026-07-24 09:15:47 | INFO     | models.fichier_excel | JeuDonnees créé : 8 lignes, 1 colonnes
+2026-07-24 09:15:52 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (42 lignes, 3 colonnes)
+2026-07-24 09:15:52 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-24 09:15:59 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-24 09:20:15 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38}
+2026-07-24 09:20:15 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-24 09:20:15 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-24 09:20:21 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38}
+2026-07-24 09:20:21 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-24 09:20:21 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-24 09:20:28 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 2 features
+2026-07-24 09:20:28 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-24 09:20:34 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 2 features
+2026-07-24 09:20:34 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-24 09:20:39 | INFO     | models.modele_ml | LogisticRegression entraîné : 2 features
+2026-07-24 09:20:39 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.909 precision=0.826 recall=0.909 f1=0.866
+2026-07-24 09:20:44 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (227 lignes, 12 colonnes)
+2026-07-24 09:20:44 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-24 09:29:36 | INFO     | models.fichier_excel | Fichier chargé : Jeu_de_donnees_Maintenance_Test.xlsx (200 lignes, 18 colonnes)
+2026-07-24 09:29:36 | INFO     | models.fichier_excel | JeuDonnees créé : 200 lignes, 18 colonnes
+2026-07-24 09:29:45 | INFO     | models.fichier_excel | Fichier chargé : Jeu_de_donnees_Maintenance_Test.xlsx (200 lignes, 18 colonnes)
+2026-07-24 09:29:45 | INFO     | models.fichier_excel | JeuDonnees créé : 200 lignes, 18 colonnes
+2026-07-24 09:29:55 | INFO     | models.analyse_eda | EDA : 3 colonnes numériques analysées
+2026-07-24 09:30:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 200}
+2026-07-24 09:30:23 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-24 09:30:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-24 09:33:05 | INFO     | models.fichier_excel | Fichier chargé : Dataset_Maintenance_Anomalies_1000.xlsx (1020 lignes, 11 colonnes)
+2026-07-24 09:33:05 | INFO     | models.fichier_excel | JeuDonnees créé : 1020 lignes, 11 colonnes
+2026-07-24 09:33:12 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-24 09:33:53 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 20, 'valeur_aberrante': 29, 'non_utile_total': 48, 'utile_total': 972}
+2026-07-24 09:33:53 | INFO     | models.pretraitement | Doublons supprimés : 20
+2026-07-24 09:33:53 | INFO     | models.pretraitement | Valeurs manquantes imputées : 101
+2026-07-24 09:34:14 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 226 features
+2026-07-24 09:34:14 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.972 precision=0.945 recall=0.972 f1=0.958
+2026-07-24 09:34:31 | INFO     | models.modele_ml | LogisticRegression entraîné : 226 features
+2026-07-24 09:34:31 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-24 09:37:46 | INFO     | models.modele_ml | LogisticRegression entraîné : 226 features
+2026-07-24 09:37:46 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-24 09:37:48 | INFO     | models.modele_ml | LogisticRegression entraîné : 226 features
+2026-07-24 09:37:48 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-24 09:37:57 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 226 features
+2026-07-24 09:37:57 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-24 09:38:07 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 226 features
+2026-07-24 09:38:07 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.972 precision=0.945 recall=0.972 f1=0.958
+2026-07-24 09:38:14 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 226 features
+2026-07-24 09:38:14 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.972 precision=0.945 recall=0.972 f1=0.958
+2026-07-24 09:46:32 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (Saisie manuelle) : 12 lignes, 4 colonnes
+2026-07-24 09:46:36 | INFO     | models.analyse_eda | EDA : 3 colonnes numériques analysées
+2026-07-24 09:46:40 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-24 09:48:26 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-24 09:50:29 | INFO     | models.fichier_excel | Fichier chargé : Dataset_Maintenance_Anomalies_1000 (1).xlsx (1020 lignes, 11 colonnes)
+2026-07-24 09:50:29 | INFO     | models.fichier_excel | JeuDonnees créé : 1020 lignes, 11 colonnes
+2026-07-24 09:50:35 | INFO     | models.fichier_excel | Fichier chargé : Dataset_Maintenance_Anomalies_1000 (1).xlsx (1020 lignes, 11 colonnes)
+2026-07-24 09:50:35 | INFO     | models.fichier_excel | JeuDonnees créé : 1020 lignes, 11 colonnes
+2026-07-24 09:50:41 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-24 10:09:43 | INFO     | models.fichier_excel | Fichier chargé : Dataset_Maintenance_Anomalies_1000 (1).xlsx (1020 lignes, 11 colonnes)
+2026-07-24 10:09:43 | INFO     | models.fichier_excel | JeuDonnees créé : 1020 lignes, 11 colonnes
+2026-07-24 10:09:54 | INFO     | models.fichier_excel | Fichier chargé : Dataset_Maintenance_Anomalies_1000 (1).xlsx (1020 lignes, 11 colonnes)
+2026-07-24 10:09:54 | INFO     | models.fichier_excel | JeuDonnees créé : 1020 lignes, 11 colonnes
+2026-07-24 10:09:58 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-24 10:11:12 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-07-24 10:11:12 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-07-24 10:11:15 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (8 lignes, 1 colonnes)
+2026-07-24 10:11:15 | INFO     | models.fichier_excel | JeuDonnees créé : 8 lignes, 1 colonnes
+2026-07-24 10:11:18 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (42 lignes, 3 colonnes)
+2026-07-24 10:11:18 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-24 10:12:31 | INFO     | models.pipeline_principal | 1 ligne(s) manuelle(s) ajoutée(s) : 43 lignes au total
+2026-07-24 10:12:50 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-07-24 10:12:57 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-07-24 10:13:05 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-07-24 10:13:05 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-07-24 10:13:21 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (227 lignes, 12 colonnes)
+2026-07-24 10:13:21 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-24 10:13:23 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (42 lignes, 3 colonnes)
+2026-07-24 10:13:23 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-24 10:13:28 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-24 10:14:02 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (227 lignes, 12 colonnes)
+2026-07-24 10:14:02 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-24 11:17:59 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (227 lignes, 12 colonnes)
+2026-07-24 11:17:59 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-24 11:18:03 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (42 lignes, 3 colonnes)
+2026-07-24 11:18:03 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-24 11:27:25 | INFO     | models.pipeline_principal | 1 ligne(s) manuelle(s) ajoutée(s) : 43 lignes au total
+2026-07-24 11:28:12 | INFO     | models.pipeline_principal | 1 ligne(s) manuelle(s) ajoutée(s) : 44 lignes au total
+2026-07-24 11:35:53 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-07-24 11:35:53 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-07-24 11:35:58 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (8 lignes, 1 colonnes)
+2026-07-24 11:35:58 | INFO     | models.fichier_excel | JeuDonnees créé : 8 lignes, 1 colonnes
+2026-07-24 11:36:04 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (42 lignes, 3 colonnes)
+2026-07-24 11:36:04 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-24 11:42:54 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (227 lignes, 12 colonnes)
+2026-07-24 11:42:54 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-24 11:42:56 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (8 lignes, 1 colonnes)
+2026-07-24 11:42:56 | INFO     | models.fichier_excel | JeuDonnees créé : 8 lignes, 1 colonnes
+2026-07-24 11:43:04 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (42 lignes, 3 colonnes)
+2026-07-24 11:43:04 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-24 11:43:38 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-24 11:44:12 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (227 lignes, 12 colonnes)
+2026-07-24 11:44:12 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-24 11:49:02 | INFO     | models.fichier_excel | Fichier chargé : test2.xlsx (300 lignes, 4 colonnes)
+2026-07-24 11:49:02 | INFO     | models.fichier_excel | JeuDonnees créé : 300 lignes, 4 colonnes
+2026-07-24 11:49:06 | INFO     | models.fichier_excel | Fichier chargé : test2.xlsx (42 lignes, 2 colonnes)
+2026-07-24 11:49:06 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 2 colonnes
+2026-07-24 11:49:11 | INFO     | models.analyse_eda | EDA : 1 colonnes numériques analysées
+2026-07-24 11:50:20 | INFO     | models.fichier_excel | Fichier chargé : test2.xlsx (300 lignes, 4 colonnes)
+2026-07-24 11:50:20 | INFO     | models.fichier_excel | JeuDonnees créé : 300 lignes, 4 colonnes
+2026-07-24 11:50:28 | INFO     | models.fichier_excel | Fichier chargé : test2.xlsx (42 lignes, 2 colonnes)
+2026-07-24 11:50:28 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 2 colonnes
+2026-07-24 11:50:34 | INFO     | models.analyse_eda | EDA : 1 colonnes numériques analysées
+2026-07-24 11:50:45 | INFO     | models.fichier_excel | Fichier chargé : test2.xlsx (300 lignes, 4 colonnes)
+2026-07-24 11:50:45 | INFO     | models.fichier_excel | JeuDonnees créé : 300 lignes, 4 colonnes
+2026-07-24 11:50:54 | INFO     | models.fichier_excel | Fichier chargé : test2.xlsx (42 lignes, 2 colonnes)
+2026-07-24 11:50:54 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 2 colonnes
+2026-07-24 11:53:32 | INFO     | models.fichier_excel | Fichier chargé : test2.xlsx (300 lignes, 4 colonnes)
+2026-07-24 11:53:32 | INFO     | models.fichier_excel | JeuDonnees créé : 300 lignes, 4 colonnes
+2026-07-24 11:53:46 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_Sample.csv (25 lignes, 12 colonnes)
+2026-07-24 11:53:46 | INFO     | models.fichier_excel | JeuDonnees créé : 25 lignes, 12 colonnes
+2026-07-24 11:54:01 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-24 12:00:07 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-07-24 12:00:07 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-07-24 12:00:23 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (8 lignes, 1 colonnes)
+2026-07-24 12:00:23 | INFO     | models.fichier_excel | JeuDonnees créé : 8 lignes, 1 colonnes
+2026-07-24 12:00:27 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (42 lignes, 2 colonnes)
+2026-07-24 12:00:27 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 2 colonnes
+2026-07-24 12:00:32 | INFO     | models.analyse_eda | EDA : 1 colonnes numériques analysées
+2026-07-24 12:01:12 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38}
+2026-07-24 12:01:12 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-24 12:01:12 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-24 12:01:19 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38}
+2026-07-24 12:01:19 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-24 12:01:19 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-24 12:01:29 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-07-24 12:01:29 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-07-24 12:01:52 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (Saisie manuelle) : 12 lignes, 4 colonnes
+2026-07-24 12:09:52 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (Saisie manuelle) : 12 lignes, 4 colonnes
+2026-07-24 12:10:13 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (Saisie manuelle) : 12 lignes, 4 colonnes
+2026-07-24 12:11:01 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (Saisie manuelle) : 12 lignes, 4 colonnes
+2026-07-24 12:11:18 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (Saisie manuelle) : 12 lignes, 4 colonnes
+2026-07-24 12:11:23 | INFO     | models.analyse_eda | EDA : 3 colonnes numériques analysées
+2026-07-24 12:11:27 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-24 12:15:50 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-24 12:16:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 12}
+2026-07-24 12:16:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-24 12:16:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-24 12:21:04 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-07-24 12:21:04 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-07-24 12:21:07 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (8 lignes, 1 colonnes)
+2026-07-24 12:21:07 | INFO     | models.fichier_excel | JeuDonnees créé : 8 lignes, 1 colonnes
+2026-07-24 12:21:10 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (42 lignes, 2 colonnes)
+2026-07-24 12:21:10 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 2 colonnes
+2026-07-24 12:21:14 | INFO     | models.analyse_eda | EDA : 1 colonnes numériques analysées
+2026-07-24 12:21:19 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-24 12:21:42 | INFO     | models.analyse_eda | EDA : 1 colonnes numériques analysées
+2026-07-24 12:21:48 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-24 12:21:53 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-07-24 12:21:53 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-07-24 12:26:52 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (8 lignes, 1 colonnes)
+2026-07-24 12:26:52 | INFO     | models.fichier_excel | JeuDonnees créé : 8 lignes, 1 colonnes
+2026-07-24 12:26:57 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (42 lignes, 2 colonnes)
+2026-07-24 12:26:57 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 2 colonnes
+2026-07-24 12:27:16 | INFO     | models.analyse_eda | EDA : 1 colonnes numériques analysées
+2026-07-24 12:28:03 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38}
+2026-07-24 12:28:03 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-24 12:28:03 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-24 12:28:10 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38}
+2026-07-24 12:28:10 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-24 12:28:10 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-24 12:28:14 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 1 features
+2026-07-24 12:28:14 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-24 12:28:19 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 1 features
+2026-07-24 12:28:19 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-24 12:28:24 | INFO     | models.modele_ml | LogisticRegression entraîné : 1 features
+2026-07-24 12:28:24 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.909 precision=0.826 recall=0.909 f1=0.866
+2026-07-24 12:51:55 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-07-24 12:51:55 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-07-24 12:52:09 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (8 lignes, 1 colonnes)
+2026-07-24 12:52:09 | INFO     | models.fichier_excel | JeuDonnees créé : 8 lignes, 1 colonnes
+2026-07-24 12:52:13 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (42 lignes, 2 colonnes)
+2026-07-24 12:52:13 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 2 colonnes
+2026-07-24 12:52:25 | INFO     | models.analyse_eda | EDA : 1 colonnes numériques analysées
+2026-07-24 12:52:39 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38}
+2026-07-24 12:52:39 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-24 12:52:39 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-24 12:52:48 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 1 features
+2026-07-24 12:52:49 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000
+2026-07-24 12:52:55 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 229, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 229, 'utile_total': 1}
+2026-07-24 12:52:55 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 46, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 46, 'utile_total': 2}
+2026-07-24 12:52:55 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 11, 'doublon': 6, 'valeur_aberrante': 0, 'non_utile_total': 11, 'utile_total': 1}
+2026-07-24 12:52:55 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 24, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 24, 'utile_total': 6}
+2026-07-24 12:53:07 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 229, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 229, 'utile_total': 1}
+2026-07-24 12:53:07 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 46, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 46, 'utile_total': 2}
+2026-07-24 12:53:07 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 11, 'doublon': 6, 'valeur_aberrante': 0, 'non_utile_total': 11, 'utile_total': 1}
+2026-07-24 12:53:07 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 24, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 24, 'utile_total': 6}
+2026-07-24 12:53:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 229, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 229, 'utile_total': 1}
+2026-07-24 12:53:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 46, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 46, 'utile_total': 2}
+2026-07-24 12:53:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 11, 'doublon': 6, 'valeur_aberrante': 0, 'non_utile_total': 11, 'utile_total': 1}
+2026-07-24 12:53:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 24, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 24, 'utile_total': 6}
+2026-07-26 16:44:52 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-07-26 16:44:52 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-07-26 16:44:55 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (8 lignes, 1 colonnes)
+2026-07-26 16:44:55 | INFO     | models.fichier_excel | JeuDonnees créé : 8 lignes, 1 colonnes
+2026-07-26 16:45:03 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (42 lignes, 2 colonnes)
+2026-07-26 16:45:03 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 2 colonnes
+2026-07-26 16:45:31 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-07-26 16:45:31 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-07-26 16:45:38 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (42 lignes, 2 colonnes)
+2026-07-26 16:45:38 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 2 colonnes
+2026-07-26 16:45:39 | INFO     | models.fichier_excel | Fichier chargé : Maintenance_Analyse.xlsx (50 lignes, 16 colonnes)
+2026-07-26 16:45:39 | INFO     | models.fichier_excel | JeuDonnees créé : 50 lignes, 16 colonnes
+2026-07-26 16:45:49 | INFO     | models.analyse_eda | EDA : 6 colonnes numériques analysées
+2026-07-26 16:46:54 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (Saisie manuelle) : 12 lignes, 4 colonnes
+2026-07-26 16:46:58 | INFO     | models.analyse_eda | EDA : 3 colonnes numériques analysées
+2026-07-26 16:47:02 | INFO     | models.tableau_maintenance | Export Excel du tableau de suivi des maintenances généré.
+2026-07-26 16:47:18 | INFO     | models.fichier_excel | Fichier chargé : Dataset_Maintenance_Anomalies_1000 (1).xlsx (1020 lignes, 11 colonnes)
+2026-07-26 16:47:18 | INFO     | models.fichier_excel | JeuDonnees créé : 1020 lignes, 11 colonnes
+2026-07-26 16:47:23 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-26 16:56:20 | INFO     | models.fichier_excel | Fichier chargé : Machine Classification (2).xlsx (163 lignes, 41 colonnes)
+2026-07-26 16:56:20 | INFO     | models.fichier_excel | JeuDonnees créé : 163 lignes, 41 colonnes
+2026-07-26 16:56:29 | INFO     | models.fichier_excel | Fichier chargé : Dataset_Maintenance_Anomalies_1000.xlsx (1020 lignes, 11 colonnes)
+2026-07-26 16:56:29 | INFO     | models.fichier_excel | JeuDonnees créé : 1020 lignes, 11 colonnes
+2026-07-26 16:56:34 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-26 17:07:07 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-07-26 17:07:07 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-07-26 17:07:10 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (8 lignes, 1 colonnes)
+2026-07-26 17:07:10 | INFO     | models.fichier_excel | JeuDonnees créé : 8 lignes, 1 colonnes
+2026-07-26 17:07:12 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (42 lignes, 2 colonnes)
+2026-07-26 17:07:12 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 2 colonnes
+2026-07-26 17:07:22 | INFO     | models.analyse_eda | EDA : 1 colonnes numériques analysées
+2026-07-26 17:08:46 | INFO     | models.fichier_excel | Fichier chargé : Dataset_Maintenance_Anomalies_1000.xlsx (1020 lignes, 11 colonnes)
+2026-07-26 17:08:46 | INFO     | models.fichier_excel | JeuDonnees créé : 1020 lignes, 11 colonnes
+2026-07-26 17:08:55 | INFO     | models.fichier_excel | Fichier chargé : Dataset_Maintenance_Anomalies_1000.xlsx (1020 lignes, 11 colonnes)
+2026-07-26 17:08:55 | INFO     | models.fichier_excel | JeuDonnees créé : 1020 lignes, 11 colonnes
+2026-07-26 17:09:18 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-26 17:16:37 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 20, 'valeur_aberrante': 29, 'non_utile_total': 48, 'utile_total': 972}
+2026-07-26 17:16:37 | INFO     | models.pretraitement | Doublons supprimés : 20
+2026-07-26 17:16:37 | INFO     | models.pretraitement | Valeurs manquantes imputées : 101
+2026-07-26 17:16:47 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 226 features
+2026-07-26 17:16:47 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.972 precision=0.945 recall=0.972 f1=0.958
+2026-07-26 17:16:51 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 20, 'valeur_aberrante': 29, 'non_utile_total': 48, 'utile_total': 972}
+2026-07-26 17:18:00 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 20, 'valeur_aberrante': 29, 'non_utile_total': 48, 'utile_total': 972}
+2026-07-26 17:18:00 | INFO     | models.pretraitement | Doublons supprimés : 20
+2026-07-26 17:18:00 | INFO     | models.pretraitement | Valeurs manquantes imputées : 101
+2026-07-26 17:18:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 20, 'valeur_aberrante': 29, 'non_utile_total': 48, 'utile_total': 972}
+2026-07-26 17:18:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 20, 'valeur_aberrante': 29, 'non_utile_total': 48, 'utile_total': 972}
