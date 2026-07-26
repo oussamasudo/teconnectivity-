@@ -438,9 +438,7 @@ with st.sidebar:
     )
     page_num = ETAPES.index(page_label) + 1
 
-    st.divider()
     st.progress(etape_terminee / 5)
-    st.caption(f"Progression : {etape_terminee}/5 étapes validées")
 
     if st.button("Recommencer le pipeline", use_container_width=True):
         st.session_state.clear()
@@ -1202,29 +1200,104 @@ elif page_num == 5:
             with tab:
                 st.dataframe(df, use_container_width=True)
 
-        if pipeline.fichierExcel is not None and pipeline.fichierExcel.url:
-            fichier_source = pipeline.fichierExcel.url
+        st.markdown("### Export")
+        st.download_button(
+            f"Télécharger le fichier nettoyé ({DEFAULT_OUTPUT_NAME})",
+            data=pipeline.exportExcel.genererExportComplet(df_utile, df_non_utile),
+            file_name=DEFAULT_OUTPUT_NAME,
+            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            use_container_width=True,
+        )
+        st.caption("Le fichier Excel reste sous sa forme normale : lignes utiles nettoyées.")
+
+        inclure_pdf = st.checkbox("Générer aussi un PDF d'analyse détaillée", value=True)
+
+        if inclure_pdf:
+            eda = pipeline.analyseEDA
+            pareto_num = eda.colonne_temps_arret(pipeline.jeuDonnees.dataframe)
+            if "Machine" in pipeline.jeuDonnees.dataframe.columns:
+                pareto_cat = "Machine"
+            else:
+                eligible_cats = [
+                    col
+                    for col in eda.colonnes_categorielles_pertinentes(pipeline.jeuDonnees.dataframe)
+                    if not AnalyseEDA._colonne_semble_date(pipeline.jeuDonnees.dataframe[col], col)
+                ]
+                pareto_cat = eligible_cats[0] if eligible_cats else None
+
+            analyses = {}
+            figures = {}
+
+            try:
+                stats_df = pd.DataFrame([s.__dict__ for s in eda.statistiques])
+                if not stats_df.empty:
+                    analyses["Statistiques descriptives"] = stats_df
+            except Exception:
+                pass
+
+            try:
+                mv = eda.tableauValeursManquantes(pipeline.jeuDonnees)
+                if mv is not None and not mv.empty:
+                    analyses["Valeurs manquantes"] = mv
+            except Exception:
+                pass
+
+            try:
+                if pareto_num and pareto_cat:
+                    fig = eda.afficherPareto(pipeline.jeuDonnees, pareto_num, pareto_cat)
+                    if fig is not None:
+                        figures[f"Pareto - {pareto_cat} par {pareto_num}"] = fig
+            except Exception:
+                pass
+
+            try:
+                fig_hist = eda.afficherHistogrammes(pipeline.jeuDonnees, max_colonnes=2)
+                if fig_hist is not None:
+                    figures["Histograms"] = fig_hist
+            except Exception:
+                pass
+
+            try:
+                if pareto_cat and pareto_num:
+                    fig_top = eda.afficherTopCategories(pipeline.jeuDonnees, pareto_num, pareto_cat, top_n=10)
+                    if fig_top is not None:
+                        figures[f"Top catégories {pareto_cat} par {pareto_num}"] = fig_top
+            except Exception:
+                pass
+
+            try:
+                aggs = eda.calculerAgregations(
+                    pipeline.jeuDonnees,
+                    colonne_numerique=pareto_num,
+                    colonnes_groupe=[pareto_cat] if pareto_cat else None,
+                )
+                for nom, df_ag in aggs.items():
+                    if df_ag is not None and not df_ag.empty:
+                        analyses[f"Aggrégation par {nom}"] = df_ag
+            except Exception:
+                pass
+
+            meta = {
+                "Nb lignes totales": str(len(df_resultat)),
+                "Nb utiles": str(len(df_utile)),
+                "Nb non utiles": str(len(df_non_utile)),
+                "Fichier source": pipeline.fichierExcel.nom if pipeline.fichierExcel else "Saisie manuelle",
+            }
+            pdf_bytes = pipeline.exportExcel.genererRapportPDF(
+                analyses=analyses,
+                figures=figures,
+                meta=meta,
+                titre="Analyse détaillée du fichier nettoyé",
+            )
+
             st.download_button(
-                f"Télécharger le fichier nettoyé ({DEFAULT_OUTPUT_NAME})",
-                data=pipeline.exportExcel.genererExportNettoyeDepuisFichier(fichier_source),
-                file_name=DEFAULT_OUTPUT_NAME,
-                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                "Télécharger le rapport PDF d'analyse détaillée",
+                data=pdf_bytes,
+                file_name="Rapport_Analyse_Detailee.pdf",
+                mime="application/pdf",
                 use_container_width=True,
             )
-            st.caption(
-                "Le fichier nettoyé conserve la structure des feuilles du fichier source."
-            )
-        else:
-            st.download_button(
-                f"Télécharger le fichier nettoyé ({DEFAULT_OUTPUT_NAME})",
-                data=pipeline.exportExcel.genererExportComplet(df_utile, df_non_utile),
-                file_name=DEFAULT_OUTPUT_NAME,
-                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                use_container_width=True,
-            )
-            st.caption(
-                "Le fichier contient un seul onglet avec les lignes utiles nettoyées."
-            )
+            st.caption("Le PDF contient une analyse détaillée du fichier nettoyé et des graphiques.")
 
 
 # --------------------------------------------------------------------------
