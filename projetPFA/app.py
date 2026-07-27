@@ -1100,6 +1100,15 @@ elif page_num == 3:
                         "cible : les garder comme feature permettrait au modèle de reconstruire "
                         "la règle au lieu d'apprendre à généraliser, faussant les métriques."
                     )
+                elif rr.get("colonnes_aberrantes"):
+                    st.warning(
+                        f"Colonne(s) {rr['colonnes_aberrantes']} utilisée(s) pour détecter les "
+                        "valeurs aberrantes, mais conservée(s) dans les features car ce fichier "
+                        "ne contient pas assez d'autres colonnes exploitables : le modèle risque "
+                        "de reproduire cette règle plutôt que de généraliser (métriques trop "
+                        "optimistes). Ajoute d'autres colonnes pertinentes à ton fichier pour "
+                        "des résultats plus fiables."
+                    )
             else:
                 st.caption(
                     f"Colonne « {COLONNE_CIBLE} » trouvée dans le fichier source : "
