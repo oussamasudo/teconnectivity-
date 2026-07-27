@@ -654,7 +654,7 @@ if page_num == 1:
             st.session_state["maintenance_df"] = dataframe_vide()
             st.session_state.pop("import_feuilles_en_attente", None)
             feuille_info = f" (feuille « {fichier.nomFeuille} »)" if fichier.nomFeuille else ""
-            st.info(
+            st.warning(
                 f"Fichier importé{feuille_info} : {pipeline.jeuDonnees.getNbLignes()} lignes, "
                 f"{pipeline.jeuDonnees.getNbColonnes()} colonnes."
             )
@@ -712,7 +712,7 @@ if page_num == 1:
         # ------------------------------------------------------------
         en_attente = st.session_state.get("import_feuilles_en_attente")
         if en_attente:
-            st.info(
+            st.warning(
                 f"Le fichier « {en_attente['nom']} » contient plusieurs feuilles : "
                 "choisis celle à importer, l'import se lance automatiquement."
             )
@@ -941,7 +941,7 @@ elif page_num == 2:
                             pipeline.jeuDonnees, pareto_num, pareto_cat
                         )
                         if fig_pareto_global is not None:
-                            st.pyplot(fig_pareto_global)
+                            st.pyplot(fig_pareto_global, use_container_width=True)
                         else:
                             st.caption("Pas assez de données pour tracer un diagramme de Pareto.")
                     else:
@@ -1297,7 +1297,40 @@ elif page_num == 5:
                 mime="application/pdf",
                 use_container_width=True,
             )
-            st.caption("Le PDF contient une analyse détaillée du fichier nettoyé et des graphiques.")
+
+            rapport_excel_bytes = pipeline.exportExcel.genererRapportStructureExcel(
+                df_utile=df_utile,
+                df_rejete=df_non_utile,
+                analyses=analyses,
+                figures=figures,
+                meta=meta,
+            )
+            st.download_button(
+                "Télécharger le rapport structuré (Excel)",
+                data=rapport_excel_bytes,
+                file_name="Rapport_Analyse_Structure.xlsx",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                use_container_width=True,
+            )
+
+            rapport_json_bytes = pipeline.exportExcel.genererRapportJSON(
+                analyses=analyses,
+                meta=meta,
+                df_utile=df_utile,
+                df_rejete=df_non_utile,
+            )
+            st.download_button(
+                "Télécharger le rapport structuré (JSON)",
+                data=rapport_json_bytes,
+                file_name="Rapport_Analyse_Structure.json",
+                mime="application/json",
+                use_container_width=True,
+            )
+
+            st.caption(
+                "Le rapport structuré contient des feuilles Excel séparées et un JSON "
+                "facilement réutilisable dans d'autres applications."
+            )
 
 
 # --------------------------------------------------------------------------
