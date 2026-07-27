@@ -85,9 +85,19 @@ def generer_labels_utilite(
     # Règle 2 : ligne strictement dupliquée (on garde la 1ère occurrence)
     raisons["doublon"] = df.duplicated(keep="first")
 
-    # Règle 3 : valeur aberrante sur au moins une colonne numérique (IQR)
+    # Règle 3 : valeur aberrante sur au moins une colonne numérique (IQR).
+    # On retient aussi QUELLES colonnes ont déclenché la règle
+    # (`colonnes_aberrantes`) : le pipeline les exclut ensuite des features
+    # d'entraînement (cf. PipelinePrincipal.pretraiterDonnees). Sans cela,
+    # la valeur brute qui a servi à ÉTIQUETER la ligne resterait aussi dans
+    # les features qui servent à la PRÉDIRE : le modèle n'a alors qu'à
+    # reseuiller cette même colonne pour reproduire la règle à 100%, au lieu
+    # d'apprendre à généraliser à partir des autres caractéristiques de la
+    # ligne (ce qui donne des métriques artificiellement parfaites et une
+    # importance des variables écrasée sur cette seule colonne).
     colonnes_num = df.select_dtypes(include="number").columns
     aberrant = pd.Series(False, index=df.index)
+    colonnes_aberrantes: list[str] = []
     for col in colonnes_num:
         serie = df[col]
         q1, q3 = serie.quantile(0.25), serie.quantile(0.75)
@@ -96,7 +106,10 @@ def generer_labels_utilite(
             continue
         borne_basse = q1 - facteur_iqr * iqr
         borne_haute = q3 + facteur_iqr * iqr
-        aberrant = aberrant | (serie < borne_basse) | (serie > borne_haute)
+        masque = (serie < borne_basse) | (serie > borne_haute)
+        if masque.any():
+            colonnes_aberrantes.append(col)
+        aberrant = aberrant | masque
     raisons["valeur_aberrante"] = aberrant
 
     non_utile = raisons.any(axis=1)
@@ -108,6 +121,7 @@ def generer_labels_utilite(
         "valeur_aberrante": int(raisons["valeur_aberrante"].sum()),
         "non_utile_total": int(non_utile.sum()),
         "utile_total": int((~non_utile).sum()),
+        "colonnes_aberrantes": colonnes_aberrantes,
     }
     logger.info("Labels d'utilité générés (règles génériques) : %s", rapport)
     return labels, rapport

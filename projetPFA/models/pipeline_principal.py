@@ -103,6 +103,7 @@ class PipelinePrincipal:
     _jeu_pretraite: Optional[JeuDonnees] = field(default=None, repr=False)  # + scaling + encodage, pour le ML
     _labels: Optional[pd.Series] = field(default=None, repr=False)
     _colonnes_texte_libre: list[str] = field(default_factory=list, repr=False)
+    _colonnes_exclues_fuite: list[str] = field(default_factory=list, repr=False)
     rapport_regles: dict = field(default_factory=dict, repr=False)
     source_cible: str = field(default="", repr=False)
 
@@ -217,6 +218,24 @@ class PipelinePrincipal:
         jeu_features = self._jeu_nettoye.copie()
         self._colonnes_texte_libre = detecter_colonnes_texte_libre(jeu_features.dataframe)
         for col in self._colonnes_texte_libre:
+            jeu_features.supprimerColonne(col)
+
+        # Anti-fuite : quand la cible vient des règles génériques, la colonne
+        # qui a servi à détecter une "valeur_aberrante" (IQR) reste, à ce
+        # stade, identique à sa valeur brute dans le jeu nettoyé. La laisser
+        # dans les features permettrait au modèle de reconstruire la règle en
+        # reseuillant simplement cette colonne (accuracy/AUC ~100%, toute
+        # l'importance concentrée dessus), au lieu d'apprendre à généraliser
+        # à partir des AUTRES caractéristiques de la ligne — ce qui est
+        # l'objectif du modèle (cf. docstring de generer_labels_utilite). On
+        # l'exclut donc des features d'entraînement ; elle reste néanmoins
+        # visible dans le jeu "lisible" exporté pour l'utilisateur.
+        self._colonnes_exclues_fuite = (
+            self.rapport_regles.get("colonnes_aberrantes", [])
+            if self.source_cible == "regles_generiques"
+            else []
+        )
+        for col in self._colonnes_exclues_fuite:
             jeu_features.supprimerColonne(col)
 
         colonnes_num = list(jeu_features.dataframe.select_dtypes(include="number").columns)

@@ -10,6 +10,10 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
+import matplotlib
+
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.metrics import (
     accuracy_score,
@@ -89,6 +93,41 @@ class RapportEvaluation:
             f"AUC ROC   : {self.rocAuc:.3f}\n"
             f"Matrice de confusion :\n{self.matriceConfusion}"
         )
+
+    def graphiqueROC(self):
+        """Retourne la courbe ROC (figure matplotlib), ou None si elle n'a
+        pas pu être calculée (cible non binaire, modèle sans score de
+        probabilité...). La diagonale pointillée représente un classifieur
+        aléatoire, pour situer visuellement la performance du modèle."""
+        if self.rocFpr.size == 0 or self.rocTpr.size == 0:
+            return None
+        fig, ax = plt.subplots(figsize=(6, 5))
+        ax.plot(self.rocFpr, self.rocTpr, color="#FF8200", linewidth=2, label=f"AUC = {self.rocAuc:.3f}")
+        ax.plot([0, 1], [0, 1], color="#6A6A6A", linestyle="--", linewidth=1, label="Hasard (AUC = 0.5)")
+        ax.set_xlabel("Taux de faux positifs")
+        ax.set_ylabel("Taux de vrais positifs")
+        ax.set_title("Courbe ROC", color="#2B2B2B", fontweight="bold")
+        ax.legend(loc="lower right")
+        fig.tight_layout()
+        return fig
+
+    def graphiqueCrossVal(self):
+        """Retourne un graphique en barres des scores de validation croisée
+        (moyenne sur les folds), ou None si elle n'a pas été calculée
+        (échantillon trop petit)."""
+        if not self.crossValScores:
+            return None
+        libelles = list(self.crossValScores.keys())
+        valeurs = list(self.crossValScores.values())
+        fig, ax = plt.subplots(figsize=(7, 4))
+        barres = ax.bar(libelles, valeurs, color="#FF8200", edgecolor="#2B2B2B")
+        ax.bar_label(barres, padding=3, fontsize=8, fmt="%.3f")
+        ax.set_ylim(0, 1.05)
+        ax.set_ylabel("Score moyen (validation croisée)")
+        ax.set_title("Validation croisée", color="#2B2B2B", fontweight="bold")
+        plt.setp(ax.get_xticklabels(), rotation=20, ha="right")
+        fig.tight_layout()
+        return fig
 
     def to_dict(self) -> dict:
         return {

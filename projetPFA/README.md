@@ -53,7 +53,7 @@ projetPFA/
 └── logs/app.log
 ```
 
-## ⚙️ Installation
+## Installation
 
 ```bash
 python -m venv venv

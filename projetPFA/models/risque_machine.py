@@ -354,7 +354,7 @@ class AnalyseRisqueMachine:
         if n_critique:
             lignes.append("")
             lignes.append(
-                f"⚠️ {n_critique} machine(s) en niveau **Critique** : une intervention "
+                f"{n_critique} machine(s) en niveau **Critique** : une intervention "
                 "préventive rapprochée est recommandée."
             )
         elif n_eleve:
