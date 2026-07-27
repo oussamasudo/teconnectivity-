@@ -377,8 +377,9 @@ class AnalyseEDA:
         idx_a = _limite_classe(seuil_classe_a)
         idx_b = max(_limite_classe(seuil_classe_b), idx_a)
 
-        largeur_fig = max(10, n * 0.35)
-        fig, ax1 = plt.subplots(figsize=(largeur_fig, 5.5))
+        largeur_fig = max(14, min(50, n * 0.4))
+        hauteur_fig = max(8, min(14, 6 + n * 0.06))
+        fig, ax1 = plt.subplots(figsize=(largeur_fig, hauteur_fig))
         barres = ax1.bar(
             range(n), agg.values, color="#FF8200", edgecolor="#CC6500"
         )

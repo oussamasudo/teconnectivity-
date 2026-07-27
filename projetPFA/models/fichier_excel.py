@@ -91,7 +91,7 @@ class FichierExcel:
         feuille_cible = nom_feuille or self.nomFeuille
         try:
             if self.url.lower().endswith(".csv"):
-                df = pd.read_csv(self.url)
+                df = self._lire_csv_avec_entete_auto(self.url)
             else:
                 df = self._lire_excel_avec_entete_auto(self.url, feuille_cible)
                 self.nomFeuille = feuille_cible or (
@@ -185,6 +185,32 @@ class FichierExcel:
 
         if ligne_tcd is not None:
             df = self._retirer_ligne_total_tcd(df)
+        return df
+
+    def _lire_csv_avec_entete_auto(self, chemin: str) -> pd.DataFrame:
+        """Détecte automatiquement l'en-tête d'un fichier CSV en scannant les
+        premières lignes jusqu'à ce qu'une ligne de colonnes plausibles soit
+        trouvée."""
+        brut = pd.read_csv(chemin, header=None, nrows=MAX_LIGNES_SCAN_ENTETE + 5)
+        limite = min(MAX_LIGNES_SCAN_ENTETE, len(brut))
+
+        meilleure_ligne = 0
+        meilleur_score = -1
+        for i in range(limite):
+            ligne = brut.iloc[i]
+            valeurs = [v for v in ligne if pd.notna(v)]
+            non_vides = len(valeurs)
+            if non_vides < 2:
+                continue
+            textuelles = sum(1 for v in valeurs if isinstance(v, str))
+            uniques = len(set(str(v).strip() for v in valeurs))
+            score = non_vides + textuelles + uniques
+            if score > meilleur_score:
+                meilleur_score = score
+                meilleure_ligne = i
+
+        df = pd.read_csv(chemin, header=meilleure_ligne)
+        df.columns = [str(c).strip() for c in df.columns]
         return df
 
     @classmethod
