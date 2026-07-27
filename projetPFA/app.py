@@ -1204,6 +1204,29 @@ elif page_num == 5:
                 st.dataframe(df, use_container_width=True)
 
         st.markdown("### Export")
+
+        st.subheader("1. Fichier Excel nettoyé")
+        st.markdown(
+            "Le fichier Excel nettoyé contient les lignes utiles et les colonnes pertinentes "
+            "pour un usage direct dans Excel ou Power BI."
+        )
+        cleaned_bytes = pipeline.exportExcel.genererExportComplet(df_utile, df_non_utile)
+        st.download_button(
+            "Télécharger le fichier Excel nettoyé",
+            data=cleaned_bytes,
+            file_name=DEFAULT_OUTPUT_NAME,
+            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            use_container_width=True,
+        )
+
+        st.divider()
+
+        st.subheader("2. Analyse PDF")
+        st.markdown(
+            "Le PDF contient l'analyse structurée du fichier Excel : statistiques descriptives, "
+            "valeurs manquantes, agrégations et visualisations."
+        )
+
         eda = pipeline.analyseEDA
         pareto_num = eda.colonne_temps_arret(pipeline.jeuDonnees.dataframe)
         if "Machine" in pipeline.jeuDonnees.dataframe.columns:
@@ -1290,7 +1313,7 @@ elif page_num == 5:
         )
 
         st.caption(
-            "Ce PDF contient l'analyse du fichier Excel : statistiques, valeurs manquantes, agrégations et figures."
+            "Analyse PDF du fichier Excel : uniquement le rapport, sans export JSON ou Excel structuré supplémentaire."
         )
 
 
