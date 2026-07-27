@@ -364,6 +364,7 @@ def reinitialiser_pipeline_pour_nouvelle_source(pipeline: PipelinePrincipal) -> 
     pipeline._jeu_pretraite = None
     pipeline._labels = None
     pipeline._colonnes_texte_libre = []
+    pipeline._colonnes_exclues_fuite = []
     pipeline.rapport_regles = {}
     pipeline.source_cible = ""
     pipeline.modele = None
@@ -1091,6 +1092,14 @@ elif page_num == 3:
                     f"(→ {rr.get('non_utile_total', 0)} lignes Non_utile / "
                     f"{rr.get('utile_total', 0)} lignes Utile)."
                 )
+                if pipeline._colonnes_exclues_fuite:
+                    st.caption(
+                        "Colonne(s) exclue(s) de l'entraînement du modèle (mais conservée(s) "
+                        f"dans les données exportées) : {pipeline._colonnes_exclues_fuite}. "
+                        "Elles ont servi à détecter les valeurs aberrantes qui définissent la "
+                        "cible : les garder comme feature permettrait au modèle de reconstruire "
+                        "la règle au lieu d'apprendre à généraliser, faussant les métriques."
+                    )
             else:
                 st.caption(
                     f"Colonne « {COLONNE_CIBLE} » trouvée dans le fichier source : "
@@ -1173,24 +1182,41 @@ elif page_num == 4:
                     st.session_state["df_resultat"] = df_resultat
                     st.session_state["ml_modele_nom"] = modele_choisi
                     st.session_state["ml_modele_params"] = params
-                    st.session_state["ml_taille_test"] = taille_test
                     st.session_state["etape_terminee"] = max(st.session_state["etape_terminee"], 4)
                 except ValueError as e:
                     st.error(str(e))
 
             if st.session_state["etape_terminee"] >= 4:
                 rapport = pipeline.rapport
-                r1, r2, r3, r4 = st.columns(4)
+                r1, r2, r3, r4, r5 = st.columns(5)
                 r1.metric("Accuracy", f"{rapport.accuracy * 100:.1f} %")
                 r2.metric("Precision", f"{rapport.precision * 100:.1f} %")
                 r3.metric("Recall", f"{rapport.recall * 100:.1f} %")
                 r4.metric("F1-score", f"{rapport.f1Score * 100:.1f} %")
+                r5.metric("AUC ROC", f"{rapport.rocAuc:.3f}" if rapport.rocAuc else "N/A")
 
-                st.subheader("Matrice de confusion")
-                st.dataframe(
-                    matrice_confusion_vers_dataframe(rapport.matriceConfusion),
-                    use_container_width=True,
-                )
+                mc1, mc2 = st.columns(2)
+                with mc1:
+                    st.subheader("Matrice de confusion")
+                    st.dataframe(
+                        matrice_confusion_vers_dataframe(rapport.matriceConfusion),
+                        use_container_width=True,
+                    )
+                with mc2:
+                    fig_roc = rapport.graphiqueROC()
+                    if fig_roc is not None:
+                        st.subheader("Courbe ROC")
+                        st.pyplot(fig_roc, use_container_width=True)
+
+                fig_cv = rapport.graphiqueCrossVal()
+                if fig_cv is not None:
+                    st.subheader("Validation croisée")
+                    st.caption(
+                        "Moyenne des métriques sur plusieurs découpages du jeu de "
+                        "données : donne une estimation plus fiable de la performance "
+                        "que le seul jeu de test, en particulier sur un petit fichier."
+                    )
+                    st.pyplot(fig_cv, use_container_width=True)
 
         # ---- Onglet 2 : Risque par machine (maintenance prédictive) --------
         with onglet_risque_ml:
@@ -1384,6 +1410,7 @@ elif page_num == 5:
                         {"Métrique": "Precision", "Valeur": f"{rapport_ml.precision * 100:.1f} %"},
                         {"Métrique": "Recall", "Valeur": f"{rapport_ml.recall * 100:.1f} %"},
                         {"Métrique": "F1-score", "Valeur": f"{rapport_ml.f1Score * 100:.1f} %"},
+                        {"Métrique": "AUC ROC", "Valeur": f"{rapport_ml.rocAuc:.3f}" if rapport_ml.rocAuc else "N/A"},
                         {"Métrique": "Taille du jeu de test", "Valeur": f"{st.session_state.get('ml_taille_test', 'N/A')}"},
                     ]
                 )
@@ -1399,6 +1426,19 @@ elif page_num == 5:
                 analyses["Machine Learning - Matrice de confusion"] = matrice_confusion_vers_dataframe(
                     rapport_ml.matriceConfusion
                 )
+
+                if rapport_ml.crossValScores:
+                    analyses["Machine Learning - Validation croisée"] = pd.DataFrame(
+                        [{"Métrique": cle, "Score moyen": f"{val:.3f}"} for cle, val in rapport_ml.crossValScores.items()]
+                    )
+
+                fig_roc = rapport_ml.graphiqueROC()
+                if fig_roc is not None:
+                    figures["Courbe ROC"] = fig_roc
+
+                fig_cv = rapport_ml.graphiqueCrossVal()
+                if fig_cv is not None:
+                    figures["Validation croisée"] = fig_cv
         except Exception:
             pass
 
