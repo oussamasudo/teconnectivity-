@@ -45,6 +45,7 @@ from models.export_excel import ExportExcel
 from models.fichier_excel import FichierExcel, FichierExcelError
 from models.pipeline_principal import PipelinePrincipal
 from models.pretraitement import Pretraitement
+from models.risque_machine import AnalyseRisqueMachine
 from models.tableau_maintenance import COLONNE_TYPE, MOIS_ANNEE, TableauMaintenance, dataframe_vide
 from utils.file_utils import sauvegarder_upload_temporaire
 from utils.metrics import matrice_confusion_vers_dataframe
@@ -867,6 +868,8 @@ elif page_num == 2:
             #     variables (numérique x catégoriel) et leurs graphiques ;
             #   - Suivi des maintenances : indicateurs de maintenance
             #     exclusivement (TP, TR, PM %, taux, objectifs, export).
+            #   (Le score de risque par machine a été déplacé dans l'étape
+            #   Machine Learning, avec les autres analyses prédictives.)
             # ------------------------------------------------------------
             df_maintenance_saisi = st.session_state.get("maintenance_df")
             df_mnt_mois = (
@@ -1114,71 +1117,192 @@ elif page_num == 4:
             "maintenances' pour analyser tes données manuellement."
         )
     else:
-        modele_choisi = st.selectbox(
-            "Modèle de Machine Learning",
-            ["Random Forest", "Régression Logistique", "Gradient Boosting", "SVM (Support Vector Machine)"],
-            key="ml_modele_choisi",
+        onglet_entrainement, onglet_risque_ml = st.tabs(
+            ["Entraînement & Prédiction", "Risque par machine"]
         )
 
-        m1, m2, m3 = st.columns(3)
-
-        params = {}
-        if modele_choisi == "Random Forest":
-            with m1:
-                params["nombreArbres"] = st.slider("Nombre d'arbres", 50, 500, 200, step=50, key="ml_rf_nb_arbres")
-            with m2:
-                profondeur = st.slider("Profondeur max (0 = illimitée)", 0, 30, 0, key="ml_rf_profondeur")
-                params["profondeurMax"] = None if profondeur == 0 else profondeur
-
-        elif modele_choisi == "Régression Logistique":
-            with m1:
-                params["C"] = st.slider("Régularisation (C)", 0.01, 10.0, 1.0, step=0.01, key="ml_lr_c")
-            with m2:
-                params["maxIter"] = st.slider("Itérations max", 100, 2000, 500, step=100, key="ml_lr_maxiter")
-
-        elif modele_choisi == "Gradient Boosting":
-            with m1:
-                params["nombreArbres"] = st.slider("Nombre d'estimateurs", 50, 500, 150, step=50, key="ml_gb_nb_arbres")
-            with m2:
-                params["tauxApprentissage"] = st.slider("Taux d'apprentissage", 0.01, 0.5, 0.1, step=0.01, key="ml_gb_taux")
-            with m3:
-                params["profondeurMax"] = st.slider("Profondeur max", 1, 10, 3, key="ml_gb_profondeur")
-
-        elif modele_choisi == "SVM (Support Vector Machine)":
-            with m1:
-                params["C"] = st.slider("Régularisation (C)", 0.01, 10.0, 1.0, step=0.01, key="ml_svm_c")
-            with m2:
-                params["kernel"] = st.selectbox("Noyau", ["rbf", "linear", "poly"], key="ml_svm_kernel")
-
-        with m3 if modele_choisi == "Random Forest" else m1:
-            taille_test = st.slider("Taille du jeu de test", 0.1, 0.4, 0.25, step=0.05, key="ml_taille_test")
-
-        if st.button("Entraîner le modèle et prédire", type="primary", key="ml_bouton_entrainer"):
-            try:
-                rapport = pipeline.entrainerModele(
-                    nomModele=modele_choisi,
-                    parametres=params,
-                    taille_test=taille_test,
-                )
-                df_resultat = pipeline.predire()
-                st.session_state["df_resultat"] = df_resultat
-                st.session_state["etape_terminee"] = max(st.session_state["etape_terminee"], 4)
-            except ValueError as e:
-                st.error(str(e))
-
-        if st.session_state["etape_terminee"] >= 4:
-            rapport = pipeline.rapport
-            r1, r2, r3, r4 = st.columns(4)
-            r1.metric("Accuracy", f"{rapport.accuracy * 100:.1f} %")
-            r2.metric("Precision", f"{rapport.precision * 100:.1f} %")
-            r3.metric("Recall", f"{rapport.recall * 100:.1f} %")
-            r4.metric("F1-score", f"{rapport.f1Score * 100:.1f} %")
-
-            st.subheader("Matrice de confusion")
-            st.dataframe(
-                matrice_confusion_vers_dataframe(rapport.matriceConfusion),
-                use_container_width=True,
+        # ---- Onglet 1 : Entraînement du modèle + prédiction ----------------
+        with onglet_entrainement:
+            modele_choisi = st.selectbox(
+                "Modèle de Machine Learning",
+                ["Random Forest", "Régression Logistique", "Gradient Boosting", "SVM (Support Vector Machine)"],
+                key="ml_modele_choisi",
             )
+
+            m1, m2, m3 = st.columns(3)
+
+            params = {}
+            if modele_choisi == "Random Forest":
+                with m1:
+                    params["nombreArbres"] = st.slider("Nombre d'arbres", 50, 500, 200, step=50, key="ml_rf_nb_arbres")
+                with m2:
+                    profondeur = st.slider("Profondeur max (0 = illimitée)", 0, 30, 0, key="ml_rf_profondeur")
+                    params["profondeurMax"] = None if profondeur == 0 else profondeur
+
+            elif modele_choisi == "Régression Logistique":
+                with m1:
+                    params["C"] = st.slider("Régularisation (C)", 0.01, 10.0, 1.0, step=0.01, key="ml_lr_c")
+                with m2:
+                    params["maxIter"] = st.slider("Itérations max", 100, 2000, 500, step=100, key="ml_lr_maxiter")
+
+            elif modele_choisi == "Gradient Boosting":
+                with m1:
+                    params["nombreArbres"] = st.slider("Nombre d'estimateurs", 50, 500, 150, step=50, key="ml_gb_nb_arbres")
+                with m2:
+                    params["tauxApprentissage"] = st.slider("Taux d'apprentissage", 0.01, 0.5, 0.1, step=0.01, key="ml_gb_taux")
+                with m3:
+                    params["profondeurMax"] = st.slider("Profondeur max", 1, 10, 3, key="ml_gb_profondeur")
+
+            elif modele_choisi == "SVM (Support Vector Machine)":
+                with m1:
+                    params["C"] = st.slider("Régularisation (C)", 0.01, 10.0, 1.0, step=0.01, key="ml_svm_c")
+                with m2:
+                    params["kernel"] = st.selectbox("Noyau", ["rbf", "linear", "poly"], key="ml_svm_kernel")
+
+            with m3 if modele_choisi == "Random Forest" else m1:
+                taille_test = st.slider("Taille du jeu de test", 0.1, 0.4, 0.25, step=0.05, key="ml_taille_test")
+
+            if st.button("Entraîner le modèle et prédire", type="primary", key="ml_bouton_entrainer"):
+                try:
+                    rapport = pipeline.entrainerModele(
+                        nomModele=modele_choisi,
+                        parametres=params,
+                        taille_test=taille_test,
+                    )
+                    df_resultat = pipeline.predire()
+                    st.session_state["df_resultat"] = df_resultat
+                    st.session_state["ml_modele_nom"] = modele_choisi
+                    st.session_state["ml_modele_params"] = params
+                    st.session_state["ml_taille_test"] = taille_test
+                    st.session_state["etape_terminee"] = max(st.session_state["etape_terminee"], 4)
+                except ValueError as e:
+                    st.error(str(e))
+
+            if st.session_state["etape_terminee"] >= 4:
+                rapport = pipeline.rapport
+                r1, r2, r3, r4 = st.columns(4)
+                r1.metric("Accuracy", f"{rapport.accuracy * 100:.1f} %")
+                r2.metric("Precision", f"{rapport.precision * 100:.1f} %")
+                r3.metric("Recall", f"{rapport.recall * 100:.1f} %")
+                r4.metric("F1-score", f"{rapport.f1Score * 100:.1f} %")
+
+                st.subheader("Matrice de confusion")
+                st.dataframe(
+                    matrice_confusion_vers_dataframe(rapport.matriceConfusion),
+                    use_container_width=True,
+                )
+
+        # ---- Onglet 2 : Risque par machine (maintenance prédictive) --------
+        with onglet_risque_ml:
+            if pipeline.estSaisieManuelle():
+                st.caption(
+                    "Le score de risque par machine n'est pas disponible pour les "
+                    "données de saisie manuelle de suivi de maintenance."
+                )
+            else:
+                eda = pipeline.analyseEDA
+                df_brut = pipeline.jeuDonnees.dataframe
+                cols_num_dispo = eda.colonnes_numeriques_triees_par_pertinence(df_brut)
+                pareto_num = eda.colonne_temps_arret(df_brut)
+
+                analyse_risque = AnalyseRisqueMachine()
+                colonnes_machine_dispo = analyse_risque.colonnes_machine_candidates(df_brut)
+
+                if not colonnes_machine_dispo:
+                    st.caption(
+                        "Aucune colonne catégorielle exploitable comme identifiant "
+                        "de machine/équipement n'a été détectée dans ce fichier."
+                    )
+                else:
+                    st.caption(
+                        "Classement des machines/équipements par risque, calculé à partir "
+                        "de règles transparentes (fréquence des pannes, durée cumulée "
+                        "d'arrêt, tendance récente, temps depuis la dernière panne). "
+                        "Sélectionne les colonnes ci-dessous si la détection automatique "
+                        "ne correspond pas à ton fichier."
+                    )
+
+                    rc1, rc2, rc3 = st.columns(3)
+                    with rc1:
+                        colonne_machine_choisie = st.selectbox(
+                            "Colonne machine / équipement",
+                            colonnes_machine_dispo,
+                            key="risque_colonne_machine",
+                        )
+                    with rc2:
+                        options_duree = ["(aucune)"] + cols_num_dispo
+                        duree_defaut = pareto_num if pareto_num in cols_num_dispo else "(aucune)"
+                        colonne_duree_choisie = st.selectbox(
+                            "Colonne durée d'arrêt (optionnelle)",
+                            options_duree,
+                            index=options_duree.index(duree_defaut),
+                            key="risque_colonne_duree",
+                        )
+                    with rc3:
+                        options_date = ["(aucune)"] + analyse_risque.colonnes_date_candidates(df_brut)
+                        colonne_date_choisie = st.selectbox(
+                            "Colonne date (active tendance + récence)",
+                            options_date,
+                            key="risque_colonne_date",
+                        )
+
+                    scores_risque = analyse_risque.calculerScores(
+                        df_brut,
+                        colonne_machine=colonne_machine_choisie,
+                        colonne_duree=None if colonne_duree_choisie == "(aucune)" else colonne_duree_choisie,
+                        colonne_date=None if colonne_date_choisie == "(aucune)" else colonne_date_choisie,
+                    )
+
+                    if scores_risque.empty:
+                        st.caption("Pas assez de données pour calculer un score de risque.")
+                        st.session_state.pop("risque_scores_rapport", None)
+                    else:
+                        st.session_state["risque_scores_rapport"] = scores_risque
+                        st.session_state["risque_colonne_machine_rapport"] = colonne_machine_choisie
+
+                        rk1, rk2, rk3 = st.columns(3)
+                        rk1.metric("Machines analysées", len(scores_risque))
+                        rk2.metric(
+                            "Niveau Critique",
+                            int((scores_risque["niveau_risque"] == "Critique").sum()),
+                        )
+                        rk3.metric(
+                            "Niveau Élevé",
+                            int((scores_risque["niveau_risque"] == "Élevé").sum()),
+                        )
+
+                        fig_classement = analyse_risque.graphiqueClassement(scores_risque)
+                        if fig_classement is not None:
+                            st.pyplot(fig_classement, use_container_width=True)
+
+                        st.subheader("Détail par machine")
+                        st.dataframe(scores_risque, hide_index=True, use_container_width=True)
+
+                        st.subheader("Analyse automatique")
+                        st.markdown(analyse_risque.genererResume(scores_risque))
+
+                        if colonne_date_choisie != "(aucune)":
+                            machine_zoom = st.selectbox(
+                                "Voir l'historique détaillé d'une machine",
+                                scores_risque["machine"].tolist(),
+                                key="risque_machine_zoom",
+                            )
+                            fig_zoom = analyse_risque.graphiqueTendanceMachine(
+                                df_brut, colonne_machine_choisie, colonne_date_choisie, machine_zoom,
+                            )
+                            if fig_zoom is not None:
+                                st.pyplot(fig_zoom, use_container_width=True)
+
+                        st.download_button(
+                            "Exporter le score de risque (Excel)",
+                            data=pipeline.exportExcel.genererExcel(
+                                scores_risque, nom_feuille="Risque_Machines"
+                            ),
+                            file_name="Score_Risque_Machines.xlsx",
+                            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                            use_container_width=True,
+                            key="risque_download_excel",
+                        )
 
 # --------------------------------------------------------------------------
 # 5. EXPORT DU RESULTAT
@@ -1223,8 +1347,10 @@ elif page_num == 5:
 
         st.subheader("2. Analyse PDF")
         st.markdown(
-            "Le PDF contient l'analyse structurée du fichier Excel : statistiques descriptives, "
-            "valeurs manquantes, agrégations et visualisations."
+            "Le PDF contient un rapport structuré complet : les résultats du Machine Learning "
+            "(métriques du modèle, hyperparamètres, matrice de confusion, score de risque par "
+            "machine), puis l'analyse exploratoire du fichier (statistiques descriptives, "
+            "valeurs manquantes, agrégations et visualisations)."
         )
 
         eda = pipeline.analyseEDA
@@ -1241,6 +1367,51 @@ elif page_num == 5:
 
         analyses = {}
         figures = {}
+
+        # ------------------------------------------------------------
+        # Section Machine Learning : résultats du modèle entraîné
+        # (métriques + matrice de confusion), puis score de risque par
+        # machine — les deux étant désormais regroupés dans l'étape
+        # Machine Learning de l'application.
+        # ------------------------------------------------------------
+        try:
+            rapport_ml = pipeline.rapport
+            if rapport_ml is not None:
+                metriques_df = pd.DataFrame(
+                    [
+                        {"Métrique": "Modèle utilisé", "Valeur": st.session_state.get("ml_modele_nom", "N/A")},
+                        {"Métrique": "Accuracy", "Valeur": f"{rapport_ml.accuracy * 100:.1f} %"},
+                        {"Métrique": "Precision", "Valeur": f"{rapport_ml.precision * 100:.1f} %"},
+                        {"Métrique": "Recall", "Valeur": f"{rapport_ml.recall * 100:.1f} %"},
+                        {"Métrique": "F1-score", "Valeur": f"{rapport_ml.f1Score * 100:.1f} %"},
+                        {"Métrique": "Taille du jeu de test", "Valeur": f"{st.session_state.get('ml_taille_test', 'N/A')}"},
+                    ]
+                )
+                analyses["Machine Learning - Résultats du modèle"] = metriques_df
+
+                params_ml = st.session_state.get("ml_modele_params") or {}
+                if params_ml:
+                    params_df = pd.DataFrame(
+                        [{"Paramètre": cle, "Valeur": val} for cle, val in params_ml.items()]
+                    )
+                    analyses["Machine Learning - Hyperparamètres"] = params_df
+
+                analyses["Machine Learning - Matrice de confusion"] = matrice_confusion_vers_dataframe(
+                    rapport_ml.matriceConfusion
+                )
+        except Exception:
+            pass
+
+        try:
+            scores_risque_rapport = st.session_state.get("risque_scores_rapport")
+            if scores_risque_rapport is not None and not scores_risque_rapport.empty:
+                analyses["Machine Learning - Risque par machine"] = scores_risque_rapport
+                analyse_risque_export = AnalyseRisqueMachine()
+                fig_risque_classement = analyse_risque_export.graphiqueClassement(scores_risque_rapport)
+                if fig_risque_classement is not None:
+                    figures["Classement des machines par risque"] = fig_risque_classement
+        except Exception:
+            pass
 
         try:
             stats_df = pd.DataFrame([s.__dict__ for s in eda.statistiques])
@@ -1296,6 +1467,10 @@ elif page_num == 5:
             "Nb utiles": str(len(df_utile)),
             "Nb non utiles": str(len(df_non_utile)),
             "Fichier source": pipeline.fichierExcel.nom if pipeline.fichierExcel else "Saisie manuelle",
+            "Modèle Machine Learning": str(st.session_state.get("ml_modele_nom", "N/A")),
+            "Accuracy du modèle": (
+                f"{pipeline.rapport.accuracy * 100:.1f} %" if pipeline.rapport is not None else "N/A"
+            ),
         }
         pdf_bytes = pipeline.exportExcel.genererRapportPDF(
             analyses=analyses,
