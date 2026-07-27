@@ -17,6 +17,8 @@ from sklearn.metrics import (
     f1_score,
     precision_score,
     recall_score,
+    roc_auc_score,
+    roc_curve,
 )
 
 from models.logger import get_logger
@@ -30,10 +32,18 @@ class RapportEvaluation:
     precision: float = 0.0
     recall: float = 0.0
     f1Score: float = 0.0
+    rocAuc: float = 0.0
     matriceConfusion: np.ndarray = field(default_factory=lambda: np.zeros((2, 2)))
+    rocFpr: np.ndarray = field(default_factory=lambda: np.array([]))
+    rocTpr: np.ndarray = field(default_factory=lambda: np.array([]))
+    crossValScores: dict[str, float] = field(default_factory=dict)
 
     def calculerMetriques(
-        self, y_reel: np.ndarray, y_predit: np.ndarray, labels: list[int] | None = None
+        self,
+        y_reel: np.ndarray,
+        y_predit: np.ndarray,
+        labels: list[int] | None = None,
+        y_score: np.ndarray | None = None,
     ) -> "RapportEvaluation":
         """Calcule les métriques. `average='weighted'` fonctionne aussi bien
         pour une cible binaire (Non_utile/Utile) que pour un cas à N classes
@@ -50,9 +60,22 @@ class RapportEvaluation:
             f1_score(y_reel, y_predit, average="weighted", zero_division=0)
         )
         self.matriceConfusion = confusion_matrix(y_reel, y_predit, labels=labels)
+
+        self.rocAuc = 0.0
+        self.rocFpr = np.array([])
+        self.rocTpr = np.array([])
+        if y_score is not None and len(np.unique(y_reel)) == 2:
+            try:
+                self.rocAuc = float(roc_auc_score(y_reel, y_score))
+                self.rocFpr, self.rocTpr, _ = roc_curve(y_reel, y_score)
+            except Exception:
+                self.rocAuc = 0.0
+                self.rocFpr = np.array([])
+                self.rocTpr = np.array([])
+
         logger.info(
-            "Évaluation : accuracy=%.3f precision=%.3f recall=%.3f f1=%.3f",
-            self.accuracy, self.precision, self.recall, self.f1Score,
+            "Évaluation : accuracy=%.3f precision=%.3f recall=%.3f f1=%.3f roc_auc=%.3f",
+            self.accuracy, self.precision, self.recall, self.f1Score, self.rocAuc,
         )
         return self
 
@@ -63,6 +86,7 @@ class RapportEvaluation:
             f"Precision : {self.precision:.3f}\n"
             f"Recall    : {self.recall:.3f}\n"
             f"F1-score  : {self.f1Score:.3f}\n"
+            f"AUC ROC   : {self.rocAuc:.3f}\n"
             f"Matrice de confusion :\n{self.matriceConfusion}"
         )
 
@@ -72,4 +96,5 @@ class RapportEvaluation:
             "precision": self.precision,
             "recall": self.recall,
             "f1Score": self.f1Score,
+            "rocAuc": self.rocAuc,
         }

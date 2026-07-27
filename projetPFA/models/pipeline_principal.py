@@ -18,7 +18,7 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 import pandas as pd
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import StratifiedKFold, cross_validate, train_test_split
 
 from config import COLONNE_CIBLE, COLONNES_OBLIGATOIRES, TAILLE_TEST_DEFAUT
 from models.analyse_eda import AnalyseEDA
@@ -87,6 +87,15 @@ class PipelinePrincipal:
     modele: Optional[ModeleML] = None
     rapport: Optional[RapportEvaluation] = None
     exportExcel: ExportExcel = field(default_factory=ExportExcel)
+
+    def __post_init__(self) -> None:
+        if self.exportExcel is None:
+            self.exportExcel = ExportExcel()
+
+    def __setstate__(self, state: dict) -> None:
+        self.__dict__.update(state)
+        if getattr(self, "exportExcel", None) is None:
+            self.exportExcel = ExportExcel()
 
     # état interne conservé entre les étapes
     _jeu_brut: Optional[JeuDonnees] = field(default=None, repr=False)
@@ -281,9 +290,49 @@ class PipelinePrincipal:
         self.modele.entrainer(X_train, y_train)
 
         y_pred_test = self.modele.predire(X_test)
+        y_score = None
+        try:
+            y_score = self.modele.predireProbabilite(X_test)[:, 1]
+        except Exception:
+            y_score = None
+
         self.rapport = RapportEvaluation().calculerMetriques(
-            y_test, y_pred_test, labels=list(range(len(CLASSES_UTILITE)))
+            y_test,
+            y_pred_test,
+            labels=list(range(len(CLASSES_UTILITE))),
+            y_score=y_score,
         )
+
+        # Validation croisée si l'échantillon est suffisant.
+        try:
+            min_labels = y.value_counts().min()
+            n_splits = min(5, min_labels) if min_labels >= 2 else 0
+            if n_splits >= 2 and len(X) >= 10:
+                cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=randomState)
+                scoring = [
+                    "accuracy",
+                    "precision_weighted",
+                    "recall_weighted",
+                    "f1_weighted",
+                    "roc_auc",
+                ]
+                results = cross_validate(
+                    self.modele,
+                    X,
+                    y,
+                    cv=cv,
+                    scoring=scoring,
+                    n_jobs=-1,
+                    error_score="raise",
+                )
+                self.rapport.crossValScores = {
+                    metric: float(results[f"test_{metric}"].mean())
+                    for metric in scoring
+                    if f"test_{metric}" in results
+                }
+        except Exception:
+            self.rapport.crossValScores = {}
+
         return self.rapport
 
     def predire(self) -> pd.DataFrame:

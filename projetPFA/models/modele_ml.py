@@ -173,6 +173,7 @@ class ModeleML(ABC):
 class RandomForestClassifierModel(ModeleML):
     nombreArbres: int = RF_NB_ARBRES_DEFAUT
     profondeurMax: Optional[int] = RF_PROFONDEUR_MAX_DEFAUT
+    class_weight: str | None = "balanced"
     randomState: int = RF_RANDOM_STATE_DEFAUT
     _feature_names: list[str] = field(default_factory=list, repr=False)
 
@@ -181,6 +182,7 @@ class RandomForestClassifierModel(ModeleML):
         self.modele = RandomForestClassifier(
             n_estimators=self.nombreArbres,
             max_depth=self.profondeurMax,
+            class_weight=self.class_weight,
             random_state=self.randomState,
         )
 
@@ -210,13 +212,17 @@ class RandomForestClassifierModel(ModeleML):
 class RegressionLogistiqueModel(ModeleML):
     C: float = 1.0
     maxIter: int = 500
+    class_weight: str | None = "balanced"
     randomState: int = RF_RANDOM_STATE_DEFAUT
     _feature_names: list[str] = field(default_factory=list, repr=False)
 
     def __post_init__(self) -> None:
         ModeleML.__init__(self)
         self.modele = LogisticRegression(
-            C=self.C, max_iter=self.maxIter, random_state=self.randomState
+            C=self.C,
+            max_iter=self.maxIter,
+            class_weight=self.class_weight,
+            random_state=self.randomState,
         )
 
     def entrainer(self, X: pd.DataFrame, y: pd.Series) -> None:
@@ -280,13 +286,18 @@ class GradientBoostingModel(ModeleML):
 class SVMModel(ModeleML):
     C: float = 1.0
     kernel: str = "rbf"
+    class_weight: str | None = "balanced"
     randomState: int = RF_RANDOM_STATE_DEFAUT
     _feature_names: list[str] = field(default_factory=list, repr=False)
 
     def __post_init__(self) -> None:
         ModeleML.__init__(self)
         self.modele = SVC(
-            C=self.C, kernel=self.kernel, probability=True, random_state=self.randomState
+            C=self.C,
+            kernel=self.kernel,
+            probability=True,
+            class_weight=self.class_weight,
+            random_state=self.randomState,
         )
 
     def entrainer(self, X: pd.DataFrame, y: pd.Series) -> None:
