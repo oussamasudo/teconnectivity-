@@ -415,17 +415,24 @@ class ExportExcel:
                 ax.axis("off")
                 fig.suptitle(nom, fontsize=18, y=0.95, weight="bold")
 
+                col_count = len(df_disp.columns)
+                col_width = min(0.18, max(0.05, 0.9 / max(1, col_count)))
                 table = ax.table(
                     cellText=df_disp.fillna("").astype(str).values,
                     colLabels=df_disp.columns,
                     loc="center",
-                    cellLoc="center",
-                    colColours=["#F2E4D5"] * len(df_disp.columns),
+                    cellLoc="left",
+                    colWidths=[col_width] * col_count,
+                    colColours=["#F2E4D5"] * col_count,
                     cellColours=[["#FFFFFF" if i % 2 == 0 else "#FBF6F0" for _ in df_disp.columns] for i in range(len(df_disp))],
                 )
                 table.auto_set_font_size(False)
-                table.set_fontsize(9)
-                table.scale(1, 1.2)
+                table.set_fontsize(8)
+                table.scale(1, 1.3)
+                try:
+                    table.auto_set_column_width(col=list(range(col_count)))
+                except Exception:
+                    pass
 
                 note = ""
                 if not affiche_full:
