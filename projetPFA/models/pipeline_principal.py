@@ -212,31 +212,49 @@ class PipelinePrincipal:
         self._labels = labels_brutes.loc[self._jeu_nettoye.dataframe.index]
 
         # 4) Transformation ML (normalisation/standardisation + encodage),
-        #    calculée à partir du jeu nettoyé (mêmes index). Les colonnes de
-        #    texte libre (détectées génériquement, cf. plus haut) en sont
-        #    exclues : elles restent dans le jeu "lisible" pour l'export.
+        #    calculée à partir du jeu nettoyé (mêmes index).
+        #
+        #    Deux catégories de colonnes sont candidates à l'exclusion :
+        #      - texte libre (commentaires, identifiants quasi uniques...) :
+        #        un encodage One-Hot les ferait exploser sans valeur prédictive ;
+        #      - anti-fuite (uniquement si la cible vient des règles
+        #        génériques) : la colonne qui a servi à détecter une
+        #        "valeur_aberrante" (IQR) reste, à ce stade, identique à sa
+        #        valeur brute. La laisser dans les features permettrait au
+        #        modèle de reconstruire la règle en reseuillant simplement
+        #        cette colonne (accuracy/AUC ~100%, importance écrasée
+        #        dessus), au lieu d'apprendre à généraliser à partir des
+        #        AUTRES caractéristiques de la ligne (cf. docstring de
+        #        generer_labels_utilite).
+        #
+        #    Les deux catégories sont évaluées ENSEMBLE : sur un fichier
+        #    pauvre en colonnes (ex. un seul identifiant texte + une seule
+        #    colonne numérique aberrante), les exclure viderait entièrement
+        #    le jeu de features et ferait planter l'entraînement (sklearn ne
+        #    peut rien apprendre sans aucune colonne). Dans ce cas on
+        #    renonce à TOUTE exclusion plutôt que de laisser un jeu vide :
+        #    mieux vaut un modèle avec un risque de fuite qu'un pipeline
+        #    cassé. Les colonnes exclues restent de toute façon visibles
+        #    dans le jeu "lisible" exporté pour l'utilisateur.
         jeu_features = self._jeu_nettoye.copie()
-        self._colonnes_texte_libre = detecter_colonnes_texte_libre(jeu_features.dataframe)
-        for col in self._colonnes_texte_libre:
-            jeu_features.supprimerColonne(col)
-
-        # Anti-fuite : quand la cible vient des règles génériques, la colonne
-        # qui a servi à détecter une "valeur_aberrante" (IQR) reste, à ce
-        # stade, identique à sa valeur brute dans le jeu nettoyé. La laisser
-        # dans les features permettrait au modèle de reconstruire la règle en
-        # reseuillant simplement cette colonne (accuracy/AUC ~100%, toute
-        # l'importance concentrée dessus), au lieu d'apprendre à généraliser
-        # à partir des AUTRES caractéristiques de la ligne — ce qui est
-        # l'objectif du modèle (cf. docstring de generer_labels_utilite). On
-        # l'exclut donc des features d'entraînement ; elle reste néanmoins
-        # visible dans le jeu "lisible" exporté pour l'utilisateur.
-        self._colonnes_exclues_fuite = (
+        colonnes_texte_libre = detecter_colonnes_texte_libre(jeu_features.dataframe)
+        candidats_fuite = (
             self.rapport_regles.get("colonnes_aberrantes", [])
             if self.source_cible == "regles_generiques"
             else []
         )
-        for col in self._colonnes_exclues_fuite:
-            jeu_features.supprimerColonne(col)
+        a_exclure = list(dict.fromkeys(colonnes_texte_libre + candidats_fuite))
+        colonnes_restantes = [
+            c for c in jeu_features.dataframe.columns if c not in a_exclure
+        ]
+        if colonnes_restantes:
+            self._colonnes_texte_libre = colonnes_texte_libre
+            self._colonnes_exclues_fuite = candidats_fuite
+            for col in a_exclure:
+                jeu_features.supprimerColonne(col)
+        else:
+            self._colonnes_texte_libre = []
+            self._colonnes_exclues_fuite = []
 
         colonnes_num = list(jeu_features.dataframe.select_dtypes(include="number").columns)
         if self.pretraitement.methodeNormalisation == "minmax":
@@ -273,6 +291,14 @@ class PipelinePrincipal:
         X = construire_features(self._jeu_pretraite.dataframe)
         y = self._labels.reset_index(drop=True)
         X = X.reset_index(drop=True)
+
+        if X.shape[1] == 0:
+            raise ValueError(
+                "Impossible d'entraîner un modèle : ce fichier ne contient aucune "
+                "colonne numérique ou catégorielle exploitable après le prétraitement "
+                "(uniquement des identifiants/texte libre). Ajoute au moins une colonne "
+                "numérique ou catégorielle pertinente pour pouvoir entraîner un modèle."
+            )
 
         if y.nunique() < 2:
             seule_classe = utilite_vers_texte(pd.Series([y.iloc[0]])).iloc[0]

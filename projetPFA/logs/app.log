@@ -1165,3 +1165,236 @@
 2026-07-27 13:35:26 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 1 features
 2026-07-27 13:35:27 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
 2026-07-27 13:35:27 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 20:46:39 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-07-27 20:46:39 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-07-27 20:46:42 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (42 lignes, 2 colonnes)
+2026-07-27 20:46:42 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 2 colonnes
+2026-07-27 20:46:47 | INFO     | models.analyse_eda | EDA : 1 colonnes numériques analysées
+2026-07-27 20:48:10 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38}
+2026-07-27 20:48:10 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-27 20:48:10 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-27 20:48:37 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 20:48:42 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 20:49:11 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 1 features
+2026-07-27 20:49:12 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-27 20:51:53 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 20:51:57 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 1 features
+2026-07-27 20:51:57 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-27 20:51:57 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 20:52:00 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 20:52:02 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 1 features
+2026-07-27 20:52:02 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-27 20:52:02 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 20:52:04 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 1 features
+2026-07-27 20:52:04 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-27 20:52:04 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 20:52:13 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 20:52:20 | INFO     | models.modele_ml | LogisticRegression entraîné : 1 features
+2026-07-27 20:52:20 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-27 20:52:20 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:00:41 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-07-27 21:00:41 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-07-27 21:00:44 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (42 lignes, 2 colonnes)
+2026-07-27 21:00:44 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 2 colonnes
+2026-07-27 21:00:46 | INFO     | models.analyse_eda | EDA : 1 colonnes numériques analysées
+2026-07-27 21:00:57 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38}
+2026-07-27 21:00:57 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-27 21:00:57 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-27 21:01:02 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:01:05 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 1 features
+2026-07-27 21:01:05 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-27 21:01:06 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:01:09 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:07:58 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test.xlsx (59 lignes, 5 colonnes)
+2026-07-27 21:07:58 | INFO     | models.fichier_excel | JeuDonnees créé : 59 lignes, 5 colonnes
+2026-07-27 21:07:58 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-27 21:07:58 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 10, 'doublon': 4, 'valeur_aberrante': 0, 'non_utile_total': 11, 'utile_total': 48, 'colonnes_aberrantes': []}
+2026-07-27 21:07:58 | INFO     | models.pretraitement | Doublons supprimés : 4
+2026-07-27 21:07:58 | INFO     | models.pretraitement | Valeurs manquantes imputées : 28
+2026-07-27 21:07:58 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-27 21:07:58 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-27 21:07:58 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test.xlsx (48 lignes utiles)
+2026-07-27 21:07:58 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_Realiste.xlsx (92 lignes, 5 colonnes)
+2026-07-27 21:07:58 | INFO     | models.fichier_excel | JeuDonnees créé : 92 lignes, 5 colonnes
+2026-07-27 21:07:58 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-27 21:07:58 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 12, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 14, 'utile_total': 78, 'colonnes_aberrantes': []}
+2026-07-27 21:07:58 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-27 21:07:58 | INFO     | models.pretraitement | Valeurs manquantes imputées : 48
+2026-07-27 21:07:58 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-27 21:07:58 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.957 precision=0.967 recall=0.957 f1=0.959 roc_auc=1.000
+2026-07-27 21:07:58 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test_Realiste.xlsx (77 lignes utiles)
+2026-07-27 21:07:58 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_Realiste_2.xlsx (157 lignes, 5 colonnes)
+2026-07-27 21:07:58 | INFO     | models.fichier_excel | JeuDonnees créé : 157 lignes, 5 colonnes
+2026-07-27 21:07:58 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-27 21:07:58 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 22, 'doublon': 5, 'valeur_aberrante': 0, 'non_utile_total': 27, 'utile_total': 130, 'colonnes_aberrantes': []}
+2026-07-27 21:07:58 | INFO     | models.pretraitement | Doublons supprimés : 5
+2026-07-27 21:07:58 | INFO     | models.pretraitement | Valeurs manquantes imputées : 77
+2026-07-27 21:07:59 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-27 21:07:59 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-27 21:07:59 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test_Realiste_2.xlsx (130 lignes utiles)
+2026-07-27 21:07:59 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test_NonOrganise.xlsx (72 lignes, 12 colonnes)
+2026-07-27 21:07:59 | INFO     | models.fichier_excel | JeuDonnees créé : 72 lignes, 12 colonnes
+2026-07-27 21:07:59 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-27 21:07:59 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 70, 'colonnes_aberrantes': []}
+2026-07-27 21:07:59 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-27 21:07:59 | INFO     | models.pretraitement | Valeurs manquantes imputées : 142
+2026-07-27 21:07:59 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 31 features
+2026-07-27 21:07:59 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.944 precision=1.000 recall=0.944 f1=0.971 roc_auc=0.000
+2026-07-27 21:07:59 | INFO     | models.export_excel | Fichier nettoyé exporté : outputs\test_Machines_Test_NonOrganise.xlsx (69 lignes utiles)
+2026-07-27 21:08:31 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:08:42 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-07-27 21:08:42 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-07-27 21:08:50 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (42 lignes, 2 colonnes)
+2026-07-27 21:08:50 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 2 colonnes
+2026-07-27 21:08:58 | INFO     | models.analyse_eda | EDA : 1 colonnes numériques analysées
+2026-07-27 21:09:10 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38}
+2026-07-27 21:09:10 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-27 21:09:10 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-27 21:09:13 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-07-27 21:09:13 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-07-27 21:09:18 | INFO     | models.fichier_excel | Fichier chargé : Rapport_Analyse_Structure.xlsx (4 lignes, 2 colonnes)
+2026-07-27 21:09:18 | INFO     | models.fichier_excel | JeuDonnees créé : 4 lignes, 2 colonnes
+2026-07-27 21:09:47 | INFO     | models.fichier_excel | Fichier chargé : Maintenacne record & downtime 2025 Daily_Update - Copy.xlsx (198 lignes, 109 colonnes)
+2026-07-27 21:09:47 | INFO     | models.fichier_excel | JeuDonnees créé : 198 lignes, 109 colonnes
+2026-07-27 21:09:50 | INFO     | models.fichier_excel | Fichier chargé : Maintenacne record & downtime 2025 Daily_Update - Copy.xlsx (470 lignes, 18 colonnes)
+2026-07-27 21:09:50 | INFO     | models.fichier_excel | JeuDonnees créé : 470 lignes, 18 colonnes
+2026-07-27 21:10:09 | INFO     | models.analyse_eda | EDA : 4 colonnes numériques analysées
+2026-07-27 21:10:33 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 100, 'doublon': 1, 'valeur_aberrante': 53, 'non_utile_total': 153, 'utile_total': 317}
+2026-07-27 21:10:33 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-27 21:10:34 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1846
+2026-07-27 21:10:38 | INFO     | models.risque_machine | Score de risque calculé pour 4 machine(s).
+2026-07-27 21:10:41 | INFO     | models.risque_machine | Score de risque calculé pour 4 machine(s).
+2026-07-27 21:10:42 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 575 features
+2026-07-27 21:10:43 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.975 precision=0.975 recall=0.975 f1=0.974 roc_auc=0.998
+2026-07-27 21:10:43 | INFO     | models.risque_machine | Score de risque calculé pour 4 machine(s).
+2026-07-27 21:12:33 | INFO     | models.risque_machine | Score de risque calculé pour 4 machine(s).
+2026-07-27 21:19:44 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (227 lignes, 12 colonnes)
+2026-07-27 21:19:44 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-27 21:19:46 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (42 lignes, 3 colonnes)
+2026-07-27 21:19:46 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-27 21:19:50 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-27 21:19:58 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38, 'colonnes_aberrantes': ["Sum of Durée de l'Arrêt\n(min)", '%']}
+2026-07-27 21:19:58 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-27 21:19:58 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-27 21:20:23 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:20:27 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:20:28 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:20:52 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:20:54 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:24:46 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:24:48 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:24:51 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:24:54 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:24:59 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:25:00 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:25:00 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:27:20 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (test) : 40 lignes, 3 colonnes
+2026-07-27 21:27:20 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-27 21:27:20 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 3, 'non_utile_total': 3, 'utile_total': 37, 'colonnes_aberrantes': ['Sum of Duree de l Arret (min)']}
+2026-07-27 21:27:20 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-27 21:27:20 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-27 21:27:34 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (test) : 40 lignes, 3 colonnes
+2026-07-27 21:27:34 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-27 21:27:34 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 3, 'non_utile_total': 3, 'utile_total': 37, 'colonnes_aberrantes': ['Sum of Duree de l Arret (min)', '%']}
+2026-07-27 21:27:34 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-27 21:27:34 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-27 21:29:13 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (test) : 40 lignes, 2 colonnes
+2026-07-27 21:29:13 | INFO     | models.analyse_eda | EDA : 1 colonnes numériques analysées
+2026-07-27 21:29:13 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 3, 'non_utile_total': 3, 'utile_total': 37, 'colonnes_aberrantes': ['Sum of Duree de l Arret (min)']}
+2026-07-27 21:29:13 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-27 21:29:13 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-27 21:29:14 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 41 features
+2026-07-27 21:29:14 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-27 21:29:34 | INFO     | models.pipeline_principal | Jeu de données créé depuis une saisie manuelle (test) : 20 lignes, 1 colonnes
+2026-07-27 21:29:34 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-07-27 21:29:34 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 20, 'colonnes_aberrantes': []}
+2026-07-27 21:29:34 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-27 21:29:34 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-27 21:29:56 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:29:58 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:30:03 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (227 lignes, 12 colonnes)
+2026-07-27 21:30:03 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-27 21:30:06 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (42 lignes, 3 colonnes)
+2026-07-27 21:30:06 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-27 21:30:09 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-27 21:30:12 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38, 'colonnes_aberrantes': ["Sum of Durée de l'Arrêt\n(min)", '%']}
+2026-07-27 21:30:12 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-27 21:30:12 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-27 21:30:15 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:30:16 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:30:52 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (227 lignes, 12 colonnes)
+2026-07-27 21:30:52 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-27 21:30:55 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (42 lignes, 3 colonnes)
+2026-07-27 21:30:55 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-27 21:30:59 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-27 21:31:08 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38, 'colonnes_aberrantes': ["Sum of Durée de l'Arrêt\n(min)", '%']}
+2026-07-27 21:31:08 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-27 21:31:08 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-27 21:31:15 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:31:21 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 44 features
+2026-07-27 21:31:21 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-27 21:31:22 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:31:24 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:31:26 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 44 features
+2026-07-27 21:31:26 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-27 21:31:27 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:31:28 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 44 features
+2026-07-27 21:31:28 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-27 21:31:29 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:31:45 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:31:45 | INFO     | models.modele_ml | SVC entraîné : noyau=rbf, 44 features
+2026-07-27 21:31:45 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-27 21:31:46 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:31:47 | INFO     | models.modele_ml | SVC entraîné : noyau=rbf, 44 features
+2026-07-27 21:31:47 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-27 21:31:49 | INFO     | models.modele_ml | SVC entraîné : noyau=rbf, 44 features
+2026-07-27 21:31:49 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-27 21:31:49 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:32:03 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (227 lignes, 12 colonnes)
+2026-07-27 21:32:03 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-27 21:32:13 | INFO     | models.fichier_excel | Fichier chargé : Maintenacne record & downtime 2025 Daily_Update - Copy.xlsx (198 lignes, 109 colonnes)
+2026-07-27 21:32:13 | INFO     | models.fichier_excel | JeuDonnees créé : 198 lignes, 109 colonnes
+2026-07-27 21:32:24 | INFO     | models.fichier_excel | Fichier chargé : Maintenacne record & downtime 2025 Daily_Update - Copy.xlsx (222 lignes, 361 colonnes)
+2026-07-27 21:32:24 | INFO     | models.fichier_excel | JeuDonnees créé : 222 lignes, 361 colonnes
+2026-07-27 21:32:36 | INFO     | models.fichier_excel | Fichier chargé : Maintenacne record & downtime 2025 Daily_Update - Copy.xlsx (368 lignes, 14 colonnes)
+2026-07-27 21:32:36 | INFO     | models.fichier_excel | JeuDonnees créé : 368 lignes, 14 colonnes
+2026-07-27 21:32:38 | INFO     | models.fichier_excel | Fichier chargé : Maintenacne record & downtime 2025 Daily_Update - Copy.xlsx (198 lignes, 109 colonnes)
+2026-07-27 21:32:38 | INFO     | models.fichier_excel | JeuDonnees créé : 198 lignes, 109 colonnes
+2026-07-27 21:32:40 | INFO     | models.fichier_excel | Fichier chargé : Maintenacne record & downtime 2025 Daily_Update - Copy.xlsx (368 lignes, 14 colonnes)
+2026-07-27 21:32:40 | INFO     | models.fichier_excel | JeuDonnees créé : 368 lignes, 14 colonnes
+2026-07-27 21:32:45 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (227 lignes, 12 colonnes)
+2026-07-27 21:32:45 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-27 21:32:48 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (42 lignes, 3 colonnes)
+2026-07-27 21:32:48 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-27 21:32:54 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-27 21:33:15 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38, 'colonnes_aberrantes': ["Sum of Durée de l'Arrêt\n(min)", '%']}
+2026-07-27 21:33:15 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-27 21:33:15 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-27 21:33:18 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:33:22 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 44 features
+2026-07-27 21:33:22 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-27 21:33:22 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-27 21:33:23 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 09:41:54 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-07-29 09:41:54 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-07-29 09:41:57 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (42 lignes, 3 colonnes)
+2026-07-29 09:41:57 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-29 09:42:03 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-29 09:42:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38, 'colonnes_aberrantes': ["Sum of Durée de l'Arrêt\n(min)", '%']}
+2026-07-29 09:42:31 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 09:42:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 09:42:39 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 09:42:44 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 44 features
+2026-07-29 09:42:44 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 09:42:45 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 09:42:46 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 44 features
+2026-07-29 09:42:46 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 09:42:47 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 09:42:49 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 09:42:52 | INFO     | models.modele_ml | LogisticRegression entraîné : 44 features
+2026-07-29 09:42:52 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 09:42:52 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 09:43:22 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 09:43:24 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 44 features
+2026-07-29 09:43:24 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 09:43:25 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
