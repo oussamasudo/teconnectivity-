@@ -45,7 +45,7 @@ from models.export_excel import ExportExcel
 from models.fichier_excel import FichierExcel, FichierExcelError
 from models.pipeline_principal import PipelinePrincipal
 from models.pretraitement import Pretraitement
-from models.risque_machine import AnalyseRisqueMachine
+from models.risque_machine import PredicteurPanneMachine
 from models.tableau_maintenance import COLONNE_TYPE, MOIS_ANNEE, TableauMaintenance, dataframe_vide
 from utils.file_utils import sauvegarder_upload_temporaire
 from utils.metrics import matrice_confusion_vers_dataframe
@@ -1136,7 +1136,7 @@ elif page_num == 4:
         )
     else:
         onglet_entrainement, onglet_risque_ml = st.tabs(
-            ["Entraînement & Prédiction", "Risque par machine"]
+            ["Entraînement & Prédiction", "Prédiction de panne par machine"]
         )
 
         # ---- Onglet 1 : Entraînement du modèle + prédiction ----------------
@@ -1227,117 +1227,231 @@ elif page_num == 4:
                     )
                     st.pyplot(fig_cv, use_container_width=True)
 
-        # ---- Onglet 2 : Risque par machine (maintenance prédictive) --------
+        # ---- Onglet 2 : Prédiction de panne par machine (maintenance prédictive) ----
         with onglet_risque_ml:
             if pipeline.estSaisieManuelle():
                 st.caption(
-                    "Le score de risque par machine n'est pas disponible pour les "
-                    "données de saisie manuelle de suivi de maintenance."
+                    "La prédiction de panne par machine n'est pas disponible pour "
+                    "les données de saisie manuelle de suivi de maintenance."
                 )
             else:
-                eda = pipeline.analyseEDA
                 df_brut = pipeline.jeuDonnees.dataframe
+                eda = pipeline.analyseEDA
                 cols_num_dispo = eda.colonnes_numeriques_triees_par_pertinence(df_brut)
                 pareto_num = eda.colonne_temps_arret(df_brut)
 
-                analyse_risque = AnalyseRisqueMachine()
-                colonnes_machine_dispo = analyse_risque.colonnes_machine_candidates(df_brut)
+                predicteur = PredicteurPanneMachine()
+                colonnes_machine_dispo = predicteur.colonnes_machine_candidates(df_brut)
+                colonnes_date_dispo = predicteur.colonnes_date_candidates(df_brut)
+                colonnes_usage_dispo = predicteur.colonnes_compteur_usage_candidates(df_brut)
+                colonnes_taux_dispo = predicteur.colonnes_taux_risque_candidates(df_brut)
+
+                methodes_dispo = []
+                if colonnes_date_dispo:
+                    methodes_dispo.append("Modèle prédictif (historique daté de pannes)")
+                if colonnes_usage_dispo and colonnes_taux_dispo:
+                    methodes_dispo.append("Estimation par formule (compteur d'usage + taux de risque)")
 
                 if not colonnes_machine_dispo:
                     st.caption(
                         "Aucune colonne catégorielle exploitable comme identifiant "
                         "de machine/équipement n'a été détectée dans ce fichier."
                     )
-                else:
+                elif not methodes_dispo:
                     st.caption(
-                        "Classement des machines/équipements par risque, calculé à partir "
-                        "de règles transparentes (fréquence des pannes, durée cumulée "
-                        "d'arrêt, tendance récente, temps depuis la dernière panne). "
-                        "Sélectionne les colonnes ci-dessous si la détection automatique "
-                        "ne correspond pas à ton fichier."
+                        "Ni historique daté de pannes, ni colonnes compteur d'usage "
+                        "+ taux de risque/défaut n'ont été détectés dans ce fichier : "
+                        "impossible d'estimer un délai avant panne."
                     )
-
-                    rc1, rc2, rc3 = st.columns(3)
-                    with rc1:
-                        colonne_machine_choisie = st.selectbox(
-                            "Colonne machine / équipement",
-                            colonnes_machine_dispo,
-                            key="risque_colonne_machine",
+                else:
+                    if len(methodes_dispo) > 1:
+                        methode_choisie = st.radio(
+                            "Méthode d'estimation", methodes_dispo,
+                            horizontal=True, key="risque_methode_choisie",
                         )
-                    with rc2:
-                        options_duree = ["(aucune)"] + cols_num_dispo
-                        duree_defaut = pareto_num if pareto_num in cols_num_dispo else "(aucune)"
-                        colonne_duree_choisie = st.selectbox(
-                            "Colonne durée d'arrêt (optionnelle)",
-                            options_duree,
-                            index=options_duree.index(duree_defaut),
-                            key="risque_colonne_duree",
-                        )
-                    with rc3:
-                        options_date = ["(aucune)"] + analyse_risque.colonnes_date_candidates(df_brut)
-                        colonne_date_choisie = st.selectbox(
-                            "Colonne date (active tendance + récence)",
-                            options_date,
-                            key="risque_colonne_date",
-                        )
-
-                    scores_risque = analyse_risque.calculerScores(
-                        df_brut,
-                        colonne_machine=colonne_machine_choisie,
-                        colonne_duree=None if colonne_duree_choisie == "(aucune)" else colonne_duree_choisie,
-                        colonne_date=None if colonne_date_choisie == "(aucune)" else colonne_date_choisie,
-                    )
-
-                    if scores_risque.empty:
-                        st.caption("Pas assez de données pour calculer un score de risque.")
-                        st.session_state.pop("risque_scores_rapport", None)
                     else:
-                        st.session_state["risque_scores_rapport"] = scores_risque
-                        st.session_state["risque_colonne_machine_rapport"] = colonne_machine_choisie
+                        methode_choisie = methodes_dispo[0]
+                        st.caption(f"Méthode disponible pour ce fichier : {methode_choisie}.")
 
-                        rk1, rk2, rk3 = st.columns(3)
-                        rk1.metric("Machines analysées", len(scores_risque))
-                        rk2.metric(
-                            "Niveau Critique",
-                            int((scores_risque["niveau_risque"] == "Critique").sum()),
+                    # ---- Méthode 1 : modèle prédictif appris (historique daté) ----
+                    if methode_choisie.startswith("Modèle prédictif"):
+                        st.caption(
+                            "Modèle prédictif (un seul modèle, entraîné sur l'historique "
+                            "des intervalles réels entre pannes de toutes les machines "
+                            "confondues) estimant, pour CHAQUE machine du fichier, la durée "
+                            "prévue avant sa prochaine panne (en jours), ainsi que la "
+                            "probabilité que cette panne soit imminente."
                         )
-                        rk3.metric(
-                            "Niveau Élevé",
-                            int((scores_risque["niveau_risque"] == "Élevé").sum()),
+                        rc1, rc2, rc3 = st.columns(3)
+                        with rc1:
+                            colonne_machine_choisie = st.selectbox(
+                                "Colonne machine / équipement",
+                                colonnes_machine_dispo,
+                                key="risque_colonne_machine",
+                            )
+                        with rc2:
+                            colonne_date_choisie = st.selectbox(
+                                "Colonne date (obligatoire)",
+                                colonnes_date_dispo,
+                                key="risque_colonne_date",
+                            )
+                        with rc3:
+                            options_duree = ["(aucune)"] + cols_num_dispo
+                            duree_defaut = pareto_num if pareto_num in cols_num_dispo else "(aucune)"
+                            colonne_duree_choisie = st.selectbox(
+                                "Colonne durée d'arrêt (optionnelle)",
+                                options_duree,
+                                index=options_duree.index(duree_defaut),
+                                key="risque_colonne_duree",
+                            )
+
+                        predictions_risque = predicteur.predire(
+                            df_brut,
+                            colonne_machine=colonne_machine_choisie,
+                            colonne_date=colonne_date_choisie,
+                            colonne_duree=None if colonne_duree_choisie == "(aucune)" else colonne_duree_choisie,
                         )
 
-                        fig_classement = analyse_risque.graphiqueClassement(scores_risque)
-                        if fig_classement is not None:
-                            st.pyplot(fig_classement, use_container_width=True)
+                        if predictions_risque.empty:
+                            st.caption(
+                                "Pas assez d'historique daté (au moins une dizaine de "
+                                "transitions entre deux pannes, sur une ou plusieurs "
+                                "machines) pour entraîner un modèle prédictif fiable."
+                            )
+                            st.session_state.pop("risque_scores_rapport", None)
+                        else:
+                            st.session_state["risque_scores_rapport"] = predictions_risque
+                            st.session_state["risque_methode_rapport"] = "ml"
+                            st.session_state["risque_colonne_machine_rapport"] = colonne_machine_choisie
 
-                        st.subheader("Détail par machine")
-                        st.dataframe(scores_risque, hide_index=True, use_container_width=True)
+                            metriques_risque = predicteur.metriques
+                            rk1, rk2, rk3, rk4 = st.columns(4)
+                            rk1.metric("Machines analysées", len(predictions_risque))
+                            rk2.metric(
+                                "Niveau Critique",
+                                int((predictions_risque["niveau_risque"] == "Critique").sum()),
+                            )
+                            rk3.metric(
+                                "Niveau Élevé",
+                                int((predictions_risque["niveau_risque"] == "Élevé").sum()),
+                            )
+                            if "mae_jours" in metriques_risque:
+                                rk4.metric(
+                                    "Erreur moy. délai (jours)",
+                                    f"{metriques_risque['mae_jours']:.1f}",
+                                )
 
-                        st.subheader("Analyse automatique")
-                        st.markdown(analyse_risque.genererResume(scores_risque))
+                            fig_classement = predicteur.graphiqueClassement(predictions_risque)
+                            if fig_classement is not None:
+                                st.pyplot(fig_classement, use_container_width=True)
 
-                        if colonne_date_choisie != "(aucune)":
+                            st.subheader("Détail par machine")
+                            st.dataframe(predictions_risque, hide_index=True, use_container_width=True)
+
+                            st.subheader("Analyse automatique")
+                            st.markdown(predicteur.genererResume(predictions_risque))
+
                             machine_zoom = st.selectbox(
                                 "Voir l'historique détaillé d'une machine",
-                                scores_risque["machine"].tolist(),
+                                predictions_risque["machine"].tolist(),
                                 key="risque_machine_zoom",
                             )
-                            fig_zoom = analyse_risque.graphiqueTendanceMachine(
+                            fig_zoom = predicteur.graphiqueTendanceMachine(
                                 df_brut, colonne_machine_choisie, colonne_date_choisie, machine_zoom,
                             )
                             if fig_zoom is not None:
                                 st.pyplot(fig_zoom, use_container_width=True)
 
-                        st.download_button(
-                            "Exporter le score de risque (Excel)",
-                            data=pipeline.exportExcel.genererExcel(
-                                scores_risque, nom_feuille="Risque_Machines"
-                            ),
-                            file_name="Score_Risque_Machines.xlsx",
-                            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                            use_container_width=True,
-                            key="risque_download_excel",
+                            st.download_button(
+                                "Exporter les prédictions de panne (Excel)",
+                                data=pipeline.exportExcel.genererExcel(
+                                    predictions_risque, nom_feuille="Prediction_Pannes"
+                                ),
+                                file_name="Prediction_Pannes_Machines.xlsx",
+                                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                                use_container_width=True,
+                                key="risque_download_excel",
+                            )
+
+                    # ---- Méthode 2 : estimation par formule (pas d'historique daté) ----
+                    else:
+                        st.caption(
+                            "Ce fichier ne contient pas d'historique daté de pannes "
+                            "répétées par machine : impossible d'apprendre un délai "
+                            "réel. Estimation transparente (pas un modèle appris) par "
+                            "extrapolation linéaire du taux de dégradation observé "
+                            "(taux de risque / compteur d'usage), calibrée sur la "
+                            "distribution de ce fichier."
                         )
+                        fc1, fc2, fc3 = st.columns(3)
+                        with fc1:
+                            colonne_machine_choisie = st.selectbox(
+                                "Colonne machine / équipement",
+                                colonnes_machine_dispo,
+                                key="risque_colonne_machine_f",
+                            )
+                        with fc2:
+                            colonne_usage_choisie = st.selectbox(
+                                "Colonne compteur d'usage (heures, cycles...)",
+                                colonnes_usage_dispo,
+                                key="risque_colonne_usage",
+                            )
+                        with fc3:
+                            colonne_taux_choisie = st.selectbox(
+                                "Colonne taux de risque / défaut (%)",
+                                colonnes_taux_dispo,
+                                key="risque_colonne_taux",
+                            )
+
+                        estimation_risque = predicteur.estimerParFormule(
+                            df_brut,
+                            colonne_machine=colonne_machine_choisie,
+                            colonne_usage=colonne_usage_choisie,
+                            colonne_taux=colonne_taux_choisie,
+                        )
+
+                        if estimation_risque.empty:
+                            st.caption(
+                                "Pas assez de données numériques exploitables sur les "
+                                "colonnes sélectionnées."
+                            )
+                            st.session_state.pop("risque_scores_rapport", None)
+                        else:
+                            st.session_state["risque_scores_rapport"] = estimation_risque
+                            st.session_state["risque_methode_rapport"] = "formule"
+                            st.session_state["risque_colonne_machine_rapport"] = colonne_machine_choisie
+
+                            ek1, ek2, ek3 = st.columns(3)
+                            ek1.metric("Machines analysées", len(estimation_risque))
+                            ek2.metric(
+                                "Niveau Critique",
+                                int((estimation_risque["niveau_risque"] == "Critique").sum()),
+                            )
+                            ek3.metric(
+                                "Niveau Élevé",
+                                int((estimation_risque["niveau_risque"] == "Élevé").sum()),
+                            )
+
+                            fig_formule = predicteur.graphiqueClassementFormule(estimation_risque)
+                            if fig_formule is not None:
+                                st.pyplot(fig_formule, use_container_width=True)
+
+                            st.subheader("Détail par machine")
+                            st.dataframe(estimation_risque, hide_index=True, use_container_width=True)
+
+                            st.subheader("Analyse automatique")
+                            st.markdown(predicteur.genererResumeFormule(estimation_risque))
+
+                            st.download_button(
+                                "Exporter l'estimation (Excel)",
+                                data=pipeline.exportExcel.genererExcel(
+                                    estimation_risque, nom_feuille="Estimation_Pannes"
+                                ),
+                                file_name="Estimation_Pannes_Machines.xlsx",
+                                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                                use_container_width=True,
+                                key="risque_download_excel_formule",
+                            )
 
 # --------------------------------------------------------------------------
 # 5. EXPORT DU RESULTAT
@@ -1454,9 +1568,16 @@ elif page_num == 5:
         try:
             scores_risque_rapport = st.session_state.get("risque_scores_rapport")
             if scores_risque_rapport is not None and not scores_risque_rapport.empty:
-                analyses["Machine Learning - Risque par machine"] = scores_risque_rapport
-                analyse_risque_export = AnalyseRisqueMachine()
-                fig_risque_classement = analyse_risque_export.graphiqueClassement(scores_risque_rapport)
+                analyses["Machine Learning - Prédiction pannes machines"] = scores_risque_rapport
+                analyse_risque_export = PredicteurPanneMachine()
+                if st.session_state.get("risque_methode_rapport") == "formule":
+                    fig_risque_classement = analyse_risque_export.graphiqueClassementFormule(
+                        scores_risque_rapport
+                    )
+                else:
+                    fig_risque_classement = analyse_risque_export.graphiqueClassement(
+                        scores_risque_rapport
+                    )
                 if fig_risque_classement is not None:
                     figures["Classement des machines par risque"] = fig_risque_classement
         except Exception:

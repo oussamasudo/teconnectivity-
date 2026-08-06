@@ -1398,3 +1398,1415 @@
 2026-07-29 09:43:24 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 44 features
 2026-07-29 09:43:24 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
 2026-07-29 09:43:25 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 10:12:59 | INFO     | models.fichier_excel | Fichier chargé : Machines_Test.xlsx (59 lignes, 5 colonnes)
+2026-07-29 10:12:59 | INFO     | models.fichier_excel | JeuDonnees créé : 59 lignes, 5 colonnes
+2026-07-29 10:12:59 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-29 10:12:59 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 10, 'doublon': 4, 'valeur_aberrante': 0, 'non_utile_total': 11, 'utile_total': 48, 'colonnes_aberrantes': []}
+2026-07-29 10:12:59 | INFO     | models.pretraitement | Doublons supprimés : 4
+2026-07-29 10:12:59 | INFO     | models.pretraitement | Valeurs manquantes imputées : 28
+2026-07-29 10:12:59 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-29 10:12:59 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 10:13:20 | INFO     | models.fichier_excel | Fichier chargé : x.xlsx (59 lignes, 5 colonnes)
+2026-07-29 10:13:20 | INFO     | models.fichier_excel | JeuDonnees créé : 59 lignes, 5 colonnes
+2026-07-29 10:13:20 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-29 10:13:20 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 10, 'doublon': 4, 'valeur_aberrante': 0, 'non_utile_total': 11, 'utile_total': 48, 'colonnes_aberrantes': []}
+2026-07-29 10:13:20 | INFO     | models.pretraitement | Doublons supprimés : 4
+2026-07-29 10:13:20 | INFO     | models.pretraitement | Valeurs manquantes imputées : 28
+2026-07-29 10:13:21 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-29 10:13:21 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 10:13:23 | INFO     | models.fichier_excel | Fichier chargé : x.xlsx (72 lignes, 12 colonnes)
+2026-07-29 10:13:23 | INFO     | models.fichier_excel | JeuDonnees créé : 72 lignes, 12 colonnes
+2026-07-29 10:13:23 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-29 10:13:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 70, 'colonnes_aberrantes': []}
+2026-07-29 10:13:23 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:13:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 142
+2026-07-29 10:13:23 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 31 features
+2026-07-29 10:13:23 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.944 precision=1.000 recall=0.944 f1=0.971 roc_auc=0.000
+2026-07-29 10:13:26 | INFO     | models.fichier_excel | Fichier chargé : x.xlsx (92 lignes, 5 colonnes)
+2026-07-29 10:13:26 | INFO     | models.fichier_excel | JeuDonnees créé : 92 lignes, 5 colonnes
+2026-07-29 10:13:26 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-29 10:13:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 12, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 14, 'utile_total': 78, 'colonnes_aberrantes': []}
+2026-07-29 10:13:26 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:13:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 48
+2026-07-29 10:13:26 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-29 10:13:26 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.957 precision=0.967 recall=0.957 f1=0.959 roc_auc=1.000
+2026-07-29 10:13:29 | INFO     | models.fichier_excel | Fichier chargé : x.xlsx (157 lignes, 5 colonnes)
+2026-07-29 10:13:29 | INFO     | models.fichier_excel | JeuDonnees créé : 157 lignes, 5 colonnes
+2026-07-29 10:13:29 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-29 10:13:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 22, 'doublon': 5, 'valeur_aberrante': 0, 'non_utile_total': 27, 'utile_total': 130, 'colonnes_aberrantes': []}
+2026-07-29 10:13:29 | INFO     | models.pretraitement | Doublons supprimés : 5
+2026-07-29 10:13:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 77
+2026-07-29 10:13:29 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-29 10:13:29 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 10:14:21 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 30, 'colonnes_aberrantes': []}
+2026-07-29 10:14:21 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:21 | INFO     | models.pretraitement | Valeurs manquantes imputées : 36
+2026-07-29 10:14:21 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 9, 'colonnes_aberrantes': []}
+2026-07-29 10:14:21 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:21 | INFO     | models.pretraitement | Valeurs manquantes imputées : 14
+2026-07-29 10:14:21 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 10 features
+2026-07-29 10:14:21 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.667 precision=1.000 recall=0.667 f1=0.800 roc_auc=0.000
+2026-07-29 10:14:21 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:21 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:21 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 3, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 27, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 3
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 14, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 11
+2026-07-29 10:14:22 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:22 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.750 precision=1.000 recall=0.750 f1=0.857 roc_auc=0.000
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 18, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 2
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 2
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 5, 'valeur_aberrante': 0, 'non_utile_total': 5, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 5
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:22 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 2 features
+2026-07-29 10:14:22 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 3, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 3, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 3
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 2
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 2
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 8
+2026-07-29 10:14:22 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:22 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 3, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 17, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 3
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 3, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 5, 'utile_total': 25, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 12
+2026-07-29 10:14:22 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:22 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.714 precision=0.714 recall=0.714 f1=0.714 roc_auc=0.500
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 15, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 19
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 8, 'valeur_aberrante': 0, 'non_utile_total': 9, 'utile_total': 11, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 8
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:22 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:22 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 3, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 27, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 16
+2026-07-29 10:14:22 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:22 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.750 precision=0.917 recall=0.750 f1=0.792 roc_auc=0.786
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 6, 'doublon': 4, 'valeur_aberrante': 0, 'non_utile_total': 9, 'utile_total': 21, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 4
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 19
+2026-07-29 10:14:22 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:22 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.714 precision=0.905 recall=0.714 f1=0.757 roc_auc=0.917
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 14, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 14
+2026-07-29 10:14:22 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 10 features
+2026-07-29 10:14:22 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.750 precision=1.000 recall=0.750 f1=0.857 roc_auc=0.000
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 10, 'valeur_aberrante': 0, 'non_utile_total': 11, 'utile_total': 9, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 10
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:22 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:22 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.500 precision=1.000 recall=0.500 f1=0.667 roc_auc=0.000
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 8
+2026-07-29 10:14:22 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 8 features
+2026-07-29 10:14:22 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 3, 'doublon': 12, 'valeur_aberrante': 0, 'non_utile_total': 13, 'utile_total': 7, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 12
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:22 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:22 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.500 precision=1.000 recall=0.500 f1=0.667 roc_auc=0.000
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 9, 'valeur_aberrante': 0, 'non_utile_total': 9, 'utile_total': 21, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 9
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 3, 'colonnes_aberrantes': []}
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:22 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:22 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:22 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:22 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 2
+2026-07-29 10:14:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:23 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:23 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 2, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:23 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 2 features
+2026-07-29 10:14:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 9, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:23 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:23 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 18, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 14
+2026-07-29 10:14:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 3, 'doublon': 21, 'valeur_aberrante': 0, 'non_utile_total': 22, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 21
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:23 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 1 features
+2026-07-29 10:14:23 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 29, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 14
+2026-07-29 10:14:23 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:23 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 7, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:23 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:23 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.500 precision=1.000 recall=0.500 f1=0.667 roc_auc=0.000
+2026-07-29 10:14:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 3, 'doublon': 16, 'valeur_aberrante': 0, 'non_utile_total': 17, 'utile_total': 3, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 16
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:23 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:23 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 19, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 20
+2026-07-29 10:14:23 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 10 features
+2026-07-29 10:14:23 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 3, 'valeur_aberrante': 0, 'non_utile_total': 5, 'utile_total': 25, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 3
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 17
+2026-07-29 10:14:23 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:23 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.571 precision=0.686 recall=0.571 f1=0.623 roc_auc=0.167
+2026-07-29 10:14:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:23 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:23 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 3, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 4, 'utile_total': 11, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 11
+2026-07-29 10:14:23 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 6 features
+2026-07-29 10:14:23 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.750 precision=0.562 recall=0.750 f1=0.643 roc_auc=0.667
+2026-07-29 10:14:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 28, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 13
+2026-07-29 10:14:23 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:23 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.750 precision=1.000 recall=0.750 f1=0.857 roc_auc=0.000
+2026-07-29 10:14:23 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 8, 'doublon': 3, 'valeur_aberrante': 0, 'non_utile_total': 10, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Doublons supprimés : 3
+2026-07-29 10:14:23 | INFO     | models.pretraitement | Valeurs manquantes imputées : 20
+2026-07-29 10:14:23 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 6 features
+2026-07-29 10:14:23 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.600 precision=0.600 recall=0.600 f1=0.600 roc_auc=0.417
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 5, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 5, 'utile_total': 15, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 11
+2026-07-29 10:14:24 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:24 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.800 precision=0.640 recall=0.800 f1=0.711 roc_auc=0.750
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 20, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 24
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 6, 'doublon': 9, 'valeur_aberrante': 0, 'non_utile_total': 14, 'utile_total': 16, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 9
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 16
+2026-07-29 10:14:24 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:24 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.667 precision=0.889 recall=0.667 f1=0.708 roc_auc=0.800
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 7, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:24 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 1 features
+2026-07-29 10:14:24 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 2
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 20, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 10
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 15
+2026-07-29 10:14:24 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:24 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.667 precision=0.444 recall=0.667 f1=0.533 roc_auc=1.000
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 4, 'utile_total': 26, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 33
+2026-07-29 10:14:24 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:24 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.857 precision=0.735 recall=0.857 f1=0.791 roc_auc=1.000
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 3, 'doublon': 26, 'valeur_aberrante': 0, 'non_utile_total': 27, 'utile_total': 3, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 26
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:24 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:24 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 3, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 17, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 32
+2026-07-29 10:14:24 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 8 features
+2026-07-29 10:14:24 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.600 precision=0.600 recall=0.600 f1=0.600 roc_auc=0.750
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:24 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 1 features
+2026-07-29 10:14:24 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.500 precision=1.000 recall=0.500 f1=0.667 roc_auc=0.000
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 30, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 24
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 5, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 5, 'utile_total': 3, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 10
+2026-07-29 10:14:24 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 6 features
+2026-07-29 10:14:24 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.500 precision=0.250 recall=0.500 f1=0.333 roc_auc=0.500
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 7, 'valeur_aberrante': 0, 'non_utile_total': 8, 'utile_total': 7, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 7
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:24 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:24 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.500 precision=1.000 recall=0.500 f1=0.667 roc_auc=0.000
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:24 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:24 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 2
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 15, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 19
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 10, 'valeur_aberrante': 0, 'non_utile_total': 10, 'utile_total': 20, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 10
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 8, 'valeur_aberrante': 0, 'non_utile_total': 8, 'utile_total': 7, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 8
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 8
+2026-07-29 10:14:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 2, 'colonnes_aberrantes': []}
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:25 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 1 features
+2026-07-29 10:14:25 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 5, 'doublon': 7, 'valeur_aberrante': 0, 'non_utile_total': 8, 'utile_total': 2, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 7
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:25 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 2 features
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 9, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:25 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:25 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 2
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:25 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:25 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 5, 'doublon': 6, 'valeur_aberrante': 0, 'non_utile_total': 9, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 6
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 8
+2026-07-29 10:14:25 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 6 features
+2026-07-29 10:14:25 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.667 precision=0.833 recall=0.667 f1=0.667 roc_auc=0.500
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 4, 'doublon': 16, 'valeur_aberrante': 0, 'non_utile_total': 17, 'utile_total': 3, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 16
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:25 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:25 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 14, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 12
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 20, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 13
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 7, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:25 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:25 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.500 precision=1.000 recall=0.500 f1=0.667 roc_auc=0.000
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 30, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 15
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 30, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 9
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 14, 'doublon': 26, 'valeur_aberrante': 0, 'non_utile_total': 27, 'utile_total': 3, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 26
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:25 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 9, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:25 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:25 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 9, 'valeur_aberrante': 0, 'non_utile_total': 10, 'utile_total': 20, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 9
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 11
+2026-07-29 10:14:25 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:25 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.833 precision=1.000 recall=0.833 f1=0.909 roc_auc=0.000
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 20, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 17
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:25 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 6 features
+2026-07-29 10:14:25 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:25 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:25 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:26 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:26 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 18, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 19
+2026-07-29 10:14:26 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 8 features
+2026-07-29 10:14:26 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.800 precision=1.000 recall=0.800 f1=0.889 roc_auc=0.000
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 11
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 3, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 17, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 14
+2026-07-29 10:14:26 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:26 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.400 precision=0.533 recall=0.400 f1=0.457 roc_auc=0.500
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 14, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 13
+2026-07-29 10:14:26 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:26 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 29, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 24
+2026-07-29 10:14:26 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 8 features
+2026-07-29 10:14:26 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 8, 'doublon': 13, 'valeur_aberrante': 0, 'non_utile_total': 18, 'utile_total': 12, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 13
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 17
+2026-07-29 10:14:26 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 6 features
+2026-07-29 10:14:26 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.200 precision=0.040 recall=0.200 f1=0.067 roc_auc=0.375
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 9
+2026-07-29 10:14:26 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:26 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 7, 'valeur_aberrante': 0, 'non_utile_total': 8, 'utile_total': 2, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 7
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:26 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 2 features
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 14, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:26 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:26 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 18, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 8
+2026-07-29 10:14:26 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:26 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.800 precision=1.000 recall=0.800 f1=0.889 roc_auc=0.000
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 3, 'doublon': 6, 'valeur_aberrante': 0, 'non_utile_total': 7, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 6
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:26 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:26 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.333 precision=1.000 recall=0.333 f1=0.500 roc_auc=0.000
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 15, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 9
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 3, 'doublon': 11, 'valeur_aberrante': 0, 'non_utile_total': 12, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 11
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:26 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 1 features
+2026-07-29 10:14:26 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.667 precision=1.000 recall=0.667 f1=0.800 roc_auc=0.000
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 10
+2026-07-29 10:14:26 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:26 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 12, 'colonnes_aberrantes': []}
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:27 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:27 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.750 precision=1.000 recall=0.750 f1=0.857 roc_auc=0.000
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 28, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 33
+2026-07-29 10:14:27 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 9 features
+2026-07-29 10:14:27 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.750 precision=0.917 recall=0.750 f1=0.792 roc_auc=0.857
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 3, 'valeur_aberrante': 0, 'non_utile_total': 5, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 3
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 8
+2026-07-29 10:14:27 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:27 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.667 precision=0.833 recall=0.667 f1=0.667 roc_auc=0.750
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 4, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 10
+2026-07-29 10:14:27 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:27 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 2
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 2
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 19, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 3, 'doublon': 5, 'valeur_aberrante': 0, 'non_utile_total': 6, 'utile_total': 2, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 5
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:27 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 2 features
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 5, 'doublon': 22, 'valeur_aberrante': 0, 'non_utile_total': 23, 'utile_total': 7, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 22
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:27 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:27 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 3, 'valeur_aberrante': 0, 'non_utile_total': 4, 'utile_total': 2, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 3
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:27 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 1 features
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:27 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:27 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 7, 'valeur_aberrante': 0, 'non_utile_total': 8, 'utile_total': 22, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 7
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:27 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:27 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:27 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 8 features
+2026-07-29 10:14:27 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 5, 'valeur_aberrante': 0, 'non_utile_total': 6, 'utile_total': 2, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 5
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:27 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 2 features
+2026-07-29 10:14:27 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 13, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 10
+2026-07-29 10:14:27 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 6 features
+2026-07-29 10:14:27 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.500 precision=0.500 recall=0.500 f1=0.500 roc_auc=0.667
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 2
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 2
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:27 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:27 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.500 precision=1.000 recall=0.500 f1=0.667 roc_auc=0.000
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 0, 'valeur_aberrante': 1, 'non_utile_total': 3, 'utile_total': 3, 'colonnes_aberrantes': ['num1']}
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 12
+2026-07-29 10:14:28 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:28 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 9, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 5, 'valeur_aberrante': 0, 'non_utile_total': 5, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 5
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 28, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 7, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:28 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:28 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 19, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:28 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:28 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 4, 'utile_total': 26, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 12
+2026-07-29 10:14:28 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:28 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.857 precision=0.735 recall=0.857 f1=0.791 roc_auc=0.750
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 29, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 38
+2026-07-29 10:14:28 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 10 features
+2026-07-29 10:14:28 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 4, 'doublon': 8, 'valeur_aberrante': 0, 'non_utile_total': 11, 'utile_total': 19, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 8
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 16
+2026-07-29 10:14:28 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:28 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.833 precision=0.694 recall=0.833 f1=0.758 roc_auc=0.500
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 15, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 19
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 2
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 9
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 5, 'doublon': 11, 'valeur_aberrante': 0, 'non_utile_total': 12, 'utile_total': 3, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 11
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:28 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:28 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 19, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 26
+2026-07-29 10:14:28 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 11 features
+2026-07-29 10:14:28 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 4, 'valeur_aberrante': 0, 'non_utile_total': 4, 'utile_total': 11, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 4
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 19, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:28 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:28 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 10
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 11
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 19, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 22
+2026-07-29 10:14:28 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:28 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 9, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 2, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:28 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 2 features
+2026-07-29 10:14:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 10
+2026-07-29 10:14:28 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 6 features
+2026-07-29 10:14:28 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.667 precision=0.833 recall=0.667 f1=0.667 roc_auc=1.000
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 30, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:29 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 6 features
+2026-07-29 10:14:29 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.500 precision=0.250 recall=0.500 f1=0.333 roc_auc=1.000
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 8
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 9, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 11
+2026-07-29 10:14:29 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 8 features
+2026-07-29 10:14:29 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.667 precision=1.000 recall=0.667 f1=0.800 roc_auc=0.000
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 3, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 5, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 13
+2026-07-29 10:14:29 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:29 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.500 precision=0.500 recall=0.500 f1=0.500 roc_auc=0.167
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 10
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 4, 'doublon': 3, 'valeur_aberrante': 0, 'non_utile_total': 4, 'utile_total': 1, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 3
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:29 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 1 features
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 3, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 3
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 29, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 17
+2026-07-29 10:14:29 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 8 features
+2026-07-29 10:14:29 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.875 precision=1.000 recall=0.875 f1=0.933 roc_auc=0.000
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:29 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:29 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.667 precision=1.000 recall=0.667 f1=0.800 roc_auc=0.000
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 2
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 2, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:29 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 2 features
+2026-07-29 10:14:29 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 20, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 11
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 15, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 2
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 20, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 10
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 7, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 11
+2026-07-29 10:14:29 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:29 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 11
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 4, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 5, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 10
+2026-07-29 10:14:29 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 6 features
+2026-07-29 10:14:29 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.500 precision=0.250 recall=0.500 f1=0.333 roc_auc=0.500
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 3, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 12, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 12
+2026-07-29 10:14:29 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:29 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.750 precision=0.562 recall=0.750 f1=0.643 roc_auc=0.667
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:29 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:29 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:30 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:30 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 14, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:30 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:30 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 14, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 20
+2026-07-29 10:14:30 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 9 features
+2026-07-29 10:14:30 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.750 precision=1.000 recall=0.750 f1=0.857 roc_auc=0.000
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:30 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 1 features
+2026-07-29 10:14:30 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 20, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 18
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 20, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 3, 'valeur_aberrante': 0, 'non_utile_total': 4, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 3
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:30 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:30 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.500 precision=1.000 recall=0.500 f1=0.667 roc_auc=0.000
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 6, 'doublon': 17, 'valeur_aberrante': 0, 'non_utile_total': 18, 'utile_total': 2, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 17
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:30 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 2 features
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 7, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 2
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 9, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:30 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:30 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 14, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 15
+2026-07-29 10:14:30 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 6 features
+2026-07-29 10:14:30 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 2
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 30, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 11
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 10, 'valeur_aberrante': 0, 'non_utile_total': 11, 'utile_total': 19, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 10
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 10
+2026-07-29 10:14:30 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:30 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.800 precision=1.000 recall=0.800 f1=0.889 roc_auc=0.000
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 2, 'non_utile_total': 3, 'utile_total': 12, 'colonnes_aberrantes': ['num0']}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 10
+2026-07-29 10:14:30 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:30 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.750 precision=0.562 recall=0.750 f1=0.643 roc_auc=0.333
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 14, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 9, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 10
+2026-07-29 10:14:30 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 8 features
+2026-07-29 10:14:30 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 20, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 8
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 7, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:30 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:30 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 15, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 12
+2026-07-29 10:14:30 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 3, 'colonnes_aberrantes': []}
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:30 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:31 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:31 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 20, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 17, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 12
+2026-07-29 10:14:31 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:31 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.600 precision=0.600 recall=0.600 f1=0.600 roc_auc=0.250
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 4, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 4, 'utile_total': 16, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 15
+2026-07-29 10:14:31 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:31 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.800 precision=0.640 recall=0.800 f1=0.711 roc_auc=0.500
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 1, 'non_utile_total': 1, 'utile_total': 7, 'colonnes_aberrantes': ['num2']}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:31 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 2 features
+2026-07-29 10:14:31 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 19, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 14
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 8
+2026-07-29 10:14:31 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:31 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 1, 'non_utile_total': 1, 'utile_total': 7, 'colonnes_aberrantes': ['num0']}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:31 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 10 features
+2026-07-29 10:14:31 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.500 precision=1.000 recall=0.500 f1=0.667 roc_auc=0.000
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 3, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 5, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 13
+2026-07-29 10:14:31 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:31 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.750 precision=0.875 recall=0.750 f1=0.767 roc_auc=0.833
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 3, 'doublon': 7, 'valeur_aberrante': 0, 'non_utile_total': 8, 'utile_total': 2, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 7
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:31 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 2 features
+2026-07-29 10:14:31 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 3, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:31 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:31 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 9, 'valeur_aberrante': 0, 'non_utile_total': 9, 'utile_total': 21, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 9
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 9
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:31 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 6 features
+2026-07-29 10:14:31 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 4, 'doublon': 16, 'valeur_aberrante': 0, 'non_utile_total': 17, 'utile_total': 3, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 16
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:31 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:31 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 6 features
+2026-07-29 10:14:31 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 20, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 20
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 8
+2026-07-29 10:14:31 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:31 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:31 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:31 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 20, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 4, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 4, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 12
+2026-07-29 10:14:32 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:32 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:32 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:32 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 29, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 29
+2026-07-29 10:14:32 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 8 features
+2026-07-29 10:14:32 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:32 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:32 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 18, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 12
+2026-07-29 10:14:32 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 6 features
+2026-07-29 10:14:32 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 14, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:32 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:32 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 14, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 15
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 2, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 8, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 11
+2026-07-29 10:14:32 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 5 features
+2026-07-29 10:14:32 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 5
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 3, 'utile_total': 2, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:32 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 2 features
+2026-07-29 10:14:32 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 20, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 17
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 4, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 8
+2026-07-29 10:14:32 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 6 features
+2026-07-29 10:14:32 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 15, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 14
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 3, 'valeur_aberrante': 0, 'non_utile_total': 4, 'utile_total': 26, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 3
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 33
+2026-07-29 10:14:32 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:32 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.833 precision=1.000 recall=0.833 f1=0.909 roc_auc=0.000
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 29, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 30
+2026-07-29 10:14:32 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 9 features
+2026-07-29 10:14:32 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.875 precision=1.000 recall=0.875 f1=0.933 roc_auc=0.000
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 6, 'valeur_aberrante': 0, 'non_utile_total': 7, 'utile_total': 3, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 6
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:32 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 3 features
+2026-07-29 10:14:32 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 4, 'valeur_aberrante': 0, 'non_utile_total': 4, 'utile_total': 11, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 4
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:14:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:32 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 6 features
+2026-07-29 10:14:33 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:14:33 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 1, 'utile_total': 14, 'colonnes_aberrantes': []}
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:33 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 4 features
+2026-07-29 10:14:33 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:14:33 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 9, 'doublon': 9, 'valeur_aberrante': 0, 'non_utile_total': 14, 'utile_total': 16, 'colonnes_aberrantes': []}
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Doublons supprimés : 9
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Valeurs manquantes imputées : 19
+2026-07-29 10:14:33 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:33 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.333 precision=0.556 recall=0.333 f1=0.417 roc_auc=0.100
+2026-07-29 10:14:33 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 5, 'doublon': 6, 'valeur_aberrante': 0, 'non_utile_total': 9, 'utile_total': 11, 'colonnes_aberrantes': []}
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Doublons supprimés : 6
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Valeurs manquantes imputées : 13
+2026-07-29 10:14:33 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 7 features
+2026-07-29 10:14:33 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.750 precision=0.875 recall=0.750 f1=0.767 roc_auc=1.000
+2026-07-29 10:14:33 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Valeurs manquantes imputées : 7
+2026-07-29 10:14:33 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 30, 'colonnes_aberrantes': []}
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Valeurs manquantes imputées : 20
+2026-07-29 10:14:33 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 5, 'colonnes_aberrantes': []}
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Valeurs manquantes imputées : 4
+2026-07-29 10:14:33 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Valeurs manquantes imputées : 15
+2026-07-29 10:14:33 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Valeurs manquantes imputées : 6
+2026-07-29 10:14:33 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 6, 'colonnes_aberrantes': []}
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Valeurs manquantes imputées : 3
+2026-07-29 10:14:33 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 5, 'doublon': 12, 'valeur_aberrante': 0, 'non_utile_total': 13, 'utile_total': 2, 'colonnes_aberrantes': []}
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Doublons supprimés : 12
+2026-07-29 10:14:33 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:14:33 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 50 arbres, 2 features
+2026-07-29 10:14:33 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.000 precision=0.000 recall=0.000 f1=0.000 roc_auc=0.000
+2026-07-29 10:15:12 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 0, 'non_utile_total': 0, 'utile_total': 10, 'colonnes_aberrantes': []}
+2026-07-29 10:15:12 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:15:12 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-29 10:15:36 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 1, 'non_utile_total': 1, 'utile_total': 15, 'colonnes_aberrantes': ['num']}
+2026-07-29 10:15:36 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:15:36 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-29 10:16:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 1, 'non_utile_total': 1, 'utile_total': 15, 'colonnes_aberrantes': ['num']}
+2026-07-29 10:16:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:16:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-29 10:16:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 1, 'non_utile_total': 1, 'utile_total': 15, 'colonnes_aberrantes': ['num']}
+2026-07-29 10:16:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:16:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-29 10:16:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 1, 'non_utile_total': 1, 'utile_total': 15, 'colonnes_aberrantes': ['num']}
+2026-07-29 10:16:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:16:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-29 10:16:26 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 1, 'non_utile_total': 1, 'utile_total': 15, 'colonnes_aberrantes': ['num']}
+2026-07-29 10:16:26 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:16:26 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-29 10:21:12 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (227 lignes, 12 colonnes)
+2026-07-29 10:21:12 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-29 10:21:15 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (42 lignes, 3 colonnes)
+2026-07-29 10:21:15 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-29 10:21:19 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-29 10:21:28 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38, 'colonnes_aberrantes': ["Sum of Durée de l'Arrêt\n(min)", '%']}
+2026-07-29 10:21:28 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:21:28 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:21:35 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 10:21:47 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 44 features
+2026-07-29 10:21:47 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:21:48 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 44 features
+2026-07-29 10:21:48 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 10:21:48 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 10:21:52 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 10:21:54 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 10:21:55 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 44 features
+2026-07-29 10:21:55 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 10:21:55 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 10:22:02 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 44 features
+2026-07-29 10:22:02 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 10:22:02 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 10:24:24 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 1, 'non_utile_total': 1, 'utile_total': 15, 'colonnes_aberrantes': ['num']}
+2026-07-29 10:24:24 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:24:24 | INFO     | models.pretraitement | Valeurs manquantes imputées : 0
+2026-07-29 10:24:25 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 4 features
+2026-07-29 10:24:25 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.750 precision=1.000 recall=0.750 f1=0.857 roc_auc=0.000
+2026-07-29 10:24:25 | INFO     | models.modele_ml | LogisticRegression entraîné : 4 features
+2026-07-29 10:24:25 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.750 precision=1.000 recall=0.750 f1=0.857 roc_auc=0.000
+2026-07-29 10:24:25 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 4 features
+2026-07-29 10:24:25 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=0.000
+2026-07-29 10:24:25 | INFO     | models.modele_ml | SVC entraîné : noyau=rbf, 4 features
+2026-07-29 10:24:25 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.750 precision=1.000 recall=0.750 f1=0.857 roc_auc=0.000
+2026-07-29 10:24:37 | INFO     | models.fichier_excel | Fichier chargé : x.xlsx (59 lignes, 5 colonnes)
+2026-07-29 10:24:37 | INFO     | models.fichier_excel | JeuDonnees créé : 59 lignes, 5 colonnes
+2026-07-29 10:24:37 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-29 10:24:37 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 10, 'doublon': 4, 'valeur_aberrante': 0, 'non_utile_total': 11, 'utile_total': 48, 'colonnes_aberrantes': []}
+2026-07-29 10:24:37 | INFO     | models.pretraitement | Doublons supprimés : 4
+2026-07-29 10:24:37 | INFO     | models.pretraitement | Valeurs manquantes imputées : 28
+2026-07-29 10:24:38 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-29 10:24:38 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 10:24:40 | INFO     | models.fichier_excel | Fichier chargé : x.xlsx (72 lignes, 12 colonnes)
+2026-07-29 10:24:40 | INFO     | models.fichier_excel | JeuDonnees créé : 72 lignes, 12 colonnes
+2026-07-29 10:24:40 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-29 10:24:40 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 1, 'doublon': 1, 'valeur_aberrante': 0, 'non_utile_total': 2, 'utile_total': 70, 'colonnes_aberrantes': []}
+2026-07-29 10:24:40 | INFO     | models.pretraitement | Doublons supprimés : 1
+2026-07-29 10:24:40 | INFO     | models.pretraitement | Valeurs manquantes imputées : 142
+2026-07-29 10:24:40 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 31 features
+2026-07-29 10:24:40 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.944 precision=1.000 recall=0.944 f1=0.971 roc_auc=0.000
+2026-07-29 10:24:43 | INFO     | models.fichier_excel | Fichier chargé : x.xlsx (92 lignes, 5 colonnes)
+2026-07-29 10:24:43 | INFO     | models.fichier_excel | JeuDonnees créé : 92 lignes, 5 colonnes
+2026-07-29 10:24:43 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-29 10:24:43 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 12, 'doublon': 2, 'valeur_aberrante': 0, 'non_utile_total': 14, 'utile_total': 78, 'colonnes_aberrantes': []}
+2026-07-29 10:24:43 | INFO     | models.pretraitement | Doublons supprimés : 2
+2026-07-29 10:24:43 | INFO     | models.pretraitement | Valeurs manquantes imputées : 48
+2026-07-29 10:24:43 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-29 10:24:43 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.957 precision=0.967 recall=0.957 f1=0.959 roc_auc=1.000
+2026-07-29 10:24:46 | INFO     | models.fichier_excel | Fichier chargé : x.xlsx (157 lignes, 5 colonnes)
+2026-07-29 10:24:46 | INFO     | models.fichier_excel | JeuDonnees créé : 157 lignes, 5 colonnes
+2026-07-29 10:24:46 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-29 10:24:46 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 22, 'doublon': 5, 'valeur_aberrante': 0, 'non_utile_total': 27, 'utile_total': 130, 'colonnes_aberrantes': []}
+2026-07-29 10:24:46 | INFO     | models.pretraitement | Doublons supprimés : 5
+2026-07-29 10:24:46 | INFO     | models.pretraitement | Valeurs manquantes imputées : 77
+2026-07-29 10:24:46 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 10 features
+2026-07-29 10:24:46 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 10:25:02 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 10:25:15 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (227 lignes, 12 colonnes)
+2026-07-29 10:25:15 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-29 10:25:23 | INFO     | models.fichier_excel | Fichier chargé : Maintenacne record & downtime 2025 Daily_Update - Copy.xlsx (198 lignes, 109 colonnes)
+2026-07-29 10:25:23 | INFO     | models.fichier_excel | JeuDonnees créé : 198 lignes, 109 colonnes
+2026-07-29 10:25:41 | INFO     | models.fichier_excel | Fichier chargé : Maintenacne record & downtime 2025 Daily_Update - Copy.xlsx (83 lignes, 725 colonnes)
+2026-07-29 10:25:41 | INFO     | models.fichier_excel | JeuDonnees créé : 83 lignes, 725 colonnes
+2026-07-29 10:25:56 | INFO     | models.analyse_eda | EDA : 721 colonnes numériques analysées
+2026-07-29 10:26:23 | INFO     | models.fichier_excel | Fichier chargé : Maintenacne record & downtime 2025 Daily_Update - Copy.xlsx (198 lignes, 109 colonnes)
+2026-07-29 10:26:23 | INFO     | models.fichier_excel | JeuDonnees créé : 198 lignes, 109 colonnes
+2026-07-29 10:26:32 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-07-29 10:26:32 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-07-29 10:26:34 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (42 lignes, 2 colonnes)
+2026-07-29 10:26:34 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 2 colonnes
+2026-07-29 10:26:37 | INFO     | models.analyse_eda | EDA : 1 colonnes numériques analysées
+2026-07-29 10:26:50 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38, 'colonnes_aberrantes': ["Sum of Durée de l'Arrêt\n(min)"]}
+2026-07-29 10:26:50 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 10:26:50 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 10:26:55 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 10:26:57 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 10:26:58 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 43 features
+2026-07-29 10:26:58 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 10:26:59 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 20:31:51 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-07-29 20:31:51 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-07-29 20:31:55 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (42 lignes, 2 colonnes)
+2026-07-29 20:31:55 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 2 colonnes
+2026-07-29 20:32:02 | INFO     | models.analyse_eda | EDA : 1 colonnes numériques analysées
+2026-07-29 20:32:27 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38, 'colonnes_aberrantes': ["Sum of Durée de l'Arrêt\n(min)"]}
+2026-07-29 20:32:27 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 20:32:27 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 20:32:37 | INFO     | models.risque_machine | Score de risque calculé pour 42 machine(s).
+2026-07-29 20:51:14 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 43 features
+2026-07-29 20:51:15 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 20:51:22 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-07-29 20:51:22 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-07-29 20:51:53 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (42 lignes, 2 colonnes)
+2026-07-29 20:51:53 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 2 colonnes
+2026-07-29 20:51:57 | INFO     | models.analyse_eda | EDA : 1 colonnes numériques analysées
+2026-07-29 20:52:07 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38, 'colonnes_aberrantes': ["Sum of Durée de l'Arrêt\n(min)"]}
+2026-07-29 20:52:07 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 20:52:07 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 21:06:49 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (227 lignes, 12 colonnes)
+2026-07-29 21:06:49 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-07-29 21:07:11 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (42 lignes, 3 colonnes)
+2026-07-29 21:07:11 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-07-29 21:07:34 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-07-29 21:07:52 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38, 'colonnes_aberrantes': ["Sum of Durée de l'Arrêt\n(min)", '%']}
+2026-07-29 21:07:52 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-07-29 21:07:52 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-07-29 21:08:07 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 44 features
+2026-07-29 21:08:07 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 21:08:11 | INFO     | models.modele_ml | LogisticRegression entraîné : 44 features
+2026-07-29 21:08:12 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 21:08:13 | INFO     | models.modele_ml | LogisticRegression entraîné : 44 features
+2026-07-29 21:08:13 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-07-29 21:18:04 | INFO     | models.risque_machine | Estimation par formule (temps restant) calculée pour 130 machine(s).
+2026-07-29 21:18:57 | INFO     | models.risque_machine | Prédicteur de panne entraîné : 981 exemples, métriques={'nb_exemples_entrainement': 981, 'mae_jours': 1.5971747967479677, 'accuracy_risque': 0.991869918699187, 'auc_risque': 0.9743852459016393}
+2026-07-29 21:18:58 | INFO     | models.risque_machine | Prédiction de panne calculée pour 11 machine(s).
+2026-07-29 21:21:25 | INFO     | models.risque_machine | Estimation par formule (temps restant) calculée pour 41 machine(s).
+2026-08-04 23:55:27 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (227 lignes, 12 colonnes)
+2026-08-04 23:55:27 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-08-04 23:55:45 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (27 lignes, 20 colonnes)
+2026-08-04 23:55:45 | INFO     | models.fichier_excel | JeuDonnees créé : 27 lignes, 20 colonnes
+2026-08-04 23:55:57 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (8 lignes, 1 colonnes)
+2026-08-04 23:55:57 | INFO     | models.fichier_excel | JeuDonnees créé : 8 lignes, 1 colonnes
+2026-08-04 23:56:03 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (42 lignes, 3 colonnes)
+2026-08-04 23:56:03 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-08-04 23:56:08 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-08-05 00:00:32 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38, 'colonnes_aberrantes': ["Sum of Durée de l'Arrêt\n(min)", '%']}
+2026-08-05 00:00:32 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-08-05 00:00:32 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-08-05 00:00:42 | INFO     | models.risque_machine | Estimation par formule (temps restant) calculée pour 41 machine(s).
+2026-08-05 00:00:44 | INFO     | models.risque_machine | Estimation par formule (temps restant) calculée pour 41 machine(s).
+2026-08-05 00:14:31 | INFO     | models.risque_machine | Estimation par formule (temps restant) calculée pour 41 machine(s).
+2026-08-05 00:15:32 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (227 lignes, 12 colonnes)
+2026-08-05 00:15:32 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-08-05 00:18:22 | INFO     | models.fichier_excel | Fichier chargé : Maintenacne record & downtime 2025 Daily_Update - Copy.xlsx (198 lignes, 109 colonnes)
+2026-08-05 00:18:22 | INFO     | models.fichier_excel | JeuDonnees créé : 198 lignes, 109 colonnes
+2026-08-05 00:18:59 | INFO     | models.analyse_eda | EDA : 56 colonnes numériques analysées
+2026-08-05 00:19:14 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 55, 'doublon': 4, 'valeur_aberrante': 7, 'non_utile_total': 55, 'utile_total': 143, 'colonnes_aberrantes': ['No.']}
+2026-08-05 00:19:14 | INFO     | models.pretraitement | Doublons supprimés : 4
+2026-08-05 00:19:14 | INFO     | models.pretraitement | Valeurs manquantes imputées : 9096
+2026-08-05 00:19:17 | INFO     | models.risque_machine | Estimation par formule (temps restant) calculée pour 9 machine(s).
+2026-08-05 00:19:20 | INFO     | models.risque_machine | Estimation par formule (temps restant) calculée pour 9 machine(s).
+2026-08-05 00:19:21 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 720 features
+2026-08-05 00:19:21 | INFO     | models.rapport_evaluation | Évaluation : accuracy=0.673 precision=0.854 recall=0.673 f1=0.689 roc_auc=0.987
+2026-08-05 00:19:23 | INFO     | models.risque_machine | Estimation par formule (temps restant) calculée pour 9 machine(s).
+2026-08-05 00:21:41 | INFO     | models.fichier_excel | Fichier chargé : Machine Classification (2).xlsx (163 lignes, 41 colonnes)
+2026-08-05 00:21:41 | INFO     | models.fichier_excel | JeuDonnees créé : 163 lignes, 41 colonnes
+2026-08-05 00:21:45 | INFO     | models.fichier_excel | Fichier chargé : Machine Classification (2).xlsx (163 lignes, 5 colonnes)
+2026-08-05 00:21:45 | INFO     | models.fichier_excel | JeuDonnees créé : 163 lignes, 5 colonnes
+2026-08-05 00:22:07 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-08-05 00:22:07 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-08-05 00:22:17 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (8 lignes, 1 colonnes)
+2026-08-05 00:22:17 | INFO     | models.fichier_excel | JeuDonnees créé : 8 lignes, 1 colonnes
+2026-08-05 00:22:24 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (42 lignes, 2 colonnes)
+2026-08-05 00:22:24 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 2 colonnes
+2026-08-05 00:22:28 | INFO     | models.analyse_eda | EDA : 1 colonnes numériques analysées
+2026-08-05 00:22:36 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38, 'colonnes_aberrantes': ["Sum of Durée de l'Arrêt\n(min)"]}
+2026-08-05 00:22:36 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-08-05 00:22:36 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-08-05 00:22:43 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 43 features
+2026-08-05 00:22:43 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-08-05 00:23:12 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-08-05 00:23:12 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-08-05 00:23:19 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (27 lignes, 20 colonnes)
+2026-08-05 00:23:19 | INFO     | models.fichier_excel | JeuDonnees créé : 27 lignes, 20 colonnes
+2026-08-05 00:23:24 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-08-05 00:23:30 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-08-05 00:23:30 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-08-05 00:23:39 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (27 lignes, 20 colonnes)
+2026-08-05 00:23:39 | INFO     | models.fichier_excel | JeuDonnees créé : 27 lignes, 20 colonnes
+2026-08-05 00:23:46 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-08-05 00:23:53 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-08-05 00:23:53 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-08-05 00:23:56 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (42 lignes, 2 colonnes)
+2026-08-05 00:23:56 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 2 colonnes
+2026-08-05 00:24:01 | INFO     | models.analyse_eda | EDA : 1 colonnes numériques analysées
+2026-08-05 00:24:09 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38, 'colonnes_aberrantes': ["Sum of Durée de l'Arrêt\n(min)"]}
+2026-08-05 00:24:09 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-08-05 00:24:09 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-08-05 00:24:14 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 43 features
+2026-08-05 00:24:14 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-08-05 00:24:56 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 43 features
+2026-08-05 00:24:56 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-08-05 00:27:11 | INFO     | models.fichier_excel | Fichier chargé : Thor.xlsx (227 lignes, 12 colonnes)
+2026-08-05 00:27:11 | INFO     | models.fichier_excel | Fichier chargé : Thor.xlsx (42 lignes, 3 colonnes)
+2026-08-05 00:27:11 | INFO     | models.fichier_excel | Fichier chargé : Thor.xlsx (8 lignes, 1 colonnes)
+2026-08-05 00:27:11 | INFO     | models.fichier_excel | Fichier chargé : Thor.xlsx (27 lignes, 20 colonnes)
+2026-08-05 00:27:30 | INFO     | models.fichier_excel | Fichier chargé : Thor.xlsx (227 lignes, 12 colonnes)
+2026-08-05 00:31:48 | INFO     | models.modele_ml | GradientBoostingClassifier entraîné : 150 arbres, 43 features
+2026-08-05 00:31:48 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-08-05 00:34:03 | INFO     | models.fichier_excel | Fichier chargé : Thor_Corrective_Maintenance_Modified.xlsx (227 lignes, 4 colonnes)
+2026-08-05 00:34:03 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 4 colonnes
+2026-08-05 00:34:13 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-08-05 00:34:54 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-08-05 00:34:54 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-08-05 00:35:15 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (8 lignes, 1 colonnes)
+2026-08-05 00:35:15 | INFO     | models.fichier_excel | JeuDonnees créé : 8 lignes, 1 colonnes
+2026-08-05 00:35:20 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (27 lignes, 20 colonnes)
+2026-08-05 00:35:20 | INFO     | models.fichier_excel | JeuDonnees créé : 27 lignes, 20 colonnes
+2026-08-05 00:35:32 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-08-05 00:35:41 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-08-05 00:35:41 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-08-05 00:35:45 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (27 lignes, 20 colonnes)
+2026-08-05 00:35:45 | INFO     | models.fichier_excel | JeuDonnees créé : 27 lignes, 20 colonnes
+2026-08-05 00:35:49 | INFO     | models.analyse_eda | EDA : 0 colonnes numériques analysées
+2026-08-05 00:35:53 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-08-05 00:35:53 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-08-05 00:35:56 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (8 lignes, 1 colonnes)
+2026-08-05 00:35:56 | INFO     | models.fichier_excel | JeuDonnees créé : 8 lignes, 1 colonnes
+2026-08-05 00:36:00 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (42 lignes, 3 colonnes)
+2026-08-05 00:36:00 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-08-05 00:36:06 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-08-05 00:36:14 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38, 'colonnes_aberrantes': ["Sum of Durée de l'Arrêt\n(min)", '%']}
+2026-08-05 00:36:14 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-08-05 00:36:14 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-08-05 00:36:39 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (0 lignes, 0 colonnes)
+2026-08-05 00:36:39 | INFO     | models.fichier_excel | JeuDonnees créé : 0 lignes, 0 colonnes
+2026-08-05 00:36:43 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (27 lignes, 20 colonnes)
+2026-08-05 00:36:43 | INFO     | models.fichier_excel | JeuDonnees créé : 27 lignes, 20 colonnes
+2026-08-05 00:36:46 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (8 lignes, 1 colonnes)
+2026-08-05 00:36:46 | INFO     | models.fichier_excel | JeuDonnees créé : 8 lignes, 1 colonnes
+2026-08-05 00:36:50 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up.xlsx (42 lignes, 3 colonnes)
+2026-08-05 00:36:50 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-08-06 10:55:26 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (227 lignes, 12 colonnes)
+2026-08-06 10:55:26 | INFO     | models.fichier_excel | JeuDonnees créé : 227 lignes, 12 colonnes
+2026-08-06 10:55:42 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (8 lignes, 1 colonnes)
+2026-08-06 10:55:42 | INFO     | models.fichier_excel | JeuDonnees créé : 8 lignes, 1 colonnes
+2026-08-06 10:55:46 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (27 lignes, 20 colonnes)
+2026-08-06 10:55:46 | INFO     | models.fichier_excel | JeuDonnees créé : 27 lignes, 20 colonnes
+2026-08-06 10:55:55 | INFO     | models.fichier_excel | Fichier chargé : Thor - Corrective maintenance follow-up - Copy.xlsx (42 lignes, 3 colonnes)
+2026-08-06 10:55:55 | INFO     | models.fichier_excel | JeuDonnees créé : 42 lignes, 3 colonnes
+2026-08-06 10:56:04 | INFO     | models.analyse_eda | EDA : 2 colonnes numériques analysées
+2026-08-06 10:56:18 | INFO     | models.modele_ml | Labels d'utilité générés (règles génériques) : {'trop_vide': 0, 'doublon': 0, 'valeur_aberrante': 4, 'non_utile_total': 4, 'utile_total': 38, 'colonnes_aberrantes': ["Sum of Durée de l'Arrêt\n(min)", '%']}
+2026-08-06 10:56:18 | INFO     | models.pretraitement | Doublons supprimés : 0
+2026-08-06 10:56:18 | INFO     | models.pretraitement | Valeurs manquantes imputées : 1
+2026-08-06 10:56:25 | INFO     | models.risque_machine | Estimation par formule (temps restant) calculée pour 41 machine(s).
+2026-08-06 10:56:36 | INFO     | models.modele_ml | RandomForestClassifier entraîné : 200 arbres, 44 features
+2026-08-06 10:56:36 | INFO     | models.rapport_evaluation | Évaluation : accuracy=1.000 precision=1.000 recall=1.000 f1=1.000 roc_auc=1.000
+2026-08-06 10:56:37 | INFO     | models.risque_machine | Estimation par formule (temps restant) calculée pour 41 machine(s).
+2026-08-06 10:57:19 | INFO     | models.risque_machine | Estimation par formule (temps restant) calculée pour 41 machine(s).

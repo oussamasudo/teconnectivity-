@@ -25,6 +25,33 @@ from models.logger import get_logger
 logger = get_logger(__name__)
 
 
+def dedupliquer_colonnes(df: pd.DataFrame) -> pd.DataFrame:
+    """Renomme les colonnes en double en leur ajoutant un suffixe numéroté.
+
+    Un encodage One-Hot générique (`pd.get_dummies`) peut produire deux
+    colonnes de même nom quand deux colonnes SOURCE différentes, combinées à
+    leurs valeurs, donnent le même résultat (ex. colonne "A" valeur "B_x" et
+    colonne "A_B" valeur "x" -> "A_B_x" dans les deux cas). scikit-learn
+    refuse ensuite d'entraîner un modèle sur un DataFrame à noms de colonnes
+    non uniques ; on désambiguïse donc systématiquement plutôt que de
+    laisser planter l'entraînement sur un fichier réel imprévisible.
+    """
+    if not df.columns.duplicated().any():
+        return df
+    vus: dict[str, int] = {}
+    nouvelles_colonnes = []
+    for nom in df.columns:
+        if nom not in vus:
+            vus[nom] = 0
+            nouvelles_colonnes.append(nom)
+        else:
+            vus[nom] += 1
+            nouvelles_colonnes.append(f"{nom}__{vus[nom]}")
+    df = df.copy()
+    df.columns = nouvelles_colonnes
+    return df
+
+
 @dataclass
 class Pretraitement:
     methodeNormalisation: str = METHODE_NORMALISATION_DEFAUT  # "standard" | "minmax"
@@ -69,7 +96,12 @@ class Pretraitement:
     def normaliser(self, jeu: JeuDonnees, colonnes: list[str] | None = None) -> JeuDonnees:
         """Normalisation Min-Max des colonnes numériques (bornes 0-1)."""
         df = jeu.dataframe.copy()
-        cols = colonnes or list(df.select_dtypes(include=[np.number]).columns)
+        # `colonnes` peut être explicitement une liste VIDE (ex. aucune colonne
+        # numérique retenue après exclusion des colonnes de fuite/texte libre) :
+        # un simple `colonnes or [...]` traiterait ce cas comme un `None` et
+        # redéclencherait une auto-détection non voulue par l'appelant. Seul
+        # `None` doit déclencher l'auto-détection.
+        cols = colonnes if colonnes is not None else list(df.select_dtypes(include=[np.number]).columns)
         if cols:
             scaler = MinMaxScaler()
             df[cols] = scaler.fit_transform(df[cols])
@@ -78,7 +110,7 @@ class Pretraitement:
     def standardiser(self, jeu: JeuDonnees, colonnes: list[str] | None = None) -> JeuDonnees:
         """Standardisation (StandardScaler, moyenne 0 / écart-type 1) des colonnes numériques."""
         df = jeu.dataframe.copy()
-        cols = colonnes or list(df.select_dtypes(include=[np.number]).columns)
+        cols = colonnes if colonnes is not None else list(df.select_dtypes(include=[np.number]).columns)
         if cols:
             scaler = StandardScaler()
             df[cols] = scaler.fit_transform(df[cols])
@@ -115,6 +147,7 @@ class Pretraitement:
                 df[col] = df[col].astype("category").cat.codes
         else:  # onehot
             df = pd.get_dummies(df, columns=cols, drop_first=False)
+            df = dedupliquer_colonnes(df)
 
         return JeuDonnees(idDataset=jeu.idDataset, dataframe=df, dateImport=jeu.dateImport)
 

@@ -42,6 +42,7 @@ from config import (
     SEUIL_TAUX_MANQUANT,
 )
 from models.logger import get_logger
+from models.pretraitement import dedupliquer_colonnes
 
 logger = get_logger(__name__)
 
@@ -143,6 +144,7 @@ def construire_features(df: pd.DataFrame) -> pd.DataFrame:
     variables catégorielles encodées sont silencieusement exclues.
     """
     features = df.select_dtypes(include=[np.number, "bool"]).copy()
+    features = dedupliquer_colonnes(features)
     features = features.astype(float)
     features = features.fillna(0)
     return features
